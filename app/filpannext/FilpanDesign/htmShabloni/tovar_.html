@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="PageFunctions.js"></script>
+	<script src="../FunkciiIKlassi/Biblioteki/jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+		{
+			inicializaciyaSobitiy();
+		}
+		);
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<title>
+
+		</title>
+	</head>
+	<body>
+		<div id="FonZatemneniyaKorzini">
+			
+		</div>
+		<div id='GlavniyDIV'>
+			<div id='VerxniyDiv'>
+				<div id='LevayaKolonkaVerxniyDiv'>
+				<img id='Logotip' src='PageImages/Logotip.gif'>
+				</div>
+				<div id='PravayaKolonkaVerxniyDiv'>
+					<div id='KorzinaPravayaKolonkaVerxniyDiv'>
+						<img src='PageImages/Korzina.gif' class='Korzina'>
+						<a class='OrangevayKnopka' id="VashaKOrzina" href=''>Ваша корзина</a>
+					</div>
+					
+					<div id='PoiskPravayaKolonkaVerxniyDiv'>	
+							<div class='PoiskPoSaytu'>	
+							Поиск по сайту			
+							</div>
+							<div>
+							<input name="StrokaPoiska" type="text" id="StrokaPoiska">
+							<input type="submit" class="" value="Ok">
+							</div>
+							
+					</div>
+					<div id='KakNasNaytiPravayaKolonkaVerxniyDiv' class="KakNasNayti">
+					КАК НАС НАЙТИ <img id='ZnachekKarti' src='PageImages/ZnachekKarti.gif'> НА КАРТЕ
+					</div>
+				</div>
+				<div id='SrednayaKolonkaVerxniyDiv'>
+					<div class='TextOrangeviyKrupniy'><img src='PageImages/Telefon.gif'>(495) 943-07-73, (495) 776-05-70. Позвоните нам!</div>
+					<div class='TextRegimRaboti'>Режим работы:<br>
+					понедельник-пятница с 9-00 до 18-00;<br>
+					в субботу – с 11-00 до 15-00 (по договоренности).<br>
+					</div>
+					
+					<div id="CentrirovanniyDivStranicSayta">
+						<a href="" class="KakNasNayti">КАК НАС НАЙТИ</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Оплата</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Доставка</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Заправка картриджей</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Важно знать</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Контакты</a>	
+					</div>	
+
+				</div>
+				
+			</div>
+			<div id='SredniyDiv'>
+				<div id='LevayaKolonkaSredniyDiv'>
+				<span class="raskritiyePlus">+</span>
+				<span class="raskritiyeMinus">-</span>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Каталог услуг</span>
+						<ul class="SpisokSsilokMenu">
+							<li>
+							<a href="" class="Neaktivnaya">Заправка картриджей</a>	
+							</li>
+								<ul class="SpisokSsilokMenu">
+									<li>
+									<a href="" class="Neaktivnaya">Лазерные</a>	
+									</li>
+										<ul class="SpisokSsilokMenu">
+										<li>
+										<a href="" class="Aktivnay">HP</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Canon</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Samsung</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Xerox</a>	
+										</li>
+										</ul>
+									<li>
+									<a href="" class="Neaktivnaya">Струйные</a>	
+									</li>
+								</ul>
+							<li>
+							<a href="" class="Neaktivnaya">Восстановка картриджей</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Прошивка принтеров</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Ремонт принтеров и офисной техники</a>	
+							</li>
+						</ul>
+
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Каталог товаров</span>
+						<ul class="SpisokSsilokMenu">
+							<li>
+							<a href="" class="Neaktivnaya">Картриджи</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Техника</a>	
+							</li>
+								<ul class="SpisokSsilokMenu">
+									<li>
+									<a href="" class="Neaktivnaya">Принтеры</a>	
+									</li>
+									<ul class="SpisokSsilokMenu">
+										
+										<li>
+										<a href="" class="Neaktivnaya">Canon</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Samsung</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Xerox</a>	
+										</li>
+										</ul>
+									<li>
+									<a href="" class="Neaktivnaya">Уничтожители бумаги</a>	
+									</li>
+									<li>
+									<a href="" class="Neaktivnaya">Сканеры</a>	
+									</li>	
+								</ul>
+							<li>
+							<a href="" class="Neaktivnaya">Фотовалы</a>	
+							</li>	
+							<li>
+							<a href="" class="Neaktivnaya">Тонеры</a>	
+							</li>
+						</ul>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<div class="MiNaYandexMarkete">
+							<a  href="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*https://grade.market.yandex.ru/?id=37776&action=link">
+								<img src="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2507/*https://grade.market.yandex.ru/?id=37776&action=image&size=3" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете" />
+							</a>
+						</div>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Написать письмо</span>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Районы которые мы обслуживаем:</span>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Суперпредложения: СОВМЕСТИМЫЕ КАРТРИДЖИ</span>
+					</div>
+				</div>
+				
+				<div id='SrednayaKolonkaSredniyDivDlyaTovara'>
+				<div class="ModulSredneyKolonki">
+					<div class="LevoeObsheeOknoKartochkaTovara">
+						<div class="ContentElementiLevoeObsheeOknoKartochkaTovara">
+							<div>
+								<img src="PageImages/1345620943.jpg" class="KartinkaTovara">
+							</div>	
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Наличие:</span><span class='Cena'>есть в наличии</span>	
+							</div>	
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+
+
+						</div>
+						<div class="ContentElementiLevoeObsheeOknoKartochkaTovara ProstoyText">
+							Внимание! Цена действительна при заказе в интернет-магазине. В розничных магазинах и заказе по телефону цена может быть другой.
+						</div>		
+					</div>
+					<div class='PravoeOknoOplataDostavkaGarantii'>
+						<div>
+							<img src="PageImages/Oplata.gif">
+							<span class="ProstoyText">Оплата</span>
+						</div>
+						<div>
+							<img src="PageImages/Dostavka.gif">
+							<span class="ProstoyText">Доставка</span>
+						</div>
+						<div>
+							<img src="PageImages/Garantiya.gif">
+							<span class="ProstoyText">Гарантии</span>
+						</div>
+					</div>
+					<div class="ContentTovara">
+					Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+
+
+
+Заправка картриджа Brother TN - 1075
+
+Цвет: Чёрный
+Ресурс: 1000 страниц
+Заправленный тонер-картридж Brother TN-1075 используется в печатных устройствах:
+
+Принтеры:
+Brother HL-1110R
+Brother HL-1112R
+Многофункциональные устройства (принтер/копир/сканер/факс):
+Brother DCP-1510R
+Brother DCP-1512R
+Brother MFC-1810R
+Brother MFC-1815R
+ 
+
+Осуществить быструю и качественную заправку картриджа Brother TN-1075 в Москве, можно только в сервис-центре Filpan. Своевременная и профессиональная замена тонера в картридже  Brother TN-1075 позволяет улучшить качество печати и увеличить до максимальной отметки рабочий ресурс картриджа.  Brother TN-1075 совместим с такими моделями принтера, как BrotherHL-1110R/1112R, MFC-1810R/1815R и DCP-1510R/1512R.
+					</div>
+				</div>
+					<div class="VneshniyVidTovara ProstoyText">
+						Внешний вид товара может отличаться от размещенного на сайте.
+Товары, услуги и цены, размещенные на сайте, не являются публичной офертой.
+					</div>
+
+					<div class="SoputstvuyushieTovariIUslugi">
+						<div class="SoputstvuyushieTovari">
+						<span class="ZagolovokSoputstvuyushieTovari">Сопутствующие товары</span>
+						<div class="ObshiySpisokSoputstvuushixTovarov">
+							
+
+
+									<div class="SoputstvuyushiyTovarElement">
+										<div>
+											<a href=""><img src="PageImages/1345620943.jpg" class="KartinkaTovaraSoputstvuyushiyTovarElement"></a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<a href="" class="SsilkaNaSoputstvushiyTovar">Заправка картриджа Brother TN-1075</a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+										</div>
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+										</div>	
+										<div class="DivContentSoputstvuyushiyTovarElement">
+											<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+										</div>	
+									</div>	
+
+									<div class="SoputstvuyushiyTovarElement">
+										<div>
+											<a href=""><img src="PageImages/1345620943.jpg" class="KartinkaTovaraSoputstvuyushiyTovarElement"></a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<a href="" class="SsilkaNaSoputstvushiyTovar">Заправка картриджа Brother TN-1075</a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+										</div>
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+										</div>	
+										<div class="DivContentSoputstvuyushiyTovarElement">
+											<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+										</div>	
+									</div>	
+
+									<div class="SoputstvuyushiyTovarElement">
+										<div>
+											<a href=""><img src="PageImages/1345620943.jpg" class="KartinkaTovaraSoputstvuyushiyTovarElement"></a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<a href="" class="SsilkaNaSoputstvushiyTovar">Заправка картриджа Brother TN-1075</a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+										</div>
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+										</div>	
+										<div class="DivContentSoputstvuyushiyTovarElement">
+											<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+										</div>	
+									</div>	
+
+
+						</div>
+						</div>	
+
+						<div class="SoputstvuyushieTovari">
+						<span class="ZagolovokSoputstvuyushieTovari">Сопутствующие услуги</span>
+						<div class="ObshiySpisokSoputstvuushixTovarov">
+							
+
+									<div class="SoputstvuyushiyTovarElement">
+										<div>
+											<a href=""><img src="PageImages/1345620943.jpg" class="KartinkaTovaraSoputstvuyushiyTovarElement"></a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<a href="" class="SsilkaNaSoputstvushiyTovar">Заправка картриджа Brother TN-1075</a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+										</div>
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+										</div>	
+										<div class="DivContentSoputstvuyushiyTovarElement">
+											<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+										</div>	
+									</div>	
+									
+									<div class="SoputstvuyushiyTovarElement">
+										<div>
+											<a href=""><img src="PageImages/1345620943.jpg" class="KartinkaTovaraSoputstvuyushiyTovarElement"></a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<a href="" class="SsilkaNaSoputstvushiyTovar">Заправка картриджа Brother TN-1075</a>
+										</div>	
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+										</div>
+										<div class="ElementiContentaSoputstvuyushiyTovarElement">
+										<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+										</div>	
+										<div class="DivContentSoputstvuyushiyTovarElement">
+											<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+										</div>	
+									</div>	
+									
+
+						</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id='NigniyDiv'>
+			</div>
+
+			<div id='Korzina'>
+			<table class="TablicaKorzina">
+				<tr>
+					<th>Артикул</th>
+					<th>Наименование</th>
+					<th>Кол-во</th>
+					<th>Цена</th>
+					<th>Сумма</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+			</table>
+			<div class="DivVsegoKOplate"><span class="TextKartochkiTovara">Всего к оплате:</span><span class="Cena"> 750 руб.</span></div>
+			<div>
+				<input type="button" class="OrangevayaKnopkaRezinovaya" value="Продолжить оформление">
+				<input type="button" class="OrangevayaKnopkaRezinovaya" value="Очистить корзину">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2016-11-19 21:44">
+  <shop>
+    <name>Filpan</name>
+    <company>11-1037776</company>
+    <url>https://www.filpan.ru</url>
+    <currencies>
+      <currency id="RUR" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="16">Тонеры</category>
+      <category id="25">Заправка принтеров</category>
+      <category id="4">Картриджи</category>
+      <category id="3">Заправка картриджей</category>
+      <category id="20">Чипы для картриджей</category>
+      <category id="24">Прошивка принтеров и копиров</category>
+    </categories>
+    <offers>
+      <offer id="1" bid="10" cbid="10">
+        <name>Тонер для заправки картриджа HP LJ 5L, 6L,3100, (140гр.)</name>
+        <url>/tovar/67/toner-dlya-zapravki-kartridzha-hp-lj-5l-6l-3100.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="2" bid="10" cbid="10">
+        <name>Тонер для заправки HP CB 435A P1005/P1006 85г.</name>
+        <url>/tovar/3090/toner-dlya-zapravki-hp-cb-435a-p1005.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205545.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="3" bid="10" cbid="10">
+        <name>Тонер для заправки HP LJ 5949 1320/1160/1320n/1320nt/1320nw/3390/3392 140гр.</name>
+        <url>/tovar/130/toner-dlya-zapravki-hp-lj-5949-1320.html</url>
+        <price>210</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205545.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="4" bid="10" cbid="10">
+        <name>Тонер заправки картриджа HP Q2612A 1010/1012/1015/&amp;lt;br&amp;gt;1018/1020/1022/3015/ 3020/3030/3050/3050Z/&amp;lt;br&amp;gt;3052/3055/M1005mfp 140г.</name>
+        <url>/tovar/131/toner-zapravki-kartridzha-hp-q2612a-1010.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205603.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="5" bid="10" cbid="10">
+        <name>Тонер для заправки HP LJ Q2624A  1150/1150N 140г.</name>
+        <url>/tovar/132/toner-dlya-zapravki-hp-lj-q2624a-1150.html</url>
+        <price>210</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205751.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="6" bid="10" cbid="10">
+        <name>Тонер для заправки HP 4096A HP 2100/2200 220гр.</name>
+        <url>/tovar/133/toner-dlya-zapravki-hp-4096a-hp-2100.html</url>
+        <price>340</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133206401.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="7" bid="10" cbid="10">
+        <name>Тонер для заправки HP LJ 92298A HP LJ 4/4 /4m/4m /5/5m 340г.</name>
+        <url>/tovar/134/toner-dlya-zapravki-hp-lj-92298a-hp-lj-4.html</url>
+        <price>390</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133206451.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="8" bid="10" cbid="10">
+        <name>Тонер для заправки картриджа HP LJ Q2610А HP LJ 2300/D/N/DN/DTN/L 340г. </name>
+        <url>/tovar/135/toner-dlya-zapravki-kartridzha-hp-lj-q2610a-hp-lj-2300.html</url>
+        <price>390</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133206497.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="9" bid="10" cbid="10">
+        <name>Тонер для заправки C4129Х HP LJ 5000 500г.</name>
+        <url>/tovar/144/toner-dlya-zapravki-c4129h-hp-lj-5000-500g..html</url>
+        <price>510</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210137.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="10" bid="10" cbid="10">
+        <name>Тонер для заправки HP Q6511A HP LJ 2410/2420/2430 320г.</name>
+        <url>/tovar/137/toner-dlya-zapravki-hp-q6511a-hp-lj-2410.html</url>
+        <price>390</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133209380.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="11" bid="10" cbid="10">
+        <name>Тонер для заправки C4127А 4000/4000N/4000TN 500г.</name>
+        <url>/tovar/139/toner-dlya-zapravki-c4127a-4000.html</url>
+        <price>490</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133209714.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="12" bid="10" cbid="10">
+        <name>Тонер для заправки HP C3900A HP LJ 4V/4MV/BX 400г.</name>
+        <url>/tovar/143/toner-dlya-zapravki-hp-c3900a-hp-lj-4v.html</url>
+        <price>510</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210005.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="13" bid="10" cbid="10">
+        <name>Тонер для заправки картриджа HP LJ C3903A 5P/5MP/6P 220г.</name>
+        <url>/tovar/145/toner-dlya-zapravki-kartridzha-hp-lj-c3903a-5p.html</url>
+        <price>340</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210254.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="14" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-4500D3 4500/4600 85г</name>
+        <url>/tovar/148/toner-dlya-zapravki-samsung-ml-4500d3-4500.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="15" bid="0" cbid="0">
+        <name>Тонер Samsung ML-1520/1710/1750/1510 фл.85г</name>
+        <url>/tovar/149/toner-samsung-ml-1520.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210808.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="16" bid="0" cbid="0">
+        <name>Тонер  Samsung SCX 4016/4216/5112/5312 фл.200г.</name>
+        <url>/tovar/150/toner-samsung-scx-4016.html</url>
+        <price>320</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210862.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="17" bid="0" cbid="0">
+        <name>Заправка  принтера Canon L90</name>
+        <url>/usluga/1426/zapravka-printera-canon-l90.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>25</categoryId>
+        <picture>/img/1345621058.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>Canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="18" bid="0" cbid="0">
+        <name>Заправка  принтера Canon L250</name>
+        <url>/usluga/1426/zapravka-printera-canon-l250.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>25</categoryId>
+        <picture>/img/1345621058.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>Canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="19" bid="10" cbid="10">
+        <name>Тонер Canon 1215 NPG-1 (Тонер Canon NP 1215 ) canon NPG-1</name>
+        <url>/tovar/204/toner-canon-1215-npg-1.html</url>
+        <price>620</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1136543319.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="20" bid="10" cbid="10">
+        <name>Тонер Canon 7161C-EXV6 ( Тонер Canon NP 7161 ) canon  C-EXV6 canon 7161</name>
+        <url>/tovar/210/toner-canon-7161c-exv6.html</url>
+        <price>2020</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1136547197.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="21" bid="10" cbid="10">
+        <name>C-EXV5 Тонер Canon для iR 1600, 2000, черный Original (2 тубы по 440 гр.)</name>
+        <url>/tovar/212/toner-canon-c-exv5.html</url>
+        <price>4230</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1136547730.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="22" bid="10" cbid="10">
+        <name>Тонер Canon 2200 C-EXV3 ( Тонер Canon iR 2200 ) canon  C-EXV3 canon iR - 2200</name>
+        <url>/tovar/213/toner-canon-2200-c-exv3.html</url>
+        <price>4410</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1136796701.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="23" bid="0" cbid="0">
+        <name>Тонер Mita - CC-50/55 ( 105гр. ) (  37082010 )</name>
+        <url>/tovar/297/toner-mita-cc-50.html</url>
+        <price>1080</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1137162476.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>mita</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="24" bid="10" cbid="10">
+        <name>Картридж Lexmark 10N0227</name>
+        <url>/tovar/364/kartridzh-lexmark-10n0227.html</url>
+        <price>1360</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139836801.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="25" bid="10" cbid="10">
+        <name>Картридж Lexmark 17G0050</name>
+        <url>/tovar/369/kartridzh-lexmark-17g0050.html</url>
+        <price>1890</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139838151.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="26" bid="10" cbid="10">
+        <name>Картридж Lexmark 17G0060</name>
+        <url>/tovar/371/kartridzh-lexmark-17g0060.html</url>
+        <price>2150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139838571.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="27" bid="10" cbid="10">
+        <name>Картридж Lexmark 13619HC</name>
+        <url>/tovar/372/kartridzh-lexmark-13619hc.html</url>
+        <price>2180</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139838872.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="28" bid="10" cbid="10">
+        <name>Картридж Lexmark 12A1970</name>
+        <url>/tovar/373/kartridzh-lexmark-12a1970.html</url>
+        <price>2240</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139839172.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="29" bid="10" cbid="10">
+        <name>Картридж Lexmark 12A1980</name>
+        <url>/tovar/374/kartridzh-lexmark-12a1980.html</url>
+        <price>2300</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139839518.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="30" bid="10" cbid="10">
+        <name>Картридж Lexmark 15МО125</name>
+        <url>/tovar/375/kartridzh-lexmark-15mo125.html</url>
+        <price>3030</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1139840029.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="31" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung 104 scx 3200/3205/3207 85г</name>
+        <url>/tovar/3105/toner-dlya-zapravki-samsung-104-scx-3200.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="32" bid="10" cbid="10">
+        <name>Тонер Canon C-EXV7 ( Тонер Canon iR 1210  ) canon  C-EXV7 canon 1210</name>
+        <url>/tovar/479/toner-canon-c-exv7.html</url>
+        <price>2400</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1152619056.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="33" bid="10" cbid="10">
+        <name>Картридж Lexmark 18С0033</name>
+        <url>/tovar/496/kartridzh-lexmark-18s0033.html</url>
+        <price>1960</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1158749934.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>lexmark</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="34" bid="10" cbid="10">
+        <name>Drum Unit Canon C-EXV7 Canon iR-1210/ 1230/ 1270/ 1510/ 1530</name>
+        <url>/tovar/536/drum-unit-canon-c-exv7-canon-ir-1210.html</url>
+        <price>7190</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1164810703.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="35" bid="10" cbid="10">
+        <name>Тонер Canon C-EXV14 ( Тонер Canon iR 2016/ 2020/ iR 2018 )</name>
+        <url>/tovar/549/toner-canon-c-exv14.html</url>
+        <price>5330</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1169448461.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="36" bid="10" cbid="10">
+        <name>Тонер Canon C-EXV18 ( Тонер Canon iR 1018/ 1022 ) canon  C-EXV18 canon 1018/1022</name>
+        <url>/tovar/578/toner-canon-c-exv18.html</url>
+        <price>3510</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1174658982.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="37" bid="10" cbid="10">
+        <name>Тонер для заправки картриджа Samsung ML-1210 1210/1250/1430/1200 85г</name>
+        <url>/tovar/3107/toner-dlya-zapravki-kartridzha-samsung-ml-1210-1210.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="38" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-1520 1520/1520P 85г</name>
+        <url>/tovar/3109/toner-dlya-zapravki-samsung-ml-1520-1520.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="39" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-1610 1610/1615 85г</name>
+        <url>/tovar/3110/toner-dlya-zapravki-samsung-ml-1610-1610.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="40" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-D1630 ML-1630/1630W/SCX-4500/4500W 85г</name>
+        <url>/tovar/3112/toner-dlya-zapravki-samsung-ml-d1630-ml-1630.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="41" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-D2850 ML2850/2850D/2851ND/2851 85г</name>
+        <url>/tovar/3113/toner-dlya-zapravki-samsung-ml-d2850-ml2850.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="42" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-D3050A ML-3050/ML-3051N/ML-3051ND 140г.</name>
+        <url>/tovar/3114/toner-dlya-zapravki-samsung-ml-d3050a-ml-3050.html</url>
+        <price>310</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="43" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung MLT-D103S ML-2545/2950/2955/SCX-4728/SCX-4729 85г</name>
+        <url>/tovar/3116/toner-dlya-zapravki-samsung-mlt-d103s-ml-2545.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="44" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung MLT-D105 1910/1915/2525/2580N/SCX-4600/4623F/4623FN 85г</name>
+        <url>/tovar/3117/toner-dlya-zapravki-samsung-mlt-d105-1910.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="45" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung MLT-D108S 1640/1641/2240/1645/2241 85г</name>
+        <url>/tovar/3118/toner-dlya-zapravki-samsung-mlt-d108s-1640.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="46" bid="10" cbid="10">
+        <name>Заправка картриджа  Panasonic  KX-FAT431A7 для Panasonic KX-MB2230RU / KX-MB2270RU / KX-MB2510RU и KX-MB2540RU </name>
+        <url>/zapravka-kartridzha-panasonic-KX-FAT431A7-dlya-panasonic-kx-MB2230RU.html</url>
+        <price>540</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/picture1433334458.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>panasonic</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="47" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung SCX-4200 85г</name>
+        <url>/tovar/3129/toner-dlya-zapravki-samsung-scx-4200.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="48" bid="0" cbid="0">
+        <name>Заправка принтера Xerox Phaser 3052</name>
+        <url>/usluga/1400/zapravka-printera-xerox-phaser-3052.html</url>
+        <price>450</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>25</categoryId>
+        <picture>/img/picture1437319374.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>0</local_delivery_cost>
+        <vendor>Xerox</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="49" bid="10" cbid="10">
+        <name>Картридж Canon 728 для Canon i-SENSYS MF4410/MF4430/MF4450/MF4550D/M F4570DN/MF4580DN</name>
+        <url>/tovar/1064/kartridzh-canon-728-dlya-canon-i-sensys-mf4410.html</url>
+        <price>3950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1295616228.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="50" bid="10" cbid="10">
+        <name>Drum Unit Canon C-EXV18  IR-1018/1020/1022/1024</name>
+        <url>/tovar/1079/drum-unit-canon-c-exv18-ir-1018.html</url>
+        <price>8990</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1304601115.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="51" bid="10" cbid="10">
+        <name>Смарт карта для картриджа Philips Laser MFD 6050 (Картридж Philips PFA 821/822) на 5500 копий</name>
+        <url>/tovar/1206/smart-karta-dlya-kartridzha-philips-laser-mfd-6050.html</url>
+        <price>560</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>20</categoryId>
+        <picture>/img/1323948260.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>philips</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="52" bid="10" cbid="10">
+        <name>Смарт карта для картриджа Philips Laser MFD 6080 (Картридж Philips PFA 821/822) на 5500 копий</name>
+        <url>/tovar/1207/smart-karta-dlya-kartridzha-philips-laser-mfd-6080.html</url>
+        <price>560</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>20</categoryId>
+        <picture>/img/1323948348.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>philips</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="53" bid="10" cbid="10">
+        <name>Смарт карта для картриджа Philips Laser MFD 6020 (Картридж Philips PFA 821/822) на 5500 копий</name>
+        <url>/tovar/1208/smart-karta-dlya-kartridzha-philips-laser-mfd-6020.html</url>
+        <price>560</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>20</categoryId>
+        <picture>/img/1323948497.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>philips</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="54" bid="10" cbid="10">
+        <name>Смарт карта для картриджа XEROX Phaser 3100 MFP  (Картридж Xerox 106R01378/106R01379) на 6000 копий</name>
+        <url>/tovar/1209/smart-karta-dlya-kartridzha-xerox-phaser-3100-mfp.html</url>
+        <price>560</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>20</categoryId>
+        <picture>/img/1324028431.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>xerox</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="55" bid="0" cbid="0">
+        <name>Тонер Minolta EP-2120/2121/2130/2130 PRO/2131/2150/2151/2152/2152 PRO/2153</name>
+        <url>/tovar/1222/toner-minolta-ep-2120.html</url>
+        <price>410</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1334123708.jpeg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>konica-minolta</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="56" bid="0" cbid="0">
+        <name>Тонер Mita CC30</name>
+        <url>/tovar/1224/toner-mita-cc30.html</url>
+        <price>820</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1334124177.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>mita</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="57" bid="0" cbid="0">
+        <name>Тонер Xerox 5017, 5317,5317-II</name>
+        <url>/tovar/1225/toner-xerox-5017-5317-5317-ii.html</url>
+        <price>1640</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1334124260.jpeg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>xerox</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="58" bid="0" cbid="0">
+        <name>Тонер Canon G-9 (C-160, 200D, NP-6016, 6218, 6521, 6621)</name>
+        <url>/tovar/1226/toner-canon-g-9.html</url>
+        <price>2400</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1334124358.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="59" bid="0" cbid="0">
+        <name>Тонер Ricoh type 450 universal (FT4022, 4522, 4027, 4527, 4622, 4822, 5035, 5535, 5632, 5640, 5832, 5840)</name>
+        <url>/tovar/1227/toner-ricoh-type-450-universal.html</url>
+        <price>2950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1334125217.jpeg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>ricoh</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="60" bid="0" cbid="0">
+        <name>Картридж оригинальный Canon FX-10 для MF 4018/4120/4140/4150/4270, MF 4320d/4330d/4340d/4350d/4370dn/4380dn, L 95/100/120/140/160, черный</name>
+        <url>/tovar/1357/kartridzh-originalnyiy-canon-fx-10-dlya-mf-4018.html</url>
+        <price>2780</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345617814.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="61" bid="10" cbid="10">
+        <name>Заправка картриджа Canon 731Y для Canon LBP 7100/7110 MF 8230/8280</name>
+        <url>/usluga/947/zapravka-kartridzha-canon-731y-dlya-i-sensys-lbp-7100.html</url>
+        <price>900</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/picture1439989880.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="62" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C9351CE (№ 21XL) black ОЕМ </name>
+        <url>/tovar/2382/kartridzh-hp-c9351ce.html</url>
+        <price>760</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478168795.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="63" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C9352CE (№ 22XL) цветной ОЕМ</name>
+        <url>/tovar/2384/kartridzh-hp-c9352ce.html</url>
+        <price>1000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478170436.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="64" bid="10" cbid="10">
+        <name>Картридж Samsung CLT-K409S OEM</name>
+        <url>/tovar/3078/toner-kartridzh-samsung-clt-k409s-oem.html</url>
+        <price>2420</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345619674.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для Samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="65" bid="10" cbid="10">
+        <name>Тонер для заправки HP C7115A 1000/1000W/1005/1005W/1200/1220/1220N/3300/3310/3320/3330/3380 140г.</name>
+        <url>/tovar/3080/toner-dlya-zapravki-hp-c7115a-1000.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1345619676.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="66" bid="10" cbid="10">
+        <name>Тонер для заправки HP C2613A 1000/1200/1300/3300 140гр.</name>
+        <url>/tovar/3081/toner-dlya-zapravki-hp-c2613a-1000.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1345619678.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="67" bid="10" cbid="10">
+        <name>Тонер для заправки HP C4092A 1100/1100А/3200/3220 140гр.</name>
+        <url>/tovar/3082/toner-dlya-zapravki-hp-c4092a-1100.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1345619677.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="68" bid="10" cbid="10">
+        <name>Тонер для заправки HP CB 436A P1505/P1606/М1120/P1522 85г.</name>
+        <url>/tovar/3088/toner-dlya-zapravki-hp-cb-436a-p1505.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205545.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="69" bid="10" cbid="10">
+        <name>Тонер для заправки HP CE285A P1102/M1210/M1212/M1214/M1217/P1120/M1132 85г.</name>
+        <url>/tovar/3089/toner-dlya-zapravki-hp-ce285a-p1102.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205545.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="70" bid="10" cbid="10">
+        <name>Картридж Samsung CLT-C409S OEM</name>
+        <url>/tovar/3122/kartridzh-samsung-clt-c409s-oem.html</url>
+        <price>2420</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345619736.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для Samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="71" bid="10" cbid="10">
+        <name>Тонер для заправки HP CF280A HP LaserJet Pro400 MFP M425dn/MFP M425dw/M401a/M401d/M401dn/M401dw 140г.</name>
+        <url>/tovar/3126/toner-dlya-zapravki-hp-cf280a-hp-laserjet-pro400-mfp-m425dn.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133205603.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="72" bid="10" cbid="10">
+        <name>Тонер для заправки Samsung ML-1710 1500/1510/1710/1710P/1740/1750 85г</name>
+        <url>/tovar/3129/toner-dlya-zapravki-samsung-ml-1710-1500.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="73" bid="10" cbid="10">
+        <name>Картридж для HP CE285A ОЕМ ECO для принтера HP P1102/M1210/M1212/M1214/M1217/P1120/M1132</name>
+        <url>/tovar/3133/kartridzh-hp-ce285a-oem-eco-dlya-printera-hp-p1102.html</url>
+        <price>850</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345620919.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для Hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="74" bid="10" cbid="10">
+        <name>Тонер для заправки картриджа Samsung ML-1210 1210/1250/1430/1200 85г</name>
+        <url>/tovar/3135/toner-dlya-zapravki-kartridzha-samsung-ml-1210-1210.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1133210694.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="75" bid="10" cbid="10">
+        <name>Тонер для заправки Canon 303 LBP 2900/3000 140гр.</name>
+        <url>/tovar/3137/toner-dlya-zapravki-canon-303-lbp-2900.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="76" bid="10" cbid="10">
+        <name>Тонер для заправки Canon 712 LBP 3010/3020/3100 85г.</name>
+        <url>/tovar/3139/toner-dlya-zapravki-canon-712-lbp-3010.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="77" bid="10" cbid="10">
+        <name>Заправка картриджа Canon 719H </name>
+        <url>/zapravka-kartridzha-canon-719h.html</url>
+        <price>650</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/picture1439910037.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="78" bid="10" cbid="10">
+        <name>Тонер для заправки Canon E16 FC108/FC128/FC200/FC206/FC208/FC220/FC226/FC228/FC230/FC330/FC336/PC860/PC890 140г.</name>
+        <url>/tovar/3143/toner-dlya-zapravki-canon-e16-fc108.html</url>
+        <price>220</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="79" bid="10" cbid="10">
+        <name>Тонер для заправки Canon EP 26 MF3110/MF5630/MF5650/MF5730/MF5750/MF5770/LBP3200 140г.</name>
+        <url>/tovar/3144/toner-dlya-zapravki-canon-ep-26-mf3110.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="80" bid="10" cbid="10">
+        <name>Тонер для заправки Canon EP 22 Сanon Laser Shot LBP-1120/LBP-800/LBP-810 140г.</name>
+        <url>/tovar/3147/toner-dlya-zapravki-canon-ep-22-sanon-laser-shot-lbp-1120.html</url>
+        <price>160</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>/img/1131093504.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="81" bid="10" cbid="10">
+        <name> Картридж Xerox Phaser 3010 /3040/WC 3045 (2,3К) ОЕМ 106R02183</name>
+        <url>/tovar/3157/kartridzh-xerox-phaser-3010.html</url>
+        <price>650</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345619762.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для Xerox</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="82" bid="10" cbid="10">
+        <name>XEROX PHASER 3140 Картридж 108R00909 совместимый увеличиный</name>
+        <url>/tovar/3161/xerox-phaser-3140-kartridzh-108r00909-sovmestimyiy-uvelichinyiy.html</url>
+        <price>1580</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345619943.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для Xerox</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="83" bid="10" cbid="10">
+        <name>Картридж hp C8061А</name>
+        <url>/tovar/3535/kartridzh-hp-c8061a.html</url>
+        <price>5610</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/1345620726.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="84" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 178XL (HP CB323HE) голубой ОЕМ </name>
+        <url>/tovar/3682/kartridzh-sovmestimyiy-178xl.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478375087.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="85" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 122XL (HP CH564HE) color ОЕМ </name>
+        <url>/tovar/3683/kartridzh-sovmestimyiy-122xl.html</url>
+        <price>1460</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478263390.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="86" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 122XL (HP CH563HE) black ОЕМ </name>
+        <url>/tovar/3684/kartridzh-sovmestimyiy-122xl.html</url>
+        <price>1290</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478262844.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="87" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 178XL (HP CB321HE) черный ОЕМ </name>
+        <url>/tovar/3685/kartridzh-sovmestimyiy-178xl.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478345967.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="88" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 178XL (HP CB324HE) пурпурный ОЕМ </name>
+        <url>/tovar/3686/kartridzh-sovmestimyiy-178xl.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478375606.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="89" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 178XL (HP CB325HE) желтый ОЕМ </name>
+        <url>/tovar/3687/kartridzh-sovmestimyiy-178xl.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478376522.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="90" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 178XL (HP CB322HE) черный фото ОЕМ </name>
+        <url>/tovar/3688/kartridzh-sovmestimyiy-178xl.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478347266.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="91" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C9363HE № 134 color ОЕМ</name>
+        <url>/tovar/3722/kartridzh-sovmestimyiy-hp-c9363he--134-color-oem.html</url>
+        <price>950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479043457.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="92" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 140XL (HP CB336HE ) black ОЕМ</name>
+        <url>/tovar/3690/kartridzh-sovmestimyiy-140xl.html</url>
+        <price>1000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478265296.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="93" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 141XL (HP CB338HE ) color ОЕМ </name>
+        <url>/tovar/3691/kartridzh-sovmestimyiy-141xl.html</url>
+        <price>1150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478265685.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="94" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для черный HP CD975AE (№ 920XL) ОЕМ</name>
+        <url>/tovar/3692/kartridzh-sovmestimyiy-chernyiy-hp-cd975ae.html</url>
+        <price>470</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479049544.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="95" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для желтый HP CD974AE (№ 920XL) ОЕМ</name>
+        <url>/tovar/3693/kartridzh-sovmestimyiy-zheltyiy-hp-cd974ae.html</url>
+        <price>430</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479048603.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="96" bid="10" cbid="10">
+        <name>Картридж ОЕМ совместимый для голубой для HP CD972AE (№ 920XL) </name>
+        <url>/tovar/3695/kartridzh-sovmestimyiy-goluboy-hp-cd972ae.html</url>
+        <price>430</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478172491.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="97" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C8765HE № 131 black ОЕМ</name>
+        <url>/tovar/3717/kartridzh-sovmestimyiy-hp-c8765he--131-black-oem.html</url>
+        <price>950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479043015.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="98" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C8766HE № 135 color ОЕМ</name>
+        <url>/tovar/3718/kartridzh-sovmestimyiy-hp-c8766he--135-color-oem.html</url>
+        <price>1060</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478256585.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="99" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для HP C8767HE № 130  black ОЕМ</name>
+        <url>/tovar/3719/kartridzh-sovmestimyiy-hp-c8767he--130-black-oem.html</url>
+        <price>950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479041925.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="100" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 177 (HP C8771HE) cyan ОЕМ </name>
+        <url>/tovar/3711/kartridzh-sovmestimyiy-177.html</url>
+        <price>250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478253193.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="101" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 177 (HP C8773HE) yellow ОЕМ</name>
+        <url>/tovar/3713/kartridzh-sovmestimyiy-177.html</url>
+        <price>250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478253889.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="102" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для  № 177 (HP C8774HE) Light Cyan ОЕМ </name>
+        <url>/tovar/3714/kartridzh-sovmestimyiy-177.html</url>
+        <price>250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478266317.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="103" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 177 (HP C8775HE) Light Magenta ОЕМ </name>
+        <url>/tovar/3715/kartridzh-sovmestimyiy-177.html</url>
+        <price>250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478336248.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="104" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для  № 177 (HP C8721HE) black ОЕМ </name>
+        <url>/tovar/3716/kartridzh-sovmestimyiy-177.html</url>
+        <price>250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478266026.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="105" bid="0" cbid="0">
+        <name>Картридж OEM совместимый для canon CL-41 цветной ОЕМ</name>
+        <url>/tovar/3741/kartridzh-sovmestimyiy-canon-cl-41-tsvetnoy-oem.html</url>
+        <price>1250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479464966.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="106" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 655 (HP CZ109AE) black ОЕМ </name>
+        <url>/tovar/3747/kartridzh-sovmestimyiy-655.html</url>
+        <price>580</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479033529.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="107" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 655 (HP CZ110AE) cyan ОЕМ </name>
+        <url>/tovar/3748/kartridzh-sovmestimyiy-655.html</url>
+        <price>580</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1478465943.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="108" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 655 (HP CZ111AE) magenta ОЕМ </name>
+        <url>/tovar/3749/kartridzh-sovmestimyiy-655.html</url>
+        <price>580</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479033777.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="109" bid="10" cbid="10">
+        <name>Картридж OEM совместимый для № 655 (HP CZ112AE) yellow ОЕМ </name>
+        <url>/tovar/3750/kartridzh-sovmestimyiy-655.html</url>
+        <price>580</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/picture1479033984.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>oem для hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="110" bid="10" cbid="10">
+        <name>Заправка картриджа HP C3906A для HP LaserJet 5L, 6L, 3100, 3150</name>
+        <url>/usluga/5/zapravka-kartridzha-hp-c3906a-dlya-hp-laserjet-5l-6l-3100-3150.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131823111.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="111" bid="10" cbid="10">
+        <name>Заправка картриджа Samsung ml 1210 для SAMSUNG ML-1210/1250/1430  </name>
+        <url>/usluga/25/zapravka-kartridzha-samsung-ml-1210-dlya-samsung-ml-1210.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1135152574.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>samsung</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="112" bid="10" cbid="10">
+        <name>Заправка картриджа HP C4092A для HP LJ 1100</name>
+        <url>/usluga/6/zapravka-kartridzha-hp-c4092a-dlya-hp-lj-1100.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131823690.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="113" bid="10" cbid="10">
+        <name>Заправка картриджа HP C4096A для HP LJ - 2100/2100M/2100TN/2200D/2200DT/2200DN/2200DTN</name>
+        <url>/usluga/7/zapravka-kartridzha-hp-c4096a-dlya-hp-lj-2100.html</url>
+        <price>550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1345619696.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="114" bid="10" cbid="10">
+        <name>Заправка картриджа HP C7115X для HP LJ - 1000W/1005W1200/1200N/1200A/1220/3300/3320/3330/3380</name>
+        <url>/usluga/9/zapravka-kartridzha-hp-c7115x-dlya-hp-lj-1000w.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131825921.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="115" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q2613A для HP LJ - 1300/1300u</name>
+        <url>/usluga/10/zapravka-kartridzha-hp-q2613a-dlya-hp-lj-1300.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131826015.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="116" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q2613X для HP LJ - 1300/1300u</name>
+        <url>/usluga/11/zapravka-kartridzha-hp-q2613x-dlya-hp-lj-1300.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131826119.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="117" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q2612A (12A)</name>
+        <url>/usluga/12/zapravka-kartridzha-hp-q2612a.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1345619685.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="118" bid="10" cbid="10">
+        <name>Заправка картриджа Canon 708  для Canon Laser Shot LBP3300</name>
+        <url>/usluga/1364/zapravka-kartridzha-canon-708-dlya-canon-laser-shot-lbp3300.html</url>
+        <price>450</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1263893489.gif</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>canon</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="119" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q2624A для HP LJ - 1150</name>
+        <url>/usluga/13/zapravka-kartridzha-hp-q2624a-dlya-hp-lj-1150.html</url>
+        <price>350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131826434.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="120" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q5949A для HP LJ - 1160/1320/3392</name>
+        <url>/usluga/14/zapravka-kartridzha-hp-q5949a-dlya-hp-lj-1160.html</url>
+        <price>450</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131826907.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="121" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q5949X для HP LJ - 1320/3392</name>
+        <url>/usluga/15/zapravka-kartridzha-hp-q5949x-dlya-hp-lj-1320.html</url>
+        <price>450</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131827661.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <offer id="122" bid="10" cbid="10">
+        <name>Заправка картриджа HP Q2610A для HP LJ - 2300/D/N/DN/DTN/L</name>
+        <url>/usluga/16/zapravka-kartridzha-hp-q2610a-dlya-hp-lj-2300.html</url>
+        <price>550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/1131833356.jpg</picture>
+        <delivery>true</delivery>
+        <local_delivery_cost>390</local_delivery_cost>
+        <vendor>hp</vendor>
+        <store>true</store>
+        <pickup>true</pickup>
+      </offer>
+      <o

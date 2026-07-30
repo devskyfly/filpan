@@ -1,0 +1,79 @@
+<?
+$StatyiVLevomMenu=new Statyi();
+$ElementVidStatyi=new ElementVidStatyi();
+$ElementVidStatyi->poluchit($MassivKriterievDliyaSpiska['vid_statyi_id']);
+$StatyiVLevomMenu->poluchitPoKriteriyu($MassivKriterievDliyaSpiska);
+/*echo sprintf('<div class="ContentLevayaKolonka">
+<span class="ZagolovokContentLevayaKolonka TextZagolovokContentLevayaKolonkaSredniyDiv">%s</span>',$ElementVidStatyi->poluchitSvoystvo('nazvaniye_dliya_polzovateliya'));
+echo '<ul class="SpisokSsilok">';
+while($StatyiVLevomMenu->poluchitSleduyushiy())
+{
+echo sprintf('<li><a href="%s%s">%s</a></li>',$_WEB_ROOT_HREF,$StatyiVLevomMenu->_TekushiyElement['ssilka'],$StatyiVLevomMenu->_TekushiyElement['nazvaniye_statyi']);
+}
+echo '</ul>';
+echo sprintf('</div>');		*/
+
+if($ElementVidStatyi->poluchitSvoystvo('variant_otobrageniya')==$_VARIANT_OTOBRAGENIYA_STATEY['statyi_metro'])
+			{
+
+			if($StatyiVLevomMenu->poluchitKolichestvoElementovMassivaInformacii())
+{
+echo '<div style="padding:10px;border:1px solid #EFEFEF;color:#FF6600;font-family: arial,helvetica,tahoma,verdana,sans-serif;font-size: 14px;font-weight:bold;text-align:center;"><strong>РњС‹ РїСЂРѕРёР·РІРѕРґРёРј Р·Р°РїСЂР°РІРєСѓ РєР°СЂС‚СЂРёРґР¶РµР№ РІ Р»СЋР±РѕРј СЂР°Р№РѕРЅРµ РњРѕСЃРєРІС‹.</strong></div>
+<div style="padding:10px;border:1px solid #EFEFEF;color:#FF6600;font-family: arial,helvetica,tahoma,verdana,sans-serif;font-size: 14px;font-weight:bold;text-align:center;">Р—Р°РїСЂР°РІРєР° РєР°СЂС‚СЂРёРґР¶РµР№ РІ РњРѕСЃРєРІРµ РїРѕ СЃС‚Р°РЅС†РёСЏРј РјРµС‚СЂРѕ:</div>';
+
+
+					echo sprintf('<table class="TablicaTovarov">');
+					//echo sprintf('<caption class="TextStolbecArticul">%s</caprion>',$ElementVidStatyi->poluchitSvoystvo('nazvaniye_dliya_polzovateliya'));
+					$iterator=0;
+						while($StatyiVLevomMenu->poluchitSleduyushiy())
+						{
+						$Silka1=$StatyiVLevomMenu->_TekushiyElement['ssilka'];
+						$Nazvaniye1=$StatyiVLevomMenu->_TekushiyElement['nazvaniye_statyi'];
+						if($StatyiVLevomMenu->poluchitSleduyushiy())
+						{
+						$Silka2=$StatyiVLevomMenu->_TekushiyElement['ssilka'];
+						$Nazvaniye2=$StatyiVLevomMenu->_TekushiyElement['nazvaniye_statyi'];
+						}
+						else
+						{
+						$Silka2='';
+						$Nazvaniye2='';
+						}
+
+						echo sprintf('<tr><td style="text-align:center;"><a class="SsilkaNazvanieVTablice" href="%s%s">%s</a></td><td style="text-align:center;"><a class="SsilkaNazvanieVTablice" href="%s%s">%s</a></td></tr>',
+							$_WEB_ROOT_HREF,$Silka1,$Nazvaniye1,$_WEB_ROOT_HREF,$Silka2,$Nazvaniye2);
+						}
+					echo sprintf('</table>');
+
+					echo '<div style="margin-top:20px;padding:10px;border:1px solid #EFEFEF;color:#89898A;font-family: arial,helvetica,tahoma,verdana,sans-serif;font-size: 12px;font-weight:bold;">Р•СЃР»Рё Р’Р°Рј РїРѕРЅР°РґРѕР±РёР»Р°СЃСЊ <h1 style="display:inline;font-size: 12px">Р·Р°РїСЂР°РІРєР° РєР°СЂС‚СЂРёРґР¶РµР№ РІ РњРѕСЃРєРІРµ</h1> - РјС‹ РІСЃРµРіРґР° РіРѕС‚РѕРІС‹ СЃСЂРѕС‡РЅРѕ РІС‹РїРѕР»РЅРёС‚СЊ Р·Р°РєР°Р· РїРѕ Р·Р°РїСЂР°РІРєРµ, РЅР°С€Рё РјРµС…Р°РЅРёРєРё РіРѕС‚РѕРІС‹ СЃСЂРѕС‡РЅРѕ, РІ С‚РµС‡РµРЅРёРё РґРІСѓС… С‡Р°СЃРѕРІ РІС‹РїРѕР»РЅРёС‚СЊ Р·Р°РєР°Р· РїРѕ Р·Р°РїСЂР°РІРєРµ Рё РЅР°СЃС‚СЂРѕР№РєРµ РІР°С€РµРіРѕ РїРµС‡Р°С‚РЅРѕРіРѕ РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ. Р“Р°СЂР°РЅС‚РёСЂСѓРµРј  РІС‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ РїРµС‡Р°С‚Рё РІР°С€РµР№ С‚РµС…РЅРёРєРё РїРѕСЃР»Рµ Р·Р°РїСЂР°РІРєРё РєР°СЂС‚СЂРёРґР¶РµР№ РІР°С€РёС… РїСЂРёРЅС‚РµСЂРѕРІ.<p><strong>РљРѕРјРїР°РЅРёСЏ Р¤РёР»РїР°РЅ РёРјРµРµС‚ Р±РѕР»СЊС€РѕР№ РѕРїС‹С‚ РїРѕ <a class="text_link" href="https://www.filpan.ru">Р·Р°РїСЂР°РІРєРµ РєР°СЂС‚СЂРёРґР¶РµР№</a>, <a class="text_link" href="/remont-orgtehniki-v-moskve">СЂРµРјРѕРЅС‚Сѓ РїСЂРёРЅС‚РµСЂРѕРІ</a>, С„Р°РєСЃРѕРІ Рё РєРѕРїРёСЂРѕРІ  (СЃ 1992 РіРѕРґР°). РўРѕРЅРµСЂ, С‡РµСЂРЅРёР»Р° Рё РєСЂР°СЃРєР° РґР»СЏ РїСЂРёРЅС‚РµСЂРѕРІ РїРѕР·РІРѕР»СЏС‚ РІР°Рј СЃСѓС‰РµСЃС‚РІРµРЅРЅРѕ СЃРЅРёР·РёС‚СЊ Р·Р°С‚СЂР°С‚С‹ РЅР° СЂР°СЃС…РѕРґРЅС‹Рµ РјР°С‚РµСЂРёР°Р»С‹.</strong> <br>РњС‹ РёСЃРїРѕР»СЊР·СѓРµРј С‚РѕР»СЊРєРѕ РІС‹СЃРѕРєРѕРєР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ С‚РѕРЅРµСЂ LG, С‡С‚Рѕ РѕР±РµСЃРїРµС‡РёРІР°РµС‚ РІС‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ РїРµС‡Р°С‚Рё Рё РјРЅРѕРіРѕРєСЂР°С‚РЅРѕРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РѕРґРЅРѕРіРѕ Рё С‚РѕРіРѕ Р¶Рµ РєР°СЂС‚СЂРёРґР¶Р°. <br><b>Р Р°Р±РѕС‚С‹ РІРµРґСѓС‚СЃСЏ РІ СЃРїРµС†РёР°Р»СЊРЅРѕ РѕР±РѕСЂСѓРґРѕРІР°РЅРЅРѕР№ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё РІС‹СЃРѕРєРѕРєРІР°Р»РёС„РёС†РёСЂРѕРІР°РЅРЅС‹РјРё СЃРїРµС†РёР°Р»РёСЃС‚Р°РјРё РЅР° РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРј РѕР±РѕСЂСѓРґРѕРІР°РЅРёРё, С‡С‚Рѕ РїРѕР·РІРѕР»СЏРµС‚ РґРѕСЃС‚РёРіР°С‚СЊ СЃС‚РѕРїСЂРѕС†РµРЅС‚РЅРѕРіРѕ РєР°С‡РµСЃС‚РІР° РїРµС‡Р°С‚Рё РЅР° Р·Р°РїСЂР°РІР»РµРЅРЅС‹С… Рё РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹С… РЅР°РјРё РєР°СЂС‚СЂРёРґР¶Р°С….</b></p><p><strong>РўР°Рє Р¶Рµ РјС‹ РїСЂРµРґР»Р°РіР°РµРј СЂРµРјРѕРЅС‚ Р’Р°С€РµР№ РѕСЂРіС‚РµС…РЅРёРєРё.</strong><br><br><a class="text_link" href="/remont-orgtehniki-v-moskve">РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Р№ СЂРµРјРѕРЅС‚ РїСЂРёРЅС‚РµСЂРѕРІ</a> вЂ“ СЌС‚Рѕ РЅРµ РїСЂРѕСЃС‚Рѕ Р·Р°РјРµРЅР° РїРѕРІСЂРµР¶РґРµРЅРЅС‹С… РґРµС‚Р°Р»РµР№ РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ, РЅРѕ Рё РїСЂРёРјРµРЅРµРЅРёРµ РїСЂРѕС„РёР»Р°РєС‚РёС‡РµСЃРєРёС… Рё С‚РµС…РЅРёС‡РµСЃРєРёС… РјРµСЂ РґР»СЏ РїСЂРµРґРѕС‚РІСЂР°С‰РµРЅРёСЏ РїРѕРґРѕР±РЅС‹С… РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚РµР№ РІ РґР°Р»СЊРЅРµР№С€РµРј. РџРѕ СЌС‚РѕРјСѓ - СЂРµРјРѕРЅС‚ РѕСЂРіС‚РµС…РЅРёРєРё, РїСЂРѕРёР·РІРѕРґРёРјС‹Р№ РЅР°С€РёРјРё СЃРїРµС†РёР°Р»РёСЃС‚Р°РјРё, РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ  С‚РѕС‡РЅРѕР№ РґРёР°РіРЅРѕСЃС‚РёРєРё, РІС‹СЏРІР»СЏСЏ СЃР»Р°Р±С‹Рµ РјРµСЃС‚Р°. Р­С‚Рѕ РїРѕР·РІРѕР»СЏРµС‚ РЅР°Рј СЃРґРµР»Р°С‚СЊ РєР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ СЂРµРјРѕРЅС‚ Рё  РіР°СЂР°РЅС‚РёСЂРѕРІР°С‚СЊ Р’Р°Рј РѕС‚СЃСѓС‚СЃС‚РІРёРµ РїРѕР»РѕРјРѕРє РІ РґР°Р»СЊРЅРµР№С€РµРј. Р, РєРѕРЅРµС‡РЅРѕ, РјС‹ РёСЃРїРѕР»СЊР·СѓРµРј РїСЂРё РєР°Р¶РґРѕРј РІРёРґРµ СЂРµРјРѕРЅС‚Р° С‚РѕР»СЊРєРѕ РєР°С‡РµСЃС‚РІРµРЅРЅС‹Рµ Р·Р°РїС‡Р°СЃС‚Рё Рё СЂР°СЃС…РѕРґРЅС‹Рµ РјР°С‚РµСЂРёР°Р»С‹.</p></div>';
+				}
+				else
+				{
+				echo '<div class="TextoviyModulSverhu">Р Р°Р·РґРµР» РїСѓСЃС‚</div>';
+				}	
+
+			}
+			else
+			{
+				if($StatyiVLevomMenu->poluchitKolichestvoElementovMassivaInformacii())
+				{	echo sprintf('<table class="TablicaTovarov">');
+					echo sprintf('<caption class="TextStolbecArticul">%s</caprion>',$ElementVidStatyi->poluchitSvoystvo('nazvaniye_dliya_polzovateliya'));
+					$iterator=0;
+						while($StatyiVLevomMenu->poluchitSleduyushiy())
+						{
+						$iterator++;
+						echo sprintf('<tr><td class="StolbecPoridkoviyNomer TextStolbecArticul">%s</td><td><a class="SsilkaNazvanieVTablice" href="%s%s">%s</a></td></tr>',$iterator,$_WEB_ROOT_HREF,$StatyiVLevomMenu->_TekushiyElement['ssilka'],$StatyiVLevomMenu->_TekushiyElement['nazvaniye_statyi']);
+						}
+					echo sprintf('</table>');
+				}
+				else
+				{
+				echo '<div class="TextoviyModulSverhu">Р Р°Р·РґРµР» РїСѓСЃС‚</div>';
+				}	
+			}
+
+
+
+
+
+?>

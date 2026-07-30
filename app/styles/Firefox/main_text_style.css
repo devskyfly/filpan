@@ -1,0 +1,38 @@
+
+/*Стиль основного текста позиции*/
+.content_text_1
+{
+color:#89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-style:normal;
+}
+/*Стиль основных ссылок в тексте позиции*/
+.content_text_links_1:link,.content_text_links_1:visited,.content_text_links_1:hover,.content_text_links_1:active,.content_text_links_1:focus
+{
+text-decoration:none;
+color:#89898A;
+}
+/*Стиль таблицы дополнительного описания*/
+.description_table   td
+{
+border:1px solid #89898A;
+padding:2px;
+margin:0px;
+color:#89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-style:normal;
+}
+/*Стиль головной ячейки таблицы дополнительного описания*/
+.description_table_td_head
+{
+border:2px solid #89898A;
+padding:2px;
+margin:0px;
+color:#89898A;
+font-family:"Times New Roman",Georgia,Serif;
+font-size:14px;
+font-style:normal;
+font-weight:bold;
+}

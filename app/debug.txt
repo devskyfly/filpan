@@ -1,0 +1,1 @@
+ ( id='2026' or LCASE(dannyedlyapoiska) LIKE CONCAT('%',LCASE('2026'),'%')) AND pokazyvat=1 

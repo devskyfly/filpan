@@ -1,0 +1,191 @@
+.left_content
+{
+min-width:260px;
+float:left;
+width:290px;
+padding:0px;
+margin:0px;
+padding-bottom:10px;
+border:1px solid #E0E0D1;
+border-radius:10px;
+background-color:white;
+color:#89898A;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+}
+
+.inner_div
+{
+padding:10px;
+}
+
+
+
+.li_menu_links
+{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+.content-box
+{
+margin-left:10px;
+margin-right:10px;
+margin-top:10px;
+border:1px solid #FF6600;
+font-size:12px;
+border-radius:5px;
+background-color:white;
+overflow:auto;
+}
+
+.padding_div
+{
+padding:5px;
+}
+
+.content_box_title
+{
+height:auto;
+background-color:#FF6600;
+padding-top:5px;
+padding-left:5px;
+display:block;
+text-align:left;
+color:white;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+}
+
+.menu_links
+{
+color:#89898A;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+list-style-type:square;
+width:80%;
+margin:0;
+margin-left:20px;
+padding:0;
+margin-bottom:5px;
+}
+
+
+
+
+.menu_links_super_predl
+{
+color:#89898A;
+font-size:11px;
+font-weight:bold;
+font-family:Arial;
+list-style-type:square;
+width:80%;
+margin:0;
+padding:0;
+margin-bottom:5px;
+}
+
+.ul_links_super_predl
+{
+padding:0px;padding-left:10px;
+}
+
+
+.li_links_super_predl
+{
+padding:0px;
+}
+
+.mail_link
+{
+color:#89898A;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+margin:0;
+padding:0;
+white-space: pre;           /* CSS 2.0 */
+white-space: pre-wrap;      /* CSS 2.1 */
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap;  /* HP Printers */
+word-wrap: break-word;      /* IE 5+ */
+word-wrap : break-word;
+}
+
+
+.small_link
+{
+color:#89898A;
+font-size:12px;
+font-family:Arial;
+margin:0;
+padding:0;
+white-space: pre;           /* CSS 2.0 */
+white-space: pre-wrap;      /* CSS 2.1 */
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap;  /* HP Printers */
+word-wrap: break-word;      /* IE 5+ */
+word-wrap : break-word;
+}
+
+
+.small_link_orange
+{
+color:#FF6600;
+font-size:12px;
+font-family:Arial;
+margin:0;
+padding:0;
+white-space: pre;           /* CSS 2.0 */
+white-space: pre-wrap;      /* CSS 2.1 */
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap;  /* HP Printers */
+word-wrap: break-word;      /* IE 5+ */
+word-wrap : break-word;
+}
+
+ul.menu_links li 
+{
+
+margin:0;
+margin-top:10px;
+height:20px;
+}
+
+a.links_in_menu
+{ 
+
+border-bottom:1px dotted #89898A;
+text-decoration:none;
+color:#89898A;
+}
+
+a.links_in_menu_selected
+{ 
+
+border-bottom:1px dotted #89898A;
+text-decoration:none;
+color:#FF6600;
+}
+
+a.links_in_menu:hover 
+{
+border-bottom:1px dotted #89898A;
+text-decoration:none;
+color:#FF6600;
+}
+

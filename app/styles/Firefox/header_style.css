@@ -1,0 +1,175 @@
+.header
+{
+min-width:1024px;
+max-width:1600px;
+clear:left;
+width:100%;
+height:213px;
+padding:0px;
+background-image:url('http://www.filpan.ru/images/header/img-3.gif');
+margin:0px;
+}
+
+.header_logo
+{
+float:left;
+width:325px;
+height:213px;
+padding:0px;
+margin:0px;
+border:none;
+}
+
+.header_middle_content
+{
+display:block;
+height:213px;
+margin-left:325px;
+margin-right:300px;
+margin-top: -22px;
+}
+
+
+.header_middle_top_content
+{
+height:24px;
+width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.header_middle_top_content_img
+{
+width:13px;
+height:22px;
+padding:0px;
+margin:0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+
+.header_middle_top_link
+{
+color: #728DA2;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+margin-left:auto;
+margin-right:auto;
+}
+
+.header_middle_middle_content
+{
+height:113px;
+width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.header_middle_middle_content_img
+{
+display:block;
+width:431px;
+height:112px;
+padding:0px;
+margin:0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.header_middle_bottom_content
+{
+padding-top:20px;
+height:53px;
+min-width:449px;
+/*width:600px;*/
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.header_right_content {
+
+float: right;
+height: 100%;
+width: 180px;
+z-index: 100000;
+
+}
+
+
+.header_right_top_content
+{
+
+height:24px;
+width:173px;
+}
+
+.header_right_top_content_img
+{
+width:21px;
+height:19px;
+padding:0px;
+margin:0px;
+
+}
+
+.grey_link
+{
+color:#89898A;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+
+}
+
+.orange_link
+{
+color:#FF6600;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+text-decoration:none;
+}
+
+.header_right_middle_content
+{
+
+height: 60px;
+width: 177px;
+padding-top: 60px;
+
+}
+
+.header_right_bottom_content
+{
+height:60px;
+width:180px;
+}
+
+.header_input_window
+{
+dipalay:block;
+background-color:  white;
+font-size: 12px !important;
+color:#89898A;
+width:130px;
+}
+.header_submit
+{
+margin-left:4px;
+background-color: white;
+font-size: 12px !important;
+color:#89898A;
+}
+
+.kak_nayti
+{
+border:0px;
+margin:0px;
+padding:0px;
+}

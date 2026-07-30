@@ -1,0 +1,64 @@
+<?php
+function get_chpu_url($id='',$name='',$type='',$len='100'){
+	$site='https://filpan/filpannext';
+    $id=(int)$id;
+    $status='true';
+    if($type=='2')$type='tovar';
+    if($type=='1')$type='usluga';
+	$name=explode('/',$name);
+    $name=explode('(',$name[0]);
+	//return $site.'/'.$type.'/'.$id.'/'.trim(cleanForShortURL($name[0],$len),'-').'.html';
+	return $type.'/'.$id.'/'.trim(cleanForShortURL($name[0],$len),'-').'.html';
+}
+
+/////
+function get_chpu_url_new($name='',$kluchevoe_slovo='',$len='100'){
+
+    $name = str_replace("_***_", $kluchevoe_slovo, $name);
+
+	$name=explode('/',$name);
+    $name=explode('(',$name[0]);
+	//return $site.'/'.$type.'/'.$id.'/'.trim(cleanForShortURL($name[0],$len),'-').'.html';
+
+
+	return trim(cleanForShortURL($name[0],$len),'-').'.html';
+}
+/////
+
+function the_chpu_url($id='',$name='',$type='',$len='100'){
+		echo get_chpu_url($id,$name,$type,$len);
+}
+
+//С‚СЂР°РЅСЃР»РёС‚
+function cleanForShortURL($title,$num='100'){
+	$my_iso9_table = array(
+		'Рђ' => 'A', 'Р‘' => 'B', 'Р’' => 'V', 'Р“' => 'G', 'Рѓ' => 'G`',
+		'Тђ' => 'G`', 'Р”' => 'D', 'Р•' => 'E', 'РЃ' => 'YO', 'Р„' => 'YE',
+		'Р–' => 'ZH', 'Р—' => 'Z', 'Р…' => 'Z', 'Р' => 'I', 'Р™' => 'Y',
+		'Р€' => 'J', 'Р†' => 'I', 'Р‡' => 'YI', 'Рљ' => 'K', 'РЊ' => 'K',
+		'Р›' => 'L', 'Р‰' => 'L', 'Рњ' => 'M', 'Рќ' => 'N', 'РЉ' => 'N',
+		'Рћ' => 'O', 'Рџ' => 'P', 'Р ' => 'R', 'РЎ' => 'S', 'Рў' => 'T',
+		'РЈ' => 'U', 'РЋ' => 'U', 'Р¤' => 'F', 'РҐ' => 'H', 'Р¦' => 'TS',
+		'Р§' => 'CH', 'РЏ' => 'DH', 'РЁ' => 'SH', 'Р©' => 'SHH', 'РЄ' => '``',
+		'Р«' => 'YI', 'Р¬' => '`', 'Р­' => 'E`', 'Р®' => 'YU', 'РЇ' => 'YA',
+		'Р°' => 'a', 'Р±' => 'b', 'РІ' => 'v', 'Рі' => 'g', 'С“' => 'g',
+		'Т‘' => 'g', 'Рґ' => 'd', 'Рµ' => 'e', 'С‘' => 'yo', 'С”' => 'ye',
+		'Р¶' => 'zh', 'Р·' => 'z', 'С•' => 'z', 'Рё' => 'i', 'Р№' => 'y',
+		'С' => 'j', 'С–' => 'i', 'С—' => 'yi', 'Рє' => 'k', 'Сњ' => 'k',
+		'Р»' => 'l', 'С™' => 'l', 'Рј' => 'm', 'РЅ' => 'n', 'Сљ' => 'n',
+		'Рѕ' => 'o', 'Рї' => 'p', 'СЂ' => 'r', 'СЃ' => 's', 'С‚' => 't',
+		'Сѓ' => 'u', 'Сћ' => 'u', 'С„' => 'f', 'С…' => 'h', 'С†' => 'ts',
+		'С‡' => 'ch', 'Сџ' => 'dh', 'С€' => 'sh', 'С‰' => 'shh', 'СЊ' => '',
+		'С‹' => 'yi', 'СЉ' => "'", 'СЌ' => 'e`', 'СЋ' => 'yu', 'СЏ' => 'ya'
+	);
+
+        $title = trim($title, ' ');
+		$title = strtr($title, $my_iso9_table);
+		$title = preg_replace("/[^A-Za-z0-9_\-\.]/", '-', $title);
+		$title = str_replace('---', '-', $title);
+		$title = str_replace('--', '-', $title);
+		$title = strtolower($title);
+		$title = substr($title, 0, $num);
+	return $title;
+}
+?>

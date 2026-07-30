@@ -1,0 +1,87 @@
+<?
+require("tpl/db.php");
+
+
+	if (@$dop) {
+		echo "<FONT COLOR=RED><b>ВНИМАНИЕ!!! Не все поля запонены</b></FONT><br><br>";
+	}
+
+	echo "<table><tr><td>";
+	echo "<form action=adm.php?reds method=POST enctype=multipart/form-data>";
+	echo "<input type=hidden name=rub value=$rub>";
+	echo "Название </td><td><input type=text name=naz size=50 value=\"$naz\"></td></tr>";
+	echo "<tr><td colspan=2>Описание :<br> <textarea name=info cols=90 rows=15>$info</textarea></td></tr>";
+	echo "<tr><td colspan=2>Таблица (файл Exl) :<br> <textarea name=xcl cols=90 rows=5>$xcl</textarea></td></tr>";
+	echo "<tr><td>Цена </td><td><input type=text name=price size=10 value=\"$price\"></td></tr>";
+	echo "<tr><td>Картинка 1</td><td><input type=file name=File size=50></td></tr>";
+	echo "<tr><td>Картинка 2</td><td><input type=file name=File1 size=50></td></tr>";
+	if ($super==1) {
+		echo "<tr><td colspan=2><input type=checkbox name=super CHECKED>Добавить в суперпредложения</td></tr>";
+	}
+	else {
+		echo "<tr><td colspan=2><input type=checkbox name=super>Добавить в суперпредложения</td></tr>";
+	}
+	echo "<tr><td><select name=proiz>";
+	echo "<OPTION VALUE='-1'>Выберите производителя</OPTION>";
+	$sel=mysql_query("SELECT id,rub FROM $proiz WHERE idrub=\"$rub\" AND idraz=\"1\"");
+	$number = mysql_num_rows($sel);
+	if ($number>0) {
+		while ($Ro=mysql_fetch_row($sel)){
+			if (@$Ro[1]!="") {
+				if ($Ro[0]==$pro) {
+					echo "<option value=$Ro[0] SELECTED>$Ro[1]</option>";
+				}
+				else {
+					echo "<option value=$Ro[0]>$Ro[1]</option>";
+				}
+			}
+		}
+	}
+	else {
+		echo "Ни одной рубрики не найдено<br><br>";
+	}
+	echo "</select><br>";
+	echo "Выберите функциональность<br>";
+	$kkk=0;
+	//echo "$fun";
+	if (@$fun) {
+		$Fun=split("-",$fun);
+	}
+	$selec=mysql_query("SELECT id,rub FROM $func WHERE idrub=\"$rub\" AND idraz=\"1\"");
+	$number = mysql_num_rows($selec);
+	if ($number>0) {				
+		while ($Rw=mysql_fetch_row($selec)){
+			//echo "$Rw[0]+++<br>";
+			foreach ($Fun as $p=>$v) {
+				//echo "$v---<br>";
+				if (@$Rw[1]!=" ") {						
+					if ($Rw[0]==$v) {
+						$kkk++;								
+						//echo "$v $Rw[0]===<br>";								
+						//echo "<input type=checkbox name=fun[] value=\"$Rw[0]\" CHECKED>$Rw[1]<br>";
+					}							
+				}						
+			}
+			if (@$kkk>0) {
+				$kkk=0;
+				echo "<input type=checkbox name=fun[] value=\"$Rw[0]\" CHECKED>$Rw[1]<br>";
+			}
+			else {
+				//echo "$kkk+++";
+				if (@$Rw[1]!="") {
+					echo "<input type=checkbox name=fun[] value=\"$Rw[0]\">$Rw[1]<br>";
+				}
+			}													
+		}				
+	}
+	else {
+		echo "Ни одной рубрики не найдено<br><br>";
+	}
+	echo "</select></td></tr>";
+	echo "<tr><td colspan=2 align=center>";
+	echo "<input type=submit name=dobpr value=\"Добавить\">";
+	echo "</form>";
+	echo "</td></tr></table>";
+
+
+?>

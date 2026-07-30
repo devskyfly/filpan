@@ -1,0 +1,44 @@
+<?
+$r=0;
+	echo "<br><b>Разделы</b>";
+	echo "<form action=adm.php?redus method=POST>";
+	echo "<input type=text name=koll size=25>";
+	echo "<input type=submit name=dob value=Добавить>";
+	echo  "</form></td></tr><tr><td>";
+
+	echo "<center><b>Подразделы</b>";
+	echo "<form action=adm.php?redus method=POST>";
+	$select=mysql_query("SELECT id,rub FROM $uslrazdels");
+	$number = mysql_num_rows($select);
+	if ($number>0) {
+		while ($Row=mysql_fetch_row($select)){
+			if ($Row[0]!=="") {
+				$str="$Row[0]##$Row[1]"; 
+				$Ressear[]=$str;	
+				$r++;
+			}
+		}
+		if ($r==0) {echo "Ни одной рубрики не найдено<br><br>";	}
+		echo "<SELECT NAME='podkoll'>";
+		echo "<OPTION VALUE='-1'>Выберите раздел</OPTION>";
+		
+		$Ressearch=array_unique($Ressear);
+		asort($Ressearch);
+		foreach (@$Ressearch as $p=>$v) {
+			list($ep,$ev)=split("##",$v);
+			if ($ep==$podkoll) {
+				echo "<option value='$ep' SELECTED>$ev</option>";
+			}
+			else {
+				echo "<option value='$ep'>$ev</option>";
+			}
+		}
+		echo "</select><br>";
+		echo "<input type=text name=kolls size=25>";
+		echo "<input type=submit name=dobpod value=Добавить>";
+		echo  "</form></td></tr><tr><td>";
+	}
+	else {
+		echo "Ни одной рубрики не найдено<br><br>";
+	}
+?>

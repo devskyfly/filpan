@@ -1,0 +1,262 @@
+﻿
+.tab{border:3px;
+border:thin;}
+
+*{
+	border:0;
+	padding:0;
+	margin:0;
+	color:#5E7485;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px ;
+	font-weight:bold;
+	}
+	
+body,html,table {
+	border:0;
+	padding:0;
+	margin:0;
+	}
+
+
+
+
+
+/*TOP--------------------------------------------------------------*/
+#top{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height:213px;
+	width:100%;
+	vertical-align:top;
+	}
+.top_telefon{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px}	
+.top_gipertext{
+	color:#728DA2;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12pt;
+	font-weight:normal;
+	text-decoration:none;
+	}
+.top_korzina{
+	color:#FFFFFF;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:9pt;
+	font-weight:normal;
+	text-decoration:none;
+	padding-right:10px;
+	}
+.top_forma{
+	padding-right:10px;
+	vertical-align: middle;
+	}
+
+.top_poisk{
+	color:#FFF;
+	font-size:14px;
+	}
+	
+
+
+
+/*CONTENT------------------------------------------------------------*/
+#content{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width:100%;
+	background-color:#F6F6F6;
+	}
+/*CENTR_PART*/
+
+#centr_part{
+	background-color:#FFF;
+	}
+	
+.centr_melkiy_text{
+	font-size:5px;
+	color:#CCCCCC;
+	}
+.centr_zagolovok{
+	
+	height:70px;
+	text-align:center;
+	vertical-align:text-bottom;
+	background-color:#EFEFEF;
+	font-size:14px;
+	}
+	
+.centr_podzagolovok{
+	width:300px;
+	text-align:left;
+	background-color:#FF6600;
+	font-size:15px;
+	color:#FFF;
+	padding-left:10px;
+	}
+	
+.centr_agitaciya{
+	text-align:center;
+	color:#FF6600;
+	font-size:12px;
+	}
+	
+	/*CENTR_PART_FIND*/
+	
+	.table_find
+	{
+	border-style:solid;
+	border-width:3px;
+	border-color:#E8E8FF;
+	border-collapse: collapse ;
+	width:100%;
+	}
+	.table_find  td.find,tr.find
+	{
+	border-style:solid;
+	border-width:3px;
+	border-color:#E8E8FF;
+	vertical-align:top;
+	margin:5px 5px 5px 5px;
+	}
+	
+	 
+	 
+	.table_find  caption
+	{
+	background-color:#E0E6E9;
+	vertical-align:top;
+	text-align:left;
+	margin:0px 0px 5px 0px;
+	}	
+	.table_cena_right
+	{
+	width=100%;
+	}	
+	
+	.table_cena_right td.table_cena_right_st
+	{
+	border-style:solid;
+	border-width:3px;
+	border-color:#FFFFFF;
+	vertical-align:top;
+	margin:5px 5px 5px 5px;
+	width:300px;	
+	}
+	
+	.table_cena_right tr.table_cena_right_st
+	{
+	border-style:solid;
+	border-width:3px;
+	border-color:#FFFFFF;
+	vertical-align:top;
+	margin:5px 5px 5px 5px;
+	height:70px;	
+	}
+	
+	.kupit
+	{
+	cursor:pointer;
+	}
+	
+	.korzina
+	{
+	cursor:pointer;
+	}
+/*LEFT_PART*/
+
+#left_part{
+background-color:#FFF;
+
+}
+.left_obramleniye_tov_usl{
+	width:100%;
+	}
+
+	
+.left_kat_usl_tov{
+	color:#5E7485;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:9pt;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	width:100%;
+	}
+	
+.left_zagolovok{
+	font-size:16px;
+	}
+	
+.left_under_interesnoye{
+	font-size:8px;
+	}
+	
+.left_pochta{
+	color:#336699;
+}
+
+
+
+A.nevidimiye:link{
+	color:#F6F6F6;
+	
+	}
+A.nevidimiye:visited{
+color:#F6F6F6;
+	}
+
+/*RIGHT_PART*/
+
+#right_part{background-color:#FFF}
+
+.right_super{
+	border-style: solid;
+    border-width:1px;        
+    border-color: #FB9754;
+	padding:5px;
+	/*margin-bottom:10px;*/
+	}
+.right_super_text{
+	padding:5px;
+	}
+
+.right_cena{
+	color:#FF6600;
+	}
+	
+.right_superpredlogeniye{
+	background-color:#FF6600;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	margin-bottom:10px;
+	}
+	
+
+A.right_super_gipertext:link{
+	color:#FF6600;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	line-height:20px;
+	text-align:justify;
+	}
+A.right_super_gipertext:visited{
+color:#FF6600;
+	}
+	
+A.right_super_gipertext > b{ 
+	color:#FF6600;
+	}
+
+	
+	
+/*BOTTOM-----------------------------------------------------------*/
+#bottom{	
+	height:40px;
+	width:100%;
+	background-color:#728DA2;
+	}

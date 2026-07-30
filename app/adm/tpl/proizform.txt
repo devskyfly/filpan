@@ -1,0 +1,44 @@
+<?
+$r=0;
+	echo "<center><b>Производители</b>";
+	echo "<form action=adm.php?redpr method=POST>";
+	if (@$us) {
+		echo "<input name=us type=hidden value=1>";
+		$select=mysql_query("SELECT id,rub FROM $uslrazdels");
+	}
+	else {
+		$select=mysql_query("SELECT id,rub FROM $razdels");
+	}
+	$number = mysql_num_rows($select);
+	if ($number>0) {
+		while ($Row=mysql_fetch_row($select)){
+			if ($Row[0]!=="") {
+				$str="$Row[0]##$Row[1]"; 
+				$Ressear[]=$str;	
+				$r++;
+			}
+		}
+		if ($r==0) {echo "Ни одной рубрики не найдено<br><br>";	}
+		echo "<SELECT NAME='koll'>";
+		echo "<OPTION VALUE='-1'>Выберите раздел</OPTION>";
+		
+		$Ressearch=array_unique($Ressear);
+		asort($Ressearch);
+		foreach (@$Ressearch as $p=>$v) {
+			list($ep,$ev)=split("##",$v);
+			if ($ep==$koll) {
+				echo "<option value='$ep' SELECTED>$ev</option>";
+			}
+			else {
+				echo "<option value='$ep'>$ev</option>";
+			}
+		}
+		echo "</select><br>";
+		echo "<input type=text name=kolls size=25>";
+		echo "<input type=submit name=dob value=Добавить>";
+		echo  "</form></td></tr><tr><td>";
+	}
+	else {
+		echo "Ни одной рубрики не найдено<br><br>";
+	}
+?>

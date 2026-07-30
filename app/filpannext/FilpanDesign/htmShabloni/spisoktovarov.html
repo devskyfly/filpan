@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="PageFunctions.js"></script>
+	<script src="../FunkciiIKlassi/Biblioteki/jquery/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+		{
+			inicializaciyaSobitiy();
+		}
+		);
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<title>
+
+		</title>
+	</head>
+	<body>
+		<div id="FonZatemneniyaKorzini">
+			
+		</div>
+		<div id='GlavniyDIV'>
+			<div id='VerxniyDiv'>
+				<div id='LevayaKolonkaVerxniyDiv'>
+				<img id='Logotip' src='PageImages/Logotip.gif'>
+				</div>
+				<div id='PravayaKolonkaVerxniyDiv'>
+					<div id='KorzinaPravayaKolonkaVerxniyDiv'>
+						<img src='PageImages/Korzina.gif' class='Korzina'>
+						<a class='OrangevayKnopka' id="VashaKOrzina" href=''>Ваша корзина</a>
+					</div>
+					
+					<div id='PoiskPravayaKolonkaVerxniyDiv'>	
+							<div class='PoiskPoSaytu'>	
+							Поиск по сайту			
+							</div>
+							<div>
+							<input name="StrokaPoiska" type="text" id="StrokaPoiska">
+							<input type="submit" class="" value="Ok">
+							</div>
+							
+					</div>
+					<div id='KakNasNaytiPravayaKolonkaVerxniyDiv' class="KakNasNayti">
+					КАК НАС НАЙТИ <img id='ZnachekKarti' src='PageImages/ZnachekKarti.gif'> НА КАРТЕ
+					</div>
+				</div>
+				<div id='SrednayaKolonkaVerxniyDiv'>
+					<div class='TextOrangeviyKrupniy'><img src='PageImages/Telefon.gif'>(495) 943-07-73, (495) 776-05-70. Позвоните нам!</div>
+					<div class='TextRegimRaboti'>Режим работы:<br>
+					понедельник-пятница с 9-00 до 18-00;<br>
+					в субботу – с 11-00 до 15-00 (по договоренности).<br>
+					</div>
+					
+					<div id="CentrirovanniyDivStranicSayta">
+						<a href="" class="KakNasNayti">КАК НАС НАЙТИ</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Оплата</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Доставка</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Заправка картриджей</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Важно знать</a>	
+						<span class="RazdelitelSsilok">|</span>
+						<a href="" class="SsilkaNaStranicuVZagolovke">Контакты</a>	
+					</div>	
+
+				</div>
+				
+			</div>
+			<div id='SredniyDiv'>
+				<div id='LevayaKolonkaSredniyDiv'>
+				<span class="raskritiyePlus">+</span>
+				<span class="raskritiyeMinus">-</span>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Каталог услуг</span>
+						<ul class="SpisokSsilokMenu">
+							<li>
+							<a href="" class="Neaktivnaya">Заправка картриджей</a>	
+							</li>
+								<ul class="SpisokSsilokMenu">
+									<li>
+									<a href="" class="Neaktivnaya">Лазерные</a>	
+									</li>
+										<ul class="SpisokSsilokMenu">
+										<li>
+										<a href="" class="Aktivnay">HP</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Canon</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Samsung</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Xerox</a>	
+										</li>
+										</ul>
+									<li>
+									<a href="" class="Neaktivnaya">Струйные</a>	
+									</li>
+								</ul>
+							<li>
+							<a href="" class="Neaktivnaya">Восстановка картриджей</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Прошивка принтеров</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Ремонт принтеров и офисной техники</a>	
+							</li>
+						</ul>
+
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Каталог товаров</span>
+						<ul class="SpisokSsilokMenu">
+							<li>
+							<a href="" class="Neaktivnaya">Картриджи</a>	
+							</li>
+							<li>
+							<a href="" class="Neaktivnaya">Техника</a>	
+							</li>
+								<ul class="SpisokSsilokMenu">
+									<li>
+									<a href="" class="Neaktivnaya">Принтеры</a>	
+									</li>
+									<ul class="SpisokSsilokMenu">
+										
+										<li>
+										<a href="" class="Neaktivnaya">Canon</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Samsung</a>	
+										</li>
+										<li>
+										<a href="" class="Neaktivnaya">Xerox</a>	
+										</li>
+										</ul>
+									<li>
+									<a href="" class="Neaktivnaya">Уничтожители бумаги</a>	
+									</li>
+									<li>
+									<a href="" class="Neaktivnaya">Сканеры</a>	
+									</li>	
+								</ul>
+							<li>
+							<a href="" class="Neaktivnaya">Фотовалы</a>	
+							</li>	
+							<li>
+							<a href="" class="Neaktivnaya">Тонеры</a>	
+							</li>
+						</ul>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<div class="MiNaYandexMarkete">
+							<a  href="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*https://grade.market.yandex.ru/?id=37776&action=link">
+								<img src="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2507/*https://grade.market.yandex.ru/?id=37776&action=image&size=3" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете" />
+							</a>
+						</div>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Написать письмо</span>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Районы которые мы обслуживаем:</span>
+					</div>
+					<div class='ContentLevayaKolonkaSredniyDiv'>
+						<span class="ZagolovokContentLevayaKolonkaSredniyDiv TextZagolovokContentLevayaKolonkaSredniyDiv" >Суперпредложения: СОВМЕСТИМЫЕ КАРТРИДЖИ</span>
+					</div>
+				</div>
+				<div id='PravayaKolonkaSredniyDiv'>
+					<div id='SuperPredlogeniyaDiv'>
+						<span class="ZagolovokSuperPredlogeniya TextZagolovokSuperPredlogeniya" >Суперпредложения:</span>
+						<div class="ContentSuperPredlogeniya">
+							<div>
+								<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTovaraSuperPredlogeniya">
+								</a>	
+							</div>
+							<div>
+								<a href="" class="SuperPredlogeniye">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+							</div>
+							<div class="DivContentSuperPredlogeniye">
+								<span class='ProstoyText'>Цена:</span><span class='Cena'> 450 руб.</span>
+							</div>
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>
+							<img src="PageImages/UgolokSuperPredlogeniy.gif" class="UgolokSuperPredlogeniy">
+						</div>
+						<div class="ContentSuperPredlogeniya">
+							<div>
+								<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTovaraSuperPredlogeniya">
+								</a>	
+							</div>
+							<div>
+								<a href="" class="SuperPredlogeniye">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+							</div>
+							<div class="DivContentSuperPredlogeniye">
+								<span class='ProstoyText'>Цена:</span><span class='Cena'> 450 руб.</span>
+							</div>
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>
+							<img src="PageImages/UgolokSuperPredlogeniy.gif" class="UgolokSuperPredlogeniy">
+						</div>
+					</div>
+				</div>
+				
+					
+				<div id='SrednayaKolonkaSredniyDiv'>
+
+
+					<div class="TextoviyModulSverhu">
+								<span style="font-weight:bold;"><span style="font-size:16px;"><span data-scayt_word="Профессиональная" data-scaytid="317">Профессиональная</span> <span data-scayt_word="заправка" data-scaytid="301">заправка</span> <span data-scayt_word="картриджей" data-scaytid="302">картриджей</span> &ndash; <span data-scayt_word="гарант" data-scaytid="320">гарант</span> <span data-scayt_word="качества" data-scaytid="321">качества</span> <span data-scayt_word="печати" data-scaytid="303">печати</span></span></span></p>
+<p style="text-align: center;">
+	<span style="font-weight:bold;"><span style="font-size:14px;"><span data-scayt_word="Поиск" data-scaytid="304">Поиск</span> <span data-scayt_word="по" data-scaytid="305">по</span>&nbsp; <span data-scayt_word="брендам" data-scaytid="306">брендам</span>:</span></span></p>
+<h1 class="big_orange" style="text-align: center;">
+	<a alt="Заправка картриджей Canon" href="/zapravka-kartridzhej-canon"><img class="img_button" src="/images/buttons/Button_canon.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Samsung" href="/zapravka-kartridzhej-samsung"><img class="img_button" src="/images/buttons/Button_samsung.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей HP" href="/zapravka-kartridjej-hp"><img class="img_button" src="/images/buttons/Button_hp.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Brother" href="/zapravka-kartridzhej-brother"><img class="img_button" src="/images/buttons/Button_brother.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Xerox" href="/zapravka-kartridzhej-xerox"><img class="img_button" src="/images/buttons/Button_xerox.gif" style="width: 125px; height: 39px;" /></a></h1>
+<p style="text-align: center;">
+	<a alt="Заправка картриджей Oki" href="/zapravka-kartridzhej-oki"><img class="img_button" src="/images/buttons/Button_oki.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Lexmark" href="/zapravka-kartridzhej-lexmark"><img class="img_button" src="/images/buttons/Button_lexmark.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Epson" href="/zapravka-kartridzhej-epson"><img class="img_button" src="/images/buttons/Button_epson.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Philips" href="/zapravka-kartridzhej-philips"><img class="img_button" src="/images/buttons/Button_philips.gif" style="width: 125px; height: 39px;" /></a></p>
+<p>
+	<img alt="качественная заправка картриджей " src="/pictures_for_elements/image/zapravka_kartridzhey_srochno_(1).jpg" style="float: left; width: 169px; height: 211px; margin: 5px;" /></p>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="Если" data-scaytid="326">Если</span> <span data-scayt_word="вы" data-scaytid="307">вы</span> <span data-scayt_word="цените" data-scaytid="328">цените</span> <span data-scayt_word="свое" data-scaytid="329">свое</span> <span data-scayt_word="время" data-scaytid="330">время</span> и <span data-scayt_word="хотите" data-scaytid="331">хотите</span> <span data-scayt_word="обратиться" data-scaytid="332">обратиться</span> к <span data-scayt_word="профессионалам" data-scaytid="333">профессионалам</span>, <span data-scayt_word="чтобы" data-scaytid="334">чтобы</span> <span style="font-weight:bold;"><span data-scayt_word="заправить" data-scaytid="315">заправить</span> <span data-scayt_word="картриджи" data-scaytid="336">картриджи</span> для <span data-scayt_word="принтера" data-scaytid="316">принтера</span></span>, <span data-scayt_word="тогда" data-scaytid="338">тогда</span> для <span data-scayt_word="сервис-центр" data-scaytid="339">сервис-центр</span> <span data-scayt_word="Filpan" data-scaytid="340">Filpan</span> &ndash; для вас. К <span data-scayt_word="вашим" data-scaytid="341">вашим</span> <span data-scayt_word="услугам" data-scaytid="342">услугам</span>: <span data-scayt_word="низкие" data-scaytid="343">низкие</span> <span data-scayt_word="цены" data-scaytid="344">цены</span>, <span data-scayt_word="гарантия" data-scaytid="345">гарантия</span> <span data-scayt_word="работ" data-scaytid="346">работ</span> и <span data-scayt_word="любые" data-scaytid="347">любые</span> <span data-scayt_word="тонеры" data-scaytid="348">тонеры</span> в <span data-scayt_word="наличии" data-scaytid="349">наличии</span>.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:11px;">Для <span data-scayt_word="владельцев" data-scaytid="354">владельцев</span> <span data-scayt_word="оргтехники" data-scaytid="355">оргтехники</span> <span data-scayt_word="проблема" data-scaytid="356">проблема</span> <span data-scayt_word="картриджа" data-scaytid="350">картриджа</span> <span data-scayt_word="основывается" data-scaytid="358">основывается</span> <span data-scayt_word="на" data-scaytid="351">на</span> <span data-scayt_word="выборе" data-scaytid="360">выборе</span>: <span data-scayt_word="приобретение" data-scaytid="361">приобретение</span> <span data-scayt_word="нового" data-scaytid="352">нового</span> <span data-scayt_word="оригинального" data-scaytid="363">оригинального</span> или <span data-scayt_word="заправка" data-scaytid="353">заправка</span> <span data-scayt_word="существующего" data-scaytid="365">существующего</span>. В <span data-scayt_word="пользу" data-scaytid="366">пользу</span> <span data-scayt_word="последнего" data-scaytid="367">последнего</span> <span data-scayt_word="склоняют" data-scaytid="368">склоняют</span> три <span data-scayt_word="веских" data-scaytid="369">веских</span> <span data-scayt_word="аргумента" data-scaytid="370">аргумента</span>:</span></div>
+<ol>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Невысокая" data-scaytid="375">Невысокая</span> <span data-scayt_word="цена" data-scaytid="376">цена</span> <span data-scayt_word="услуги" data-scaytid="377">услуги</span>, <span data-scayt_word="которая" data-scaytid="378">которая</span> <span data-scayt_word="существенно" data-scaytid="379">существенно</span> <span data-scayt_word="влияет" data-scaytid="380">влияет</span> <span data-scayt_word="на" data-scaytid="371">на</span> <span data-scayt_word="снижение" data-scaytid="382">снижение</span> <span data-scayt_word="себестоимости" data-scaytid="383">себестоимости</span> <span data-scayt_word="отпечатка" data-scaytid="384">отпечатка</span>.</span></li>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Высокое" data-scaytid="385">Высокое</span> <span data-scayt_word="качество" data-scaytid="372">качество</span> <span data-scayt_word="печати" data-scaytid="373">печати</span>, как <span data-scayt_word="если" data-scaytid="374">если</span> <span data-scayt_word="бы" data-scaytid="389">бы</span> был <span data-scayt_word="установлен" data-scaytid="390">установлен</span> <span data-scayt_word="фирменный" data-scaytid="391">фирменный</span> <span data-scayt_word="модуль" data-scaytid="392">модуль</span>.</span></li>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Внешне" data-scaytid="400">Внешне</span> <span data-scayt_word="корпус" data-scaytid="401">корпус</span> <span data-scayt_word="остается" data-scaytid="402">остается</span> <span data-scayt_word="оригинальным" data-scaytid="403">оригинальным</span>, что <span data-scayt_word="не" data-scaytid="393">не</span> <span data-scayt_word="влияет" data-scaytid="394">влияет</span> <span data-scayt_word="на" data-scaytid="395">на</span> <span data-scayt_word="работоспособность" data-scaytid="407">работоспособность</span> <span data-scayt_word="принтера" data-scaytid="396">принтера</span>.</span></li>
+</ol>
+<h2 style="text-align: center;">
+	<span style="font-size:14px;"><span data-scayt_word="Заправка" data-scaytid="397">Заправка</span> <span data-scayt_word="картриджей" data-scaytid="398">картриджей</span> в <span data-scayt_word="Filpan" data-scaytid="399">Filpan</span></span></h2>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="Компания" data-scaytid="425">Компания</span> <span data-scayt_word="Filpan" data-scaytid="412">Filpan</span> <span data-scayt_word="специализируется" data-scaytid="427">специализируется</span> в <span data-scayt_word="Москве" data-scaytid="428">Москве</span> <span data-scayt_word="на" data-scaytid="413">на</span> <span data-scayt_word="продаже" data-scaytid="431">продаже</span> и <span data-scayt_word="комплексном" data-scaytid="432">комплексном</span> <span data-scayt_word="обслуживании" data-scaytid="433">обслуживании</span> <span data-scayt_word="оргтехники" data-scaytid="415">оргтехники</span>, а </span></div>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="также" data-scaytid="416">также</span> <span data-scayt_word="поставке" data-scaytid="436">поставке</span> <span data-scayt_word="расходных" data-scaytid="437">расходных</span> <span data-scayt_word="материалов" data-scaytid="438">материалов</span> и <span data-scayt_word="срочной" data-scaytid="439">срочной</span> <span data-scayt_word="заправке" data-scaytid="417">заправке</span> <span data-scayt_word="картриджей" data-scaytid="418">картриджей</span>. <span data-scayt_word="Знание" data-scaytid="442">Знание</span> <span data-scayt_word="особенностей" data-scaytid="443">особенностей</span> и <span data-scayt_word="нюансов" data-scaytid="444">нюансов</span> <span data-scayt_word="работы" data-scaytid="419">работы</span> <span data-scayt_word="каждого" data-scaytid="446">каждого</span> <span data-scayt_word="из" data-scaytid="447">из</span> <span data-scayt_word="предлагаемых" data-scaytid="448">предлагаемых</span> <span data-scayt_word="устройств" data-scaytid="449">устройств</span> <span data-scayt_word="позволяет" data-scaytid="450">позволяет</span> нам <span data-scayt_word="заправлять" data-scaytid="420">заправлять</span> <span data-scayt_word="картриджи" data-scaytid="421">картриджи</span> для <span data-scayt_word="принтера" data-scaytid="422">принтера</span> <span data-scayt_word="на" data-scaytid="414">на</span> <span data-scayt_word="высоком" data-scaytid="454">высоком</span> <span data-scayt_word="техническом" data-scaytid="455">техническом</span> <span data-scayt_word="уровне" data-scaytid="423">уровне</span>. В <span data-scayt_word="работу" data-scaytid="424">работу</span> <span data-scayt_word="принимаются" data-scaytid="458">принимаются</span> <span data-scayt_word="модули" data-scaytid="459">модули</span> <span data-scayt_word="техники" data-scaytid="460">техники</span>:</span>
+	<p style="text-align: center;">
+		<img src="/pictures_for_elements/razukrasky/blonde-businesswoman2.jpg" style="margin: 3px 10px; width: 271px; height: 192px; float: right;" /></p>
+
+		</div>
+					</div>
+
+
+				<table class="TablicaTovarov">
+					<caption><a href="" class="ZagolovokSsilkaTabliciTovarov">Заправка картриджей</a> | <a href="" class="ZagolovokSsilkaTabliciTovarov">Лазерные</a> | <a href="" class="ZagolovokSsilkaTabliciTovarov">HP</a></caption>
+					<!--<tr>
+						<th class="ZagolovokStolbcaArtikul">Артикул</th>
+						<th class="ZagolovokStolbcaIzobrageniye">Изображение</th>
+						<th class="ZagolovokStolbcaNazvaniye">Название</th>
+						<th class="ZagolovokStolbcaCena">Цена</th>
+					</tr>-->
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>	
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>	
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>	
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>	
+					<tr>
+						<td class="StolbecArticul TextStolbecArticul">№ 12345</td>
+						<td class="StolbecIzobrageniye">
+							<a href="">
+									<img src="PageImages/1345620943.jpg" class="KartinkaTabliciTovarov">
+							</a>
+						</td>
+						<td class="StolbecNazvaniye">
+								<a href="" class="SsilkaNazvanieVTablice">
+									Заправка картриджа Brother TN-1075 для Brother HL-1110R/1112R, DCP-1510R/1512R, MFC-1810R/1815R
+								</a>	
+						</td>
+						<td class="StolbecCena">
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Цена:</span><span class='Cena'> 450 руб.</span>	
+							</div>
+							<div class="ElementiContenta">
+							<span class='TextKartochkiTovara'>Кол-во:</span><input type="text" value="1" class="StrokaVvodaKolichestvo">	
+							</div>	
+							<div class="DivContentSuperPredlogeniye">
+								<img src="PageImages/KorzinaKupit.gif" class="KorzinaKupit">
+							</div>	
+						</td>
+					</tr>		
+				</table>
+
+				<div class="ModulSsilokNaStraniciTablici">
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div><div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div><div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+					<div class="ElementSsilkaStraniciTablici">
+						<a href="" class="SsilkaNaStranicuTablici">1</a>
+					</div>
+
+				</div>
+
+				<div class="TextoviyModulSnizu">
+					<span style="font-weight:bold;"><span style="font-size:16px;"><span data-scayt_word="Профессиональная" data-scaytid="317">Профессиональная</span> <span data-scayt_word="заправка" data-scaytid="301">заправка</span> <span data-scayt_word="картриджей" data-scaytid="302">картриджей</span> &ndash; <span data-scayt_word="гарант" data-scaytid="320">гарант</span> <span data-scayt_word="качества" data-scaytid="321">качества</span> <span data-scayt_word="печати" data-scaytid="303">печати</span></span></span></p>
+<p style="text-align: center;">
+	<span style="font-weight:bold;"><span style="font-size:14px;"><span data-scayt_word="Поиск" data-scaytid="304">Поиск</span> <span data-scayt_word="по" data-scaytid="305">по</span>&nbsp; <span data-scayt_word="брендам" data-scaytid="306">брендам</span>:</span></span></p>
+<h1 class="big_orange" style="text-align: center;">
+	<a alt="Заправка картриджей Canon" href="/zapravka-kartridzhej-canon"><img class="img_button" src="/images/buttons/Button_canon.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Samsung" href="/zapravka-kartridzhej-samsung"><img class="img_button" src="/images/buttons/Button_samsung.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей HP" href="/zapravka-kartridjej-hp"><img class="img_button" src="/images/buttons/Button_hp.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Brother" href="/zapravka-kartridzhej-brother"><img class="img_button" src="/images/buttons/Button_brother.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Xerox" href="/zapravka-kartridzhej-xerox"><img class="img_button" src="/images/buttons/Button_xerox.gif" style="width: 125px; height: 39px;" /></a></h1>
+<p style="text-align: center;">
+	<a alt="Заправка картриджей Oki" href="/zapravka-kartridzhej-oki"><img class="img_button" src="/images/buttons/Button_oki.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Lexmark" href="/zapravka-kartridzhej-lexmark"><img class="img_button" src="/images/buttons/Button_lexmark.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Epson" href="/zapravka-kartridzhej-epson"><img class="img_button" src="/images/buttons/Button_epson.gif" style="width: 125px; height: 39px;" /></a><a alt="Заправка картриджей Philips" href="/zapravka-kartridzhej-philips"><img class="img_button" src="/images/buttons/Button_philips.gif" style="width: 125px; height: 39px;" /></a></p>
+<p>
+	<img alt="качественная заправка картриджей " src="/pictures_for_elements/image/zapravka_kartridzhey_srochno_(1).jpg" style="float: left; width: 169px; height: 211px; margin: 5px;" /></p>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="Если" data-scaytid="326">Если</span> <span data-scayt_word="вы" data-scaytid="307">вы</span> <span data-scayt_word="цените" data-scaytid="328">цените</span> <span data-scayt_word="свое" data-scaytid="329">свое</span> <span data-scayt_word="время" data-scaytid="330">время</span> и <span data-scayt_word="хотите" data-scaytid="331">хотите</span> <span data-scayt_word="обратиться" data-scaytid="332">обратиться</span> к <span data-scayt_word="профессионалам" data-scaytid="333">профессионалам</span>, <span data-scayt_word="чтобы" data-scaytid="334">чтобы</span> <span style="font-weight:bold;"><span data-scayt_word="заправить" data-scaytid="315">заправить</span> <span data-scayt_word="картриджи" data-scaytid="336">картриджи</span> для <span data-scayt_word="принтера" data-scaytid="316">принтера</span></span>, <span data-scayt_word="тогда" data-scaytid="338">тогда</span> для <span data-scayt_word="сервис-центр" data-scaytid="339">сервис-центр</span> <span data-scayt_word="Filpan" data-scaytid="340">Filpan</span> &ndash; для вас. К <span data-scayt_word="вашим" data-scaytid="341">вашим</span> <span data-scayt_word="услугам" data-scaytid="342">услугам</span>: <span data-scayt_word="низкие" data-scaytid="343">низкие</span> <span data-scayt_word="цены" data-scaytid="344">цены</span>, <span data-scayt_word="гарантия" data-scaytid="345">гарантия</span> <span data-scayt_word="работ" data-scaytid="346">работ</span> и <span data-scayt_word="любые" data-scaytid="347">любые</span> <span data-scayt_word="тонеры" data-scaytid="348">тонеры</span> в <span data-scayt_word="наличии" data-scaytid="349">наличии</span>.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:11px;">Для <span data-scayt_word="владельцев" data-scaytid="354">владельцев</span> <span data-scayt_word="оргтехники" data-scaytid="355">оргтехники</span> <span data-scayt_word="проблема" data-scaytid="356">проблема</span> <span data-scayt_word="картриджа" data-scaytid="350">картриджа</span> <span data-scayt_word="основывается" data-scaytid="358">основывается</span> <span data-scayt_word="на" data-scaytid="351">на</span> <span data-scayt_word="выборе" data-scaytid="360">выборе</span>: <span data-scayt_word="приобретение" data-scaytid="361">приобретение</span> <span data-scayt_word="нового" data-scaytid="352">нового</span> <span data-scayt_word="оригинального" data-scaytid="363">оригинального</span> или <span data-scayt_word="заправка" data-scaytid="353">заправка</span> <span data-scayt_word="существующего" data-scaytid="365">существующего</span>. В <span data-scayt_word="пользу" data-scaytid="366">пользу</span> <span data-scayt_word="последнего" data-scaytid="367">последнего</span> <span data-scayt_word="склоняют" data-scaytid="368">склоняют</span> три <span data-scayt_word="веских" data-scaytid="369">веских</span> <span data-scayt_word="аргумента" data-scaytid="370">аргумента</span>:</span></div>
+<ol>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Невысокая" data-scaytid="375">Невысокая</span> <span data-scayt_word="цена" data-scaytid="376">цена</span> <span data-scayt_word="услуги" data-scaytid="377">услуги</span>, <span data-scayt_word="которая" data-scaytid="378">которая</span> <span data-scayt_word="существенно" data-scaytid="379">существенно</span> <span data-scayt_word="влияет" data-scaytid="380">влияет</span> <span data-scayt_word="на" data-scaytid="371">на</span> <span data-scayt_word="снижение" data-scaytid="382">снижение</span> <span data-scayt_word="себестоимости" data-scaytid="383">себестоимости</span> <span data-scayt_word="отпечатка" data-scaytid="384">отпечатка</span>.</span></li>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Высокое" data-scaytid="385">Высокое</span> <span data-scayt_word="качество" data-scaytid="372">качество</span> <span data-scayt_word="печати" data-scaytid="373">печати</span>, как <span data-scayt_word="если" data-scaytid="374">если</span> <span data-scayt_word="бы" data-scaytid="389">бы</span> был <span data-scayt_word="установлен" data-scaytid="390">установлен</span> <span data-scayt_word="фирменный" data-scaytid="391">фирменный</span> <span data-scayt_word="модуль" data-scaytid="392">модуль</span>.</span></li>
+	<li>
+		<span style="font-size:11px;"><span data-scayt_word="Внешне" data-scaytid="400">Внешне</span> <span data-scayt_word="корпус" data-scaytid="401">корпус</span> <span data-scayt_word="остается" data-scaytid="402">остается</span> <span data-scayt_word="оригинальным" data-scaytid="403">оригинальным</span>, что <span data-scayt_word="не" data-scaytid="393">не</span> <span data-scayt_word="влияет" data-scaytid="394">влияет</span> <span data-scayt_word="на" data-scaytid="395">на</span> <span data-scayt_word="работоспособность" data-scaytid="407">работоспособность</span> <span data-scayt_word="принтера" data-scaytid="396">принтера</span>.</span></li>
+</ol>
+<h2 style="text-align: center;">
+	<span style="font-size:14px;"><span data-scayt_word="Заправка" data-scaytid="397">Заправка</span> <span data-scayt_word="картриджей" data-scaytid="398">картриджей</span> в <span data-scayt_word="Filpan" data-scaytid="399">Filpan</span></span></h2>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="Компания" data-scaytid="425">Компания</span> <span data-scayt_word="Filpan" data-scaytid="412">Filpan</span> <span data-scayt_word="специализируется" data-scaytid="427">специализируется</span> в <span data-scayt_word="Москве" data-scaytid="428">Москве</span> <span data-scayt_word="на" data-scaytid="413">на</span> <span data-scayt_word="продаже" data-scaytid="431">продаже</span> и <span data-scayt_word="комплексном" data-scaytid="432">комплексном</span> <span data-scayt_word="обслуживании" data-scaytid="433">обслуживании</span> <span data-scayt_word="оргтехники" data-scaytid="415">оргтехники</span>, а </span></div>
+<div>
+	<span style="font-size:11px;"><span data-scayt_word="также" data-scaytid="416">также</span> <span data-scayt_word="поставке" data-scaytid="436">поставке</span> <span data-scayt_word="расходных" data-scaytid="437">расходных</span> <span data-scayt_word="материалов" data-scaytid="438">материалов</span> и <span data-scayt_word="срочной" data-scaytid="439">срочной</span> <span data-scayt_word="заправке" data-scaytid="417">заправке</span> <span data-scayt_word="картриджей" data-scaytid="418">картриджей</span>. <span data-scayt_word="Знание" data-scaytid="442">Знание</span> <span data-scayt_word="особенностей" data-scaytid="443">особенностей</span> и <span data-scayt_word="нюансов" data-scaytid="444">нюансов</span> <span data-scayt_word="работы" data-scaytid="419">работы</span> <span data-scayt_word="каждого" data-scaytid="446">каждого</span> <span data-scayt_word="из" data-scaytid="447">из</span> <span data-scayt_word="предлагаемых" data-scaytid="448">предлагаемых</span> <span data-scayt_word="устройств" data-scaytid="449">устройств</span> <span data-scayt_word="позволяет" data-scaytid="450">позволяет</span> нам <span data-scayt_word="заправлять" data-scaytid="420">заправлять</span> <span data-scayt_word="картриджи" data-scaytid="421">картриджи</span> для <span data-scayt_word="принтера" data-scaytid="422">принтера</span> <span data-scayt_word="на" data-scaytid="414">на</span> <span data-scayt_word="высоком" data-scaytid="454">высоком</span> <span data-scayt_word="техническом" data-scaytid="455">техническом</span> <span data-scayt_word="уровне" data-scaytid="423">уровне</span>. В <span data-scayt_word="работу" data-scaytid="424">работу</span> <span data-scayt_word="принимаются" data-scaytid="458">принимаются</span> <span data-scayt_word="модули" data-scaytid="459">модули</span> <span data-scayt_word="техники" data-scaytid="460">техники</span>:</span>
+	<p style="text-align: center;">
+		<img src="/pictures_for_elements/razukrasky/blonde-businesswoman2.jpg" style="margin: 3px 10px; width: 271px; height: 192px; float: right;" /></p>
+
+		</div>	
+				</div>
+
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div id='NigniyDiv'>
+
+		</div>
+
+		<div id='Korzina'>
+			<table class="TablicaKorzina">
+				<tr>
+					<th>Артикул</th>
+					<th>Наименование</th>
+					<th>Кол-во</th>
+					<th>Цена</th>
+					<th>Сумма</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="" class=""></a></td>
+					<td>
+						<input type="button" class="minus" value="-">
+						<input type="text" class="StrokaVvodaKolichestvo" value="">
+						<input type="button" class="plus" value="+">
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="button" class="OrangevayaKnopkaRezinovaya" value="Удалить"></td>
+				</tr>
+			</table>
+			<div class="DivVsegoKOplate"><span class="TextKartochkiTovara">Всего к оплате:</span><span class="Cena"> 750 руб.</span></div>
+			<div>
+				<input type="button" class="OrangevayaKnopkaRezinovaya" value="Продолжить оформление">
+				<input type="button" class="OrangevayaKnopkaRezinovaya" value="Очистить корзину">
+			</div>
+		</div>
+	</body>
+</html>

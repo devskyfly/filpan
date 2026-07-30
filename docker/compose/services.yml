@@ -1,0 +1,27 @@
+services:
+  db:
+    build:
+      dockerfile: ./docker/images/db/Dockerfile
+      context: ../..
+      args:
+        - UID:${APP_USER_ID:-1000}
+        - GUI:${APP_GROUP_ID:-1000}
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=chislopi
+      - MYSQL_DATABASE=${MYSQL_DB}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: [ "CMD", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ../../volumes/db/data:/var/lib/mysql
+      - ../../volumes/db/init:/docker-entrypoint-initdb.d
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+

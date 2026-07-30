@@ -1,0 +1,139 @@
+.container
+{
+min-width:1024px;
+max-width:1600px;
+margin:0px;
+margin-left:auto;
+margin-right:auto;
+position:relative;
+padding:0px;
+
+}
+
+/*Начинается описание основной части*/
+.content
+{
+
+padding-top:10px;
+width:100%;
+background-color:#FFFFFF;
+overflow:auto;
+}
+
+
+.middle_content
+{
+overflow-y:auto;
+position:relative;
+min-width:500px;
+margin-left:300px;
+margin-right:210px;
+padding:10px;
+background-color:white;
+border:1px solid #E0E0D1;
+border-radius:10px;
+}
+
+
+.korzina_table
+{
+width:100%;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+}
+.name
+{
+vertical-align:middle;
+padding-left:10px;
+width:auto;
+border:1px solid #EFEFEF;
+color: #89898A;
+}
+.cena
+{
+vertical-align:middle;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}
+.colichestvo
+{
+vertical-align:middle;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}
+.summa
+{
+vertical-align:middle;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}
+
+
+.name_cap
+{
+padding-left:10px;
+background-color:#EFEFEF;
+width:auto;
+border:1px solid #EFEFEF;
+color: #89898A;
+}
+.cena_cap
+{
+background-color:#EFEFEF;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}.colichestvo_cap
+{
+background-color:#EFEFEF;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}
+.summa_cap
+{
+background-color:#EFEFEF;
+width:150px;
+border:1px solid #EFEFEF;
+color: #89898A;
+padding-left:70px;
+}
+
+.footer_table
+{
+height:20px;
+}
+
+.button_korz
+{
+float:left;
+width:190px;
+padding:5px;
+margin:10px;
+background-color:#EFEFEF;
+
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+text-align:center;
+border-radius:10px;
+}
+
+.button_korz:hover
+{
+cursor:pointer;
+text-decoration:none;
+}

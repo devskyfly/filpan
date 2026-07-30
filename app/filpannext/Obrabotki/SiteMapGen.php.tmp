@@ -1,0 +1,56 @@
+<?
+set_time_limit(0);
+require_once($_SERVER['DOCUMENT_ROOT']."/filpanutf8/FunkciiIKlassi/FailKonfiguracii.php");
+
+
+$DliyaZapisi='';
+
+$SpisokSsilok=new Ssilki();
+
+$SpisokSsilok->vibratPoliya('id,ssilka');
+$SpisokSsilok->poluchit();
+
+$DliyaZapisi.=sprintf('<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">'."\r\n");
+
+while ($SpisokSsilok->poluchitSleduyushiy()) {
+$DliyaZapisi.=htmlspecialchars (sprintf("<url>\r\n<loc>%s</loc>\r\n</url>\r\n",$SpisokSsilok->_TekushiyElement['ssilka']));
+}
+
+$DliyaZapisi.=sprintf('</urlset>');
+
+$filename = $_SERVER['DOCUMENT_ROOT'].'/sitemap.xml';
+
+$somecontent = $DliyaZapisi;
+
+// Р’РЅР°С‡Р°Р»Рµ РґР°РІР°Р№С‚Рµ СѓР±РµРґРёРјСЃСЏ, С‡С‚Рѕ С„Р°Р№Р» СЃСѓС‰РµСЃС‚РІСѓРµС‚ Рё РґРѕСЃС‚СѓРїРµРЅ РґР»СЏ Р·Р°РїРёСЃРё.
+if (is_writable($filename)) {
+
+    // Р’ РЅР°С€РµРј РїСЂРёРјРµСЂРµ РјС‹ РѕС‚РєСЂС‹РІР°РµРј $filename РІ СЂРµР¶РёРјРµ "РґРѕРїРёСЃР°С‚СЊ РІ РєРѕРЅРµС†".
+    // РўР°РєРёРј РѕР±СЂР°Р·РѕРј, СЃРјРµС‰РµРЅРёРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ РІ РєРѕРЅРµС† С„Р°Р№Р»Р° Рё
+    // РЅР°С€ $somecontent РґРѕРїРёС€РµС‚СЃСЏ РІ РєРѕРЅРµС† РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё fwrite().
+    if (!$handle = fopen($filename, 'w+')) {
+         echo "РќРµ РјРѕРіСѓ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» ($filename)";
+         exit;
+    }
+
+    // Р—Р°РїРёСЃС‹РІР°РµРј $somecontent РІ РЅР°С€ РѕС‚РєСЂС‹С‚С‹Р№ С„Р°Р№Р».
+    if (fwrite($handle, $somecontent) === FALSE) {
+        echo "РќРµ РјРѕРіСѓ РїСЂРѕРёР·РІРµСЃС‚Рё Р·Р°РїРёСЃСЊ РІ С„Р°Р№Р» ($filename)";
+        exit;
+    }
+    
+    echo "РРЅС„РѕСЂРјР°С†РёСЏ Р·Р°РїРёСЃР°РЅР° РІ С„Р°Р№Р» ($filename)";
+    
+    fclose($handle);
+
+} else {
+    echo "Р¤Р°Р№Р» $filename РЅРµРґРѕСЃС‚СѓРїРµРЅ РґР»СЏ Р·Р°РїРёСЃРё";
+}
+
+
+
+
+
+
+?>

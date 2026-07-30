@@ -1,0 +1,427 @@
+.container
+{
+min-width:1024px;
+max-width:1600px;
+margin:0px;
+margin-left:auto;
+margin-right:auto;
+position:relative;
+width:100%;
+padding:0px;
+
+
+}
+
+/*Начинается описание основной части*/
+.content
+{
+padding-top:10px;
+background-color:#FFFFFF;
+min-width:1024px;
+max-width:1600px;
+overflow:auto;
+}
+
+.korz_div
+{
+width:150px;
+}
+
+.middle_content
+{
+overflow-y:auto;
+position:relative;
+min-width:490px;
+margin-left:300px;
+margin-right:210px;
+padding:10px;
+background-color:white;
+border:1px solid #E0E0D1;
+border-radius:10px;
+}
+
+.big_orange
+{
+color:#FF6600 !important;
+}
+
+.link_orange
+{
+decoration:none;
+color:#FF6600 !important;
+}
+
+.text_link
+{
+color: #89898A; !important;
+}
+
+.sop_tov_usl
+{color: #FF6600;
+margin-left:10px;}
+
+.sub_content
+{
+float:left;
+overflow:hidden;
+position:relative;
+min-width:300px;
+max-width:300px;
+padding:10px;
+margin:10px;
+background-color:white;
+border:1px solid #E0E0D1;
+border-radius:10px;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+height:200px;
+min-height: 150px;
+max-height: 200px;
+}
+.div_gift_table
+{
+margin-top:4px;
+margin-left:4px;
+margin-right:4px;
+margin-bottom:4px;
+}
+
+.sub_div_table_gift
+{
+margin-top:10px;
+}
+
+.sub_table > *
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.gift_table
+{
+width:100%;
+}
+
+.td_img_gift_table
+{
+border:1px solid #EFEFEF;
+width:150px;
+padding-left:10px;
+color: #89898A;
+}
+
+.td_nazv_gift_table
+{
+max-width:200px;
+border:1px solid #EFEFEF;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+vertical-align:text-top;
+padding:10px;
+white-space: pre;           /* CSS 2.0 */
+white-space: pre-wrap;      /* CSS 2.1 */
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap;  /* HP Printers */
+word-wrap: break-word;      /* IE 5+ */
+word-wrap : break-word;
+text-align:justify;
+}
+
+.td_buy_gift_table
+{
+border:1px solid #EFEFEF;
+color: #89898A;
+width:80px;
+vertical-align:text-top;
+padding:10px;
+}
+
+.input_window
+{
+background-color: #EAF1F7;
+font-size: 12px !important;
+color:#89898A;
+}
+
+
+.table_gift_link
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+text-align:justify;
+}
+.caption_gift_table
+{
+padding-left:10px;
+padding-top:5px;
+padding-bottom:5px;
+background-color:#EFEFEF;
+color: #89898A;
+text-align:left;
+font-size: 16px;
+font-weight:bold;
+}
+
+
+.caption_link
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 14px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.caption_link:hover
+{
+color: #FF6600;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 14px;
+font-weight:bold;
+text-decoration:none;
+}
+
+
+.link_box
+{
+float:left;
+background-color:#EFEFEF;
+width:20px;
+height:20px;
+padding:2px;
+margin:2px;
+}
+
+.link_box:hover
+{
+float:left;
+background-color:#999999;
+color:black;
+width:20px;
+height:20px;
+padding:2px;
+margin:2px;
+}
+
+
+
+.link_box_current
+{
+float:left;
+background-color:#999999;
+color:black;
+width:20px;
+height:20px;
+padding:2px;
+margin:2px;
+}
+
+.sub_pages_link
+{
+
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+
+}
+
+.sub_pages_link_selected
+{
+
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-decoration:none;
+
+}
+
+.page_link_panel
+{
+margin-left:170px;
+margin-right:50px;
+text-align:center;
+height:30px;
+}
+
+
+.img_div_element
+{
+width:200px;
+/*height:300px;*/
+overflow-y:auto;
+margin-left:20px;
+margin-right:20px;
+margin-top:10px;
+margin-bottom:20px;
+padding:10px;
+border:1px solid #D6D6D6;
+border-radius:5px;
+background-color:white;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+}
+
+.relative_img_div_element
+{
+float:left;
+width:260px;
+/*height:300px;*/
+overflow-y:auto;
+}
+
+.img_gift
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:20px;
+width:130px;
+/*height:130px;*/
+padding:0px;
+}
+
+.right_div_element
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+/*float:left;*/
+width:inherit;
+font-size:12px;
+text-align:justify;
+/*margin-left:300px;*/
+}
+.description p, li, ul, b, strong
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+/*float:left;*/
+width:inherit;
+text-align:justify;
+/*margin-left:300px;*/
+}
+
+.bottom_div_element
+{
+margin:20px;
+clear:left;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+text-align:justify;
+}
+
+
+.gift_title
+{
+ccolor: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight:bold;
+text-align:justify;
+}
+
+.around_img
+{
+height:210px;
+}
+
+.podrobno
+{
+
+color:#89898A;
+font-size:12px;
+font-weight:bold;
+font-family:Arial;
+}
+
+#remont
+{
+color: #89898A;
+padding:20px;
+}
+
+#remont>img 
+{
+display:block;
+margin:20px;
+}
+
+#remont table
+{
+border: 1px solid #89898A;!important
+}
+
+#remont tr
+{
+border: 1px solid #89898A;!important
+}
+
+#remont td
+{
+border: 1px solid #89898A;!important
+}
+
+#remont th
+{
+border: 1px solid #89898A;!important
+}
+
+#remont Caption
+{
+border: 1px solid #89898A;!important
+}
+
+
+table.podrobno
+{
+border-collapse:collapse;
+}
+table.podrobno,th.podrobno, td.podrobno
+{
+border: 1px solid #E0E0D1;
+padding:5px;
+}
+
+.sub_rub_content
+{
+
+margin-left:10px;
+margin-top:10px;
+padding-left:10px;
+padding-right:10px;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:auto;
+marin-right:auto;
+border:1px solid #FF6600;
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+background-color:white;
+margin-bottom:10px;
+border-radius:10px;
+}
+
+a.perxod_korz
+{
+color: #FF6600;font-family: arial,helvetica,tahoma,verdana,sans-serif;font-size: 12px;font-weight:bold;text-decoration:none;
+}
+
+

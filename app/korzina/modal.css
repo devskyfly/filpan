@@ -1,0 +1,251 @@
+﻿
+
+
+/* Базовые стили модального окна  */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 100000;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup img{
+	display: inline;
+	border: none;
+	padding: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #ffffff;	
+}
+.popup {
+
+overflow: hidden;
+
+    background-color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    padding: 3px;
+    position: fixed;
+  
+	font: 14px Helvetica, Arial, Sans-Serif;
+  
+    visibility: hidden;
+    z-index: 10000000;
+	
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.overlay:target+.popup {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+
+}
+.close {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: -13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    top: -15px;
+    width: 24px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-size: 14px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
+
+
+
+
+table {border-collapse: collapse;}
+table p {margin: 0;}
+
+.modal_text {color: #1476b6;font-weight: bold; text-decoration: underline;}
+.modal_text:hover {text-decoration: none;font-weight: bold; color: #BA0000;}
+
+    #validEmail
+    {
+    margin-left: 9px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    }
+
+.modal_korz
+{
+overflow:auto;
+position:relative;
+min-width:450px;
+padding:5px;
+background-color:white;
+border:1px solid #E0E0D1;
+border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.korz_s {
+    font-size: 15px;
+	color: black;
+	text-decoration: none;
+    height: 60px;
+    width: 170px;
+    overflow: auto;
+    margin: 10px 10px 2px;
+    float: right;
+	
+	border: 1px solid gray;
+	opacity: 1;
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+}
+
+.korz_s_fixed {
+font-size: 15px;
+color: black;
+text-decoration: none;
+float: right;
+position: fixed;
+border: 1px solid gray;
+opacity: 0.9;
+background: none repeat scroll 0% 0% rgb(255, 255, 255);
+border-radius: 0px 0px 10px 10px;
+color: rgb(39, 39, 39);
+height: 60px;
+width: 170px;
+overflow: auto;
+top:-10px;
+right:-5px;
+z-index:1000;
+}
+
+.div_s{
+  display: table-cell !important;
+  display: inline; /* для IE */
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.minus{cursor: pointer;}
+
+.cart2 span {font-size: 1.5em; color: #333;}
+
+insert_1 {padding: 15px 15px 15px 0px; }
+
+.catalog_table {width: 100%; color: #000; }
+.catalog_table th {color: #fff; background: #757575 url("http://www.kartmaster.ru/images/style/menu.gif") left top repeat-x; font-weight: normal; text-align: center;}
+.catalog_table th {padding: 10px 0px 10px 0px; }
+.catalog_table td {padding: 10px 9px 6px 11px; height: 28px; border-bottom: 1px solid #aaaaaa;}
+.catalog_table .center {text-align: center;}
+
+.catalog_table_price {font-weight: bold; font-size: 1.08em; padding: 5px 0px 0px 0px;}
+
+.catalog_table_price_1
+{font-size: 16px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+color: #050404; }
+	
+.catalog_table .normal {font-weight: normal; font-size: 1.08em;}
+
+
+#for_basket {position: relative; border: 1px solid #B9B9B9;border-radius:10px 10px 10px 10px; padding: 0px 30px 0px 33px; color: #999; font: 0.92em/1.27em Tahoma, Arial, Verdana, Helvetica, sans-serif;}
+
+
+#for_basket table {clear: left;}
+#for_basket table td {padding: 0px 10px 5px 0; vertical-align: top; color: #333;}
+
+#for_basket input {vertical-align: middle;}
+#for_basket input.input-text, #for_basket select, #for_basket textarea {font: 11px Tahoma, Arial, Verdana, Helvetica, sans-serif; color: #666; background: #fff;}
+#for_basket input.input-text {width: 333px; height: 11px; padding: 2px; border: 1px solid #b9b9b9;}
+#for_basket textarea {width: 333px; height: 20px; border: 1px solid #b9b9b9;}
+#for_basket select {width: 339px; height: 17px;}
+
+
+
+#for_basket .submit {text-align: right; padding-top: 0;}
+#for_basket .submit input {width: 92px; height: 19px; padding: 0; border: 0; background: url("http://www.kartmaster.ru/images/style/send.gif") 0 0 no-repeat; color: #fff; cursor: pointer;}
+#for_basket .submit input:hover, #for_basket .submit input.hover1 {background-position: 0 -19px}
+
+
+span.red { color: red; }
+span.reds { color: red; }
+
+

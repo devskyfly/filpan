@@ -1,0 +1,24 @@
+
+<table width="68%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <form method="post" action="adm.php?raskp" enctype=multipart/form-data>
+    <tr> 
+      <td> Основной текст:<br>
+        <textarea rows=6 cols=50 name=text ><?=@$text?></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td> <br>
+        Вложения: 
+        <input type="file" name="File" size=30>
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><input type=submit name=zak value="Начать рассылку"></td>
+    </tr>
+  </form>
+<tr><td><br><br>
+</td></tr>
+</table>

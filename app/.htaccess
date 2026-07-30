@@ -1,0 +1,150 @@
+
+
+AddHandler server-parsed .shtml .shtm .htm .html .xml
+RewriteEngine on
+
+ErrorDocument 404 404.php
+#php_flag opcache.enable Off
+
+RewriteCond %{REQUEST_URI}  (^/\.well-known/pki-validation/29EB6D42C805447873B62BBFB19848AD\.txt$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{HTTP_HOST} ^filpan.ru
+RewriteRule (.*) http://www.filpan.ru/$1 [R=301,L]
+
+#RewriteCond %{ENV:HTTPS} !on
+#
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI}  404.php$
+RewriteRule  (.*)  404.php [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/tst.php$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/MailRegister\.html$)
+RewriteRule  (.*) $1 [QSA,L]
+
+
+RewriteCond %{REQUEST_URI}  (^/session\.php$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/yandex_58cc534b84a72f5b\.html$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/yandex_7a697bee5f4734dc\.txt$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/YMLNEW\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/org.html$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/yml\.csv$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/YML\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/yandex_tovari\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/yandex_uslugi\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/yandex_market_new_uslugi\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/YMLNEW\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/site_information/YMLNEXT\.xml$)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (.*/img/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/filpannext/FunkciiIKlassi/.*)
+RewriteRule  (.*) $1 [QSA,L]
+RewriteCond %{REQUEST_URI}  (^/pictures_for_elements/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/filpannext/Obrabotki/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/filpannext/PanelUpravleniya/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI}  (^/PoiskPoSaytu.*)
+RewriteRule  (.*)(/?.*) filpannext/FilpanDesign/input.php?input_uri=$1$2 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/PrimeriIspolzovaniyaKlassov/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+
+
+RewriteCond %{REQUEST_URI}  (^/FeedBack/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/export/menu.php)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/export/menu_actions.php)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.xls$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/direct/*)
+RewriteRule  (.*) $1 [QSA,L]
+
+
+
+
+RewriteCond %{REQUEST_URI}  ^/sitemap\.xml
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  ^/robots\.txt
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.ico$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.css$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.csv$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.jpg$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.gif$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.png$
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*\.js$
+RewriteRule  (.*) $1 [QSA,L]
+
+
+
+
+RewriteCond %{REQUEST_URI}  .*ObshiyeModuli.*
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*User.*
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  .*alternative.*
+#RewriteRule  (.*)(/?.*) filpannext/FilpanDesign/alternative.php?input_uri=$1$2 [QSA,L]
+RewriteRule  (.*)(/?.*) filpanutf8/FilpanDesign/alternative.php?input_uri=$1$2 [QSA,L]
+
+#RewriteRule  (.*)(/?.*) filpannext/FilpanDesign/input.php?input_uri=$1$2 [QSA,L]
+RewriteRule  (.*)(/?.*) filpannext/FilpanDesign/input.php?input_uri=$1$2 [QSA,L]

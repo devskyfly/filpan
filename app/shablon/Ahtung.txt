@@ -1,0 +1,14 @@
+
+
+
+Чтобы использовать рамки с заголовком используй эту конструкцию
+Не забудь подписать заголовок
+<?php okantovka_title_top('title','100%',15,30,15,15,'#FFFFFF','<span style="color:#FFFFFF;font-size:20px">Тут заголовок</span>');?> 
+  //тут информация
+<?php okantovka_title_bottom('title',15,15,'##FFFFFF');?>
+
+
+Чтобы спользовать простые рамки используй эту конструкцию
+ <?php okantovka_top('Nezakr','100%',17,15,'#FFFFFF');?> 
+ //тут информация
+  <?php okantovka_bottom('Nezakr',17,15,'#FFFFFF');?> 

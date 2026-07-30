@@ -1,0 +1,34 @@
+<table width="68%" border="0" cellspacing="0" cellpadding="0" align="center">
+<?
+if (@$dop) {
+	echo "<tr><td><font color=red>Список E-mail не задан</font><br><br></td></tr>";
+}
+?>
+  <form method="post" action="adm.php?zakem" enctype=multipart/form-data>
+    <tr> 
+      <td> Список E-mail:<br>
+	<textarea rows=6 cols=50 name=text><?
+$select=mysql_query("SELECT name,email FROM $reg");
+$number = mysql_num_rows($select);
+if ($number>0) {
+	while ($Row=mysql_fetch_row($select)){
+		if ($Row[1]!=" ") {
+			echo "$Row[1]##$Row[0]\n";
+		}
+	}
+}
+else {
+	echo "Никаких E-mail-ов пока нет";
+}
+
+?>
+</textarea>
+      </td>
+    </tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><input type=submit name=zak value="Начать закачку"></td>
+    </tr>
+  </form>
+</table>

@@ -1,0 +1,13 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.filpan.ru
+AuthUserFile /var/www/u3558310/data/www/public_html/_vti_pvt/service.pwd
+AuthGroupFile /var/www/u3558310/data/www/public_html/_vti_pvt/service.grp
+
+

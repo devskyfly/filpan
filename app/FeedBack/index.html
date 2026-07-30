@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feedBackTest</title>
+	<!-- FEEDBACK -->
+	<script src="feedback/js/feedback.js"></script>
+	<script src="feedback/js/jquery.arcticmodal.js"></script>
+	<script src="feedback/js/jquery.jgrowl.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/feedback/css/jquery.arcticmodal.css">
+	<link rel="stylesheet" type="text/css" href="/feedback/css/jquery.jgrowl.css">
+
+</head>
+<body>
+
+
+				<form action="" method="get" name="form-2" id="pastform">
+					<div class="leftFromCart">
+						<div class="titleForm">Информация о вас:</div>
+						<div class="input-prepend">
+					        <span class="add-on"><i class="icon-user"></i></span>
+					        <input class="input-medium focused fname" name="name" type="text" placeholder="Ваше ФИО">
+					    </div>
+					    <div class="input-prepend">
+					        <span class="add-on"><i class="icon-book"></i></span>
+					        <input class="input-medium focused ftell" name="tell" type="text" placeholder="+7(___)___-__-__">
+					    </div>
+					    <div class="input-prepend addres_bloker">
+					        <span class="add-on"><i class="icon-envelope"></i></span>
+					        <input class="input-medium focused fmail" name="addres" type="text" placeholder="Адрес доставки">
+					    </div>
+					    <input id="submitBye" class="feedback btn btn-block btn-large btn-success" name="send" type="button" value="Оформить заказ">
+					</div>
+					<div class="rightFormCart">
+						<div class="titleForm">Способы оплаты:</div>
+							<label class="radio"><input id="robo" type="radio" value="Онлайн платежи" name="Oplata">Онлайн платежи</label>
+ 							<label class="radio"><input id="nali" type="radio" value="Наличными при получении" name="Oplata">Наличными при получении</label>
+		
+						<div class="titleForm sposobDostavki">Способы доставки:</div>
+							<label class="radio"><input class="doS" type="radio" value="Почта России" name="Dostavka">Почта России</label>
+ 							<label class="radio"><input class="doS" type="radio" value="Деловые линии" name="Dostavka">Деловые линии</label>
+ 							<label class="radio"><input class="doS" type="radio" value="ПЭК" name="Dostavka">ПЭК</label>
+					</div>
+ 					<!-- Скрытые параметры -->
+				    <div style="display: none;">
+				  		<div class="input-prepend">
+				  		    <input class="input-medium count" name="count" type="text" placeholder="" value="">
+				  		    <input class="input-medium totalPrice" name="totalPrice" type="text" placeholder="" value="">>
+				  		</div>
+				    </div>
+				</form>
+
+
+</body>
+</html>

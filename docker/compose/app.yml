@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      target: ${APP_TARGET:-develop}
+      dockerfile: ./docker/images/php/Dockerfile
+      context: ../..
+      args:
+        - IMAGE_TAG=${APP_VERSION:-0.0.1}
+    environment:
+      - PHP_DISPLAY_ERRORS=1
+      - APP_UID=1000
+      - APP_GID=1000
+      - APP_USER=devskyfly
+      - APP_GROUP=devskyfly
+    restart: unless-stopped
+    volumes:
+      - ../../app:/var/www/html
+#      - /etc/localtime:/etc/localtime:ro
+#      - /etc/timezone:/etc/timezone:row
+    ports:
+      - ${APP_PORT:-8000}:80

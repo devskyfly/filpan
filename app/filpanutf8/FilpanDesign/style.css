@@ -1,0 +1,5337 @@
+
+* {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.isolation-baner
+{
+    background-color: white !important;
+    padding: 20px;
+}
+
+.isolation-baner__content-box
+{
+    text-align: center;
+    border: 1px solid red;
+    color: #5c7385;
+    font-size: 24px;
+    padding: 10px;
+    font-family: Calibri;
+}
+
+body {
+    background-color: #e1e7ed;
+    font-family: Calibri;
+}
+
+ul.SpisokSsilokMenu > ul.SpisokSsilokMenu {
+    background-color: #415879;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+ul.SpisokSsilokMenu > ul.SpisokSsilokMenu {
+    /* background-color: #ffd700; */
+}
+
+#scroller {
+    background: rgba(65, 88, 121, 0.76) url("/filpannext/FilpanDesign/PageImages/up_to_top.png") no-repeat scroll center center / 55px auto;
+    border-radius: 100%;
+    bottom: 85px;
+    cursor: pointer;
+    display: none;
+    height: 90px;
+    position: fixed;
+    right: 15px;
+    transition: all 0.2s ease 0s;
+    width: 90px;
+    z-index: 222222222;
+}
+
+#StrokaPoiska {
+    padding: 5px;
+    width: 140px;
+}
+
+.RaskritiySpisok li {
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.StrokaVvodaKolichestvo {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #ff7d45;
+    border-image: initial;
+    border-radius: 5px 0 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #ff7d45;
+    cursor: auto;
+    display: inline-table;
+    font-size: 14px !important;
+    height: 32px;
+    outline: medium none;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: 0px;
+    width: 32px;
+}
+
+.SoputstvuyushiyTovarElement .StrokaVvodaKolichestvo
+{
+    height: 30px;
+    left:3px;
+}
+
+.SpisokSsilokMenu a.Neaktivnaya, .SpisokSsilokMenu a.Neaktivnaya:link, .SpisokSsilokMenu a.Neaktivnaya:visited {
+    color: #fff;
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.Aktivnay, .SpisokSsilokMenu a.Neaktivnaya:hover {
+    color: #ff7d45;
+    text-decoration: none;
+}
+
+.SsilkaNazvanieVTablice {
+    color: #ff7d45;
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.SsilkaNazvanieVTablice:hover {
+    color: #5c7385;
+    text-decoration: none;
+}
+
+.SsilkaNaStranicuTablici, .SsilkaNaStranicuTablici:link, .SsilkaNaStranicuTablici:visited {
+    color: #89898a;
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SuperPredlogeniye, .SuperPredlogeniye:link, .SuperPredlogeniye:visited {
+    color: gray;
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.SuperPredlogeniye:hover {
+    color: #ff7c45;
+    text-decoration: none;
+}
+
+.link_orange, .link_orange:link, .link_orange:visited {
+    color: #f60;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.SsilkaNaSoputstvushiyTovar, .SsilkaNaSoputstvushiyTovar:link, .SsilkaNaSoputstvushiyTovar:visited {
+    color: gray;
+    font-family: Calibri;
+    font-size: 14px;
+}
+
+.SsilkaTriKnopkiKontentaTovara, .SsilkaTriKnopkiKontentaTovara:link, .SsilkaTriKnopkiKontentaTovara:visited {
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.OrangevayKnopka {
+    background-color: #f60;
+    background-image: -moz-linear-gradient(center top, #f60 0%, #cf5300 100%);
+    border: 1px solid #c24f02;
+    border-radius: 12px;
+    box-shadow: 0 0 2px #bababa, 0 0 1px #ffffff inset;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    padding: 3px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 125px;
+}
+
+.callback, .or_button {
+    background-color: #ff7d45;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font: bold 15px/35px Calibri;
+    height: 35px;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 174px;
+}
+
+.callback:hover, .or_button:hover {
+    background-color: #ff5b45;
+}
+
+.CartElementTovara
+{
+    margin-bottom: 10px;
+}
+
+.CartElementTovaraText
+{
+    color: #ff7d45;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.CartElementTovara .text_cart_top_button
+{
+    font-size: 17px;
+}
+
+.CartElementTovaraPrice
+{
+    color: gray;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.callbackElementTovara {
+    background-color: #ff7d45;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font: bold 17px/36px Calibri;
+    height: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+}
+
+.callbackElementTovara:hover {
+    background-color: #ff5b45;
+}
+
+.plus, .minus {
+    background-color: #ff7d45;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    height: 26px;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all 0.2s ease 0s;
+    width: 26px;
+    z-index: 2;
+}
+
+.plus:hover, .minus:hover {
+    background-color: #ff5b45;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.OrangevayaKnopkaRezinovaya {
+    cursor: pointer;
+}
+
+.knopkaViboraElementa {
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 2px;
+}
+
+.GruppaMenu {
+    background-color: #ebebeb;
+    border-radius: 3px;
+    display: none;
+    padding: 6px;
+}
+
+.Korzina {
+    display: block;
+    float: left;
+    height: 19px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 21px;
+}
+
+.PodpisPoliya {
+    width: 200px;
+}
+
+#Logotip {
+    height: 213px;
+    width: 325px;
+}
+
+#img404 {
+    background-image: url("/pictures_for_elements/404.png");
+    height: 606px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    width: 700px;
+}
+
+.Text404 {
+    left: 300px;
+    position: relative;
+    top: 300px;
+    width: 350px;
+}
+
+.TextDiv404 {
+    padding-bottom: 20px;
+}
+
+#ZnachekKarti {
+}
+
+.KartinkaTovaraSuperPredlogeniya {
+    width: 130px;
+}
+
+.KartinkaTovaraSoputstvuyushiyTovarElement {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.ElementiContentaSoputstvuyushiyTovarElement {
+}
+
+.KartinkaTabliciTovarov {
+    width: 80px;
+}
+
+.KartinkaTabliciTovarovAdmin {
+    width: 50px;
+}
+
+.KakNasNayti {
+    color: #f60;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SsilkaNaStranicuVZagolovke {
+    color: #728da2;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.RazdelitelSsilok {
+    color: #728da2;
+}
+
+.UgolokSuperPredlogeniy {
+    margin-bottom: -25px;
+    margin-left: -10px;
+}
+
+.KartinkaTovara {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.TextOrangeviyKrupniy {
+    color: #f60;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.PoiskPoSaytu {
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.TextContenta > * {
+    color: #404040;
+    font-family: Calibri;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#SrednayaKolonkaSredniyDiv > * {
+    color: #89898a;
+    font-family: arial, helvetica, tahoma, verdana, sans-serif;
+    font-size: 12px;
+}
+
+.ZagolovokSsilkaTabliciTovarov {
+    color: #fff;
+    font-family: Calibri, Arial;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.TextZagolovokContentLevayaKolonkaSredniyDiv, .TextZagolovokSuperPredlogeniya, .ZagolovokSoputstvuyushieTovari {
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ZagolovokSoputstvuyushieTovari {
+    border-bottom: 1px solid #f2f2f2;
+    color: #666;
+    display: block;
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin-left: -12px;
+}
+
+.ZagolovokOpisanie
+{
+    font-weight: bold;
+    border-bottom: 1px solid #f2f2f2;
+    color: #666;
+    display: block;
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin-bottom:10px;
+}
+
+.TextRegimRaboti {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.Cena {
+    color: #ff7d45;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.na_zakaz
+{
+    color: #ff7d45;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.CenaSumma {
+    color: #f60;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ProstoyText {
+    color: #b9b9b9;
+    font-size: 15px;
+}
+
+.TextKartochkiTovara {
+    color: #616161;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+.TextStolbecArticul {
+    color: #89898a;
+    font-family: arial, helvetica, tahoma, verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.TextNaimenovaniyStolbcov {
+    color: #89898a;
+    font-family: arial, helvetica, tahoma, verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: none;
+}
+
+#GlavniyDIV {
+    border: 0 solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    overflow: auto;
+    position: relative;
+}
+
+#VerxniyDiv {
+}
+
+#LevayaKolonkaVerxniyDiv {
+    border: 0 solid #000;
+    float: left;
+    height: 213px;
+    position: relative;
+    width: 325px;
+}
+
+#SrednayaKolonkaVerxniyDiv {
+    background-image: url("PageImages/CentralniyFon.gif");
+    background-position: 50% 24px;
+    background-repeat: no-repeat;
+    border: 0 solid #000;
+    height: 213px;
+    margin-left: 327px;
+    margin-right: 250px;
+    position: relative;
+}
+
+#CentrirovanniyDivStranicSayta {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#PravayaKolonkaVerxniyDiv {
+    border: 0 solid #000;
+    float: right;
+    height: 213px;
+    overflow: auto;
+    position: relative;
+    width: 220px;
+}
+
+#KorzinaPravayaKolonkaVerxniyDiv {
+    height: 24px;
+}
+
+#PoiskPravayaKolonkaVerxniyDiv {
+    height: 75px;
+    padding-top: 40px;
+    vertical-align: bottom;
+}
+
+#KakNasNaytiPravayaKolonkaVerxniyDiv {
+    padding-top: 15px;
+}
+
+#SredniyDiv {
+    border: 0 solid #000;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+#LevayaKolonkaSredniyDiv {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 282px;
+}
+
+.ContentLevayaKolonkaSredniyDiv {
+    background-color: #5c7394;
+    margin-bottom: 13px;
+    padding-bottom: 10px;
+}
+
+.ZagolovokContentLevayaKolonkaSredniyDiv {
+    background-color: #ff7d45;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -1px;
+    padding-left: 25px;
+    text-align: left;
+    z-index: 2222;
+}
+
+.ContentLevayaKolonka {
+    background-color: #fff;
+    margin-bottom: 13px;
+    margin-top: -1px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.ZagolovokContentLevayaKolonka {
+    background-color: #ff7d45;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    min-height: 50px;
+    padding-left: 25px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.SpisokSsilokMenu {
+    color: #89898a;
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 10px 0;
+}
+
+.SpisokSsilokMenu li {
+    border-bottom: 1px solid #4d5e76;
+    line-height: 30px;
+    margin-bottom: -1px;
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+.SpisokSsilokMenu li:hover {
+}
+
+.SpisokSsilok {
+    color: #89898a;
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: circle;
+    margin: 0 0 10px 25px;
+    padding: 0;
+    width: 80%;
+}
+
+.SpisokSsilok li {
+    margin-top: 10px;
+}
+
+.SpisokSsilok a {
+    color: #89898a;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.raskritiyePlus {
+    background-color: transparent;
+    background-image: url("/filpannext/FilpanDesign/new_images/left_icon_menu.png");
+    background-position: 3px 4px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+    font-size: 0;
+    height: 16px;
+    left: -2px;
+    margin-left: 0;
+    margin-top: 4px;
+    padding: 3px;
+    position: relative;
+    width: 16px;
+}
+
+.raskritiyeMinus {
+    background-color: transparent;
+    background-image: url("/filpannext/FilpanDesign/new_images/up_left_icon_menu.png");
+    background-position: 3px 4px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+    font-size: 0;
+    height: 16px;
+    left: -13px;
+    margin-left: 0;
+    margin-top: 4px;
+    padding: 3px;
+    position: relative;
+    width: 16px;
+}
+
+.MiNaYandexMarkete {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 200px;
+}
+
+#SrednayaKolonkaSredniyDiv {
+    background-color: #fff;
+    margin-left: 294px;
+    overflow: auto;
+    position: relative;
+}
+
+#SrednayaKolonkaSredniyDivDlyaTovara {
+    background-color: #fff;
+    margin-left: 294px;
+    overflow: hidden;
+    position: relative;
+}
+
+#SrednayaKolonkaSredniyDivDlyaPaneliUpravleniya {
+    background-color: #fff;
+    border: 1px solid #e0e0d1;
+    border-radius: 10px;
+    margin-left: 294px;
+    margin-right: 0;
+    overflow: auto;
+    padding: 5px;
+    position: relative;
+}
+
+.LevoeObsheeOknoKartochkaTovara {
+}
+
+.PravoeOknoOplataDostavkaGarantii {
+    display: none;
+    float: right;
+    height: 214px;
+    margin-left: 15px;
+    margin-top: 30px;
+    position: relative;
+    width: 70px;
+}
+
+.ModulSredneyKolonki {
+    display: table;
+    padding: 25px 35px 0;
+}
+
+.ContentElementiLevoeObsheeOknoKartochkaTovara {
+    padding-left: 35px;
+    width: 100%;
+    padding-bottom: 35px;
+    margin-top: 10px;
+}
+
+.ContentTovara {
+    border-radius: 5px;
+    height: 139px;
+    margin-top: 26px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+}
+
+#PravayaKolonkaSredniyDiv {
+    float: right;
+    margin-left: 12px;
+    overflow: auto;
+    position: relative;
+    width: 200px;
+}
+
+.VneshniyVidTovara {
+    background-color: rgba(229, 229, 229, 1);
+    border-radius: 3px;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    overflow: auto;
+    padding: 6px 11px;
+    position: relative;
+    margin-bottom: 3px !important;
+}
+
+.DopolnitelnoeOpisanie {
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 0;
+    text-align: justify;
+}
+
+.SoputstvuyushieTovariIUslugi {
+    margin-right: 0;
+    overflow: hidden;
+    padding-top:30px;
+}
+
+.SoputstvuyushieTovari, .ObshiySpisokSoputstvuushixTovarov {
+    display: block;
+    margin-bottom: 10px;
+    min-width: 0;
+    overflow: hidden;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.SoputstvuyushiyTovarElement {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    float: left;
+    height: 272px;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    margin-top: 0;
+    padding: 14px 5px 5px;
+    width: 170px;
+}
+
+table.TablicaTovarov {
+    position: relative;
+    width: 100%;
+}
+
+table.TablicaTovarov caption {
+    background-color: #ff7d45;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+table.TablicaTovarov, table.TablicaTovarov th, table.TablicaTovarov td {
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+}
+
+.StolbecArticul {
+    padding: 10px;
+    width: 70px;
+}
+
+.StolbecPoridkoviyNomer {
+    padding: 10px;
+    width: 30px;
+}
+
+.StolbecIzobrageniye {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.StolbecNazvaniye {
+    padding: 5px;
+    width: auto;
+}
+
+.StolbecCena {
+    padding: 10px;
+    width: 110px;
+}
+
+.StolbecArticulAdmin {
+    padding: 10px;
+    width: 50px;
+}
+
+.StolbecPoridkoviyNomerAdmin {
+    padding: 10px;
+    width: 30px;
+}
+
+.StolbecIzobrageniyeAdmin {
+    padding: 10px;
+    width: 60px;
+}
+
+.StolbecNazvaniyeAdmin {
+    padding: 5px;
+    width: auto;
+}
+
+.StolbecCenaAdmin {
+    padding: 10px;
+    width: 50px;
+}
+
+.StolbecCheckBoxAdmin {
+    padding: 10px;
+    width: 30px;
+}
+
+.ModulSsilokNaStraniciTablici {
+    overflow: auto;
+    padding: 25px;
+}
+
+.ElementSsilkaStraniciTablici {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #5c7394;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+}
+
+.TekushiyElementSsilkaStraniciTablici {
+    background-color: #ff7d45;
+    border-radius: 5px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+}
+
+.TekushiyElementSsilkaStraniciTablici .SsilkaNaStranicuTablici {
+    color: #fff;
+}
+
+.ElementSsilkaStraniciTablici:hover {
+    background-color: #5c7394;
+}
+
+.ElementSsilkaStraniciTablici:hover .SsilkaNaStranicuTablici {
+    color: #fff;
+}
+
+.ZagolovokSuperPredlogeniya {
+    background-color: #ff7d45;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.ContentSuperPredlogeniya:hover {
+    border-bottom: 1px solid #666;
+}
+
+.ContentSuperPredlogeniya {
+    background-color: #fff;
+    border-bottom: 1px solid #ff7d45;
+    padding: 10px 10px 20px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 180px;
+}
+
+.DivContentSuperPredlogeniye {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.TextoviyModulSnizu, .TextoviyModulSverhu {
+    background-color: #fff;
+    border-radius: 0;
+    margin: 0;
+    overflow: auto;
+    padding: 35px;
+}
+
+#NigniyDiv {
+    background-color: #ccc;
+    border: 0 solid #000;
+    bottom: 0;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+}
+
+#FonZatemneniyaKorzini {
+    background-color: rgba(0, 0, 0, 0.33);
+    display: none;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#Korzina {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 55px rgba(0, 0, 0, 0.31);
+    display: none;
+    left: 50%;
+    margin-left: -425px;
+    margin-top: 60px;
+    padding: 25px;
+    position: absolute;
+    top: 5%;
+    width: 800px;
+    z-index: 100;
+}
+
+.DivVsegoKOplate {
+    margin-bottom: 20px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.TablicaKorzina {
+    width: 100%;
+}
+
+.TablicaKorzina th {
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+.TablicaKorzina, .TablicaKorzina td {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td.TablicaKorzinaBezCentrovki {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px;
+}
+
+.StolbecKnopok {
+    width: 150px;
+}
+
+.tablicaBlankaZakaza {
+    width: 95%;
+}
+
+.tablicaBlankaZakaza, .tablicaBlankaZakaza td, .tablicaBlankaZakaza caption {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.blankZakazaTable input {
+    border: 1px solid #ff7d45;
+    border-radius: 3px;
+    color: #4f4f4f;
+    font-size: 17px;
+    margin: 3px;
+    padding: 5px 11px;
+}
+
+.blankZakazaTable select {
+    border: 1px solid #ff7d45;
+    border-radius: 3px;
+    color: #4f4f4f;
+    font-size: 14px;
+    margin-left: 3px;
+    padding: 5px 11px;
+    width: 240px;
+}
+
+.BlankZakazaDivText {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 10px 20px;
+    overflow: auto;
+    padding: 16px;
+}
+
+#ZakazSamovivoz {
+    display: none;
+}
+
+#ZakazViezdBeznal {
+    display: none;
+}
+
+#ZakazSamovivozBeznal {
+    display: none;
+}
+
+.ORGANIZACIYA {
+    display: none;
+}
+
+.BEZNAL {
+    display: none;
+}
+
+.SsilkaPerehodNaSayt, .SsilkaPerehodNaSayt:link, .SsilkaPerehodNaSayt:visited {
+    color: #f60;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.knopka {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.blockElementovRabochegoOkna {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin: 10px 20px 20px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.poleVvodaDannixElementa {
+    border: 1px solid #d6d6d6;
+    width: 300px;
+}
+
+.poleVvodaDannixStrokiTablici {
+    border: 1px solid #d6d6d6;
+    width: 40px;
+}
+
+.poleVvodaDannixChechboxStrokiTablici {
+    border: 1px solid #d6d6d6;
+    width: 20px;
+}
+
+table.tablicaSsilok {
+    position: relative;
+    width: 100%;
+}
+
+table.tablicaSsilok caption {
+    background-color: #efefef;
+    padding: 5px;
+    text-align: left;
+}
+
+table.tablicaSsilok, table.tablicaSsilok th, table.tablicaSsilok td {
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+}
+
+.redaktiruemayaSsilkaVTablice {
+    border: 1px solid #d6d6d6;
+    width: 80%;
+}
+
+.content-box-auto-width-grey_100 {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    color: #89898a;
+    display: none;
+    font-size: 15px;
+    margin: 10px auto;
+    overflow-y: auto;
+    width: 99%;
+}
+
+.content_box_title-auto-width-grey {
+    color: #5c7385;
+    display: block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    height: 25px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 35px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.content_box_title-auto-width-grey-100 {
+    background-color: #d6d6d6;
+    color: #fff;
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.content-box-auto-width-grey {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #89898a;
+    font-size: 15px;
+}
+
+.content_box_title-auto-width {
+    background-color: #5c7385;
+    color: #fff;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    height: 45px;
+    line-height: 43px;
+    margin-bottom: 34px;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-left: 30px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.content-box-auto-width {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.al_center_orange {
+    color: #f60;
+    display: block;
+    text-align: center;
+}
+
+.streetDiv {
+    color: #f60;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+li.left_imenu:hover {
+    background-color: #fcfcfc;
+}
+
+li.left_imenu {
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 25px;
+    width: 260px;
+}
+
+li.left_imenu:hover a.Neaktivnaya {
+}
+
+a.Neaktivnaya:hover {
+    color: #ff7d45;
+    text-decoration: underline;
+}
+
+.raskritiyePlus {
+    background-image: url("/filpannext/FilpanDesign/new_images/left_icon_menu.png");
+}
+
+.raskritiyePlus:hover {
+    background-image: url("/filpannext/FilpanDesign/new_images/left_icon_menu_h.png");
+}
+
+ul.SpisokSsilokMenu li.left_imenu ul.SpisokSsilokMenu {
+    padding-left: 20px;
+}
+
+.SpisokSsilok a:hover {
+    color: #ff7d45;
+}
+
+.ContentLevayaKolonka2222 {
+    display: none;
+}
+
+.raskritiyeMinus:hover {
+    background-image: url("/filpannext/FilpanDesign/new_images/up_left_icon_menu_h.png");
+}
+
+img.UgolokSuperPredlogeniy {
+    display: none;
+}
+
+span.Cena_right_block {
+    color: #666;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top_right_block {
+    background-color: #fff;
+    margin-bottom: 13px;
+    padding: 1px 13px 13px;
+}
+
+.new_header {
+    background-color: #5c7385;
+    height: 230px;
+    margin-top: 11px;
+    overflow: hidden;
+}
+
+.new_top_menu {
+    background-color: #fff;
+    height: 63px;
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+
+.right_contact_block {
+    background-color: #5c7394;
+    display: inline-block;
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 200px;
+}
+
+.left_logo_block {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.center_slider {
+    background-color: #f2f2f2;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: calc(100% - 393px);
+}
+
+li.menu_top_level_1 {
+    border-right: 1px solid #f2f2f2;
+    display: inline-block;
+    vertical-align: top;
+    font-family: Calibri;
+    font-size: 17px;
+    position: relative;
+}
+
+li.menu_top_level_1.search_form {
+    width: calc(100% - 762px);
+    border-right: none;
+}
+
+li.menu_top_level_1 a {
+    height: 63px;
+    line-height: 63px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: gray;
+    text-decoration: none;
+}
+
+li.menu_top_level_1:not(.search_form):hover {
+    background-color: #5c7394;
+}
+
+li.menu_top_level_1:hover a {
+    color: #ffffff;
+}
+
+img.home_icon {
+    position: relative;
+    display: block;
+    top: 18px;
+}
+
+input.OrangevayaKnopkaRezinovaya {
+    background-color: #ff7d45;
+    border-radius: 3px;
+    color: #fff;
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: bold;
+    height: 39px;
+    margin: 6px;
+    min-width: 105px;
+    outline: medium none;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 0.2s ease 0s;
+}
+
+input.OrangevayaKnopkaRezinovaya:hover {
+    background-color: #ff5b45;
+    color: #fff;
+    transition: all 0.2s ease 0s;
+}
+
+input#StrokaPoiska {
+    border: 1px solid #bac8d3;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 35px;
+    margin-left: 12px;
+    outline: medium none;
+    padding-left: 15px;
+    width: calc(100% - 160px);
+}
+
+.top_cart_right {
+    background-color: #fff;
+    margin-bottom: 13px;
+    padding: 13px;
+}
+
+.blcok_text_Con {
+    color: #fff;
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 17px;
+    position: relative;
+    text-decoration: none;
+    top: -4px;
+}
+
+.blcok_text_Con:hover {
+    color: #b5c0c8;
+}
+
+.block_ico_con {
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    width: 24px;
+}
+
+.block_cont {
+    margin-top: 4px;
+}
+
+img.con_tell {
+    margin-left: -2px;
+}
+
+.right_title_block {
+    color: #d1d8dd;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.date_time_work {
+    color: #b5c0c8;
+    font-size: 15px;
+    margin-top: 3px;
+    padding-left: 20px;
+}
+
+.data_work_3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-left: -1px;
+    margin-top: -4px;
+}
+
+.button_goto_cart {
+    background-color: #ff7d45;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 15px/35px Calibri;
+    height: 35px;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 174px;
+}
+
+.button_goto_cart:hover {
+    background-color: #ff5b45;
+}
+
+img.right_block {
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: -5px;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+span.text_cart_top_button {
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.top_count_prod_cart {
+    color: #ff7d45;
+    font-family: Calibri;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top_price_cart {
+    color: gray;
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.button_add_to_cart {
+    background-color: #ff7d45;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-table;
+    font: bold 15px/34px Calibri;
+    height: 34px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 125px;
+    line-height: 34px;
+    float: right;
+    right: 3px;
+}
+
+.DivContentSoputstvuyushiyTovarElement .button_add_to_cart
+{
+    height: 32px;
+    line-height: 32px;
+}
+
+.DivContentSuperPredlogeniye .button_add_to_cart
+{
+      right: 11px;
+}
+
+.DivContentSuperPredlogeniye .button_add_to_cart
+{
+      right: 11px;
+}
+
+img.add_to_cart_icon {
+    position: relative;
+    top: 4px;
+}
+
+.button_add_to_cart:hover {
+    background-color: #ff5b45;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    border-top: 8px solid #ff7d45;
+    padding-bottom: 130px;
+    width: 100%;
+}
+
+.carousel {
+    background-color: #fff;
+    width: 100%;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-items {
+    position: relative;
+    width: 10000px;
+}
+
+.carousel-block {
+    float: left;
+}
+
+.carousel-block img {
+    display: block;
+    height: 229px;
+}
+
+.carousel-button-left a, .carousel-button-right a {
+    cursor: pointer;
+    height: 230px;
+    text-decoration: none;
+    top: 0;
+    width: 60px;
+}
+
+.carousel-button-left a:hover, .carousel-button-right a:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease 0s;
+}
+
+.carousel-button-left a {
+    background-image: url("/filpannext/FilpanDesign/PageImages/left_arrow.png");
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-button-right a {
+    background-image: url("/filpannext/FilpanDesign/PageImages/right_arrow.png");
+    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.shadow {
+}
+
+.center_footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    min-width: 1024px;
+    position: relative;
+}
+
+a.footer_hrefss {
+    color: #ff7d45;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-right: 47px;
+    position: relative;
+    text-decoration: underline;
+}
+
+.center_foot_href {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+
+a.footer_hrefss:hover {
+    color: #fff;
+}
+
+.block_ico_con_2 {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+}
+
+.blcok_text_Con_2 {
+    color: #999;
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    top: -4px;
+}
+
+.blocker_header {
+    color: #e6e6e6;
+    font-size: 18px;
+}
+
+.bloker_content {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.bloker_footer {
+    display: inline-table;
+    margin-right: 30px;
+    margin-top: 20px;
+    position: relative;
+    width: 220px;
+}
+
+.blocks_footer {
+}
+
+.fixed_block_top {
+    background-color: #fff;
+    border-bottom: 2px solid #f4f4f4;
+    box-shadow: 0 0 23px rgba(119, 119, 119, 0.48);
+    display: none;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 223;
+}
+
+.top_count_prod_cart_2 {
+    color: #ff7d45;
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.center_top_blck_fix {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    min-width: 1024px;
+    position: relative;
+}
+
+.left_cen_top_block {
+    display: inline-block;
+    float: right;
+    padding-left: 20px;
+    position: relative;
+}
+
+.center_cen_top_fix {
+    display: inline-block;
+    position: relative;
+}
+
+.right_cen_top_block {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+    position: relative;
+    top: 6px;
+}
+
+img.top_tell_fix_icon {
+    display: inline-block;
+    position: relative;
+}
+
+.span_top_fix {
+    color: gray;
+    display: inline-block;
+    font-size: 21px;
+    margin-left: 8px;
+    position: relative;
+    top: -4px;
+}
+
+.tell_block_top_fix {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 6px;
+}
+
+div#scroll_to_top {
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 16%;
+}
+
+div#scroll_to_top:hover {
+    background-color: #fafafa;
+}
+
+a.top_fix_hrefs {
+    color: #ff7d45;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+a.top_fix_hrefs:hover {
+    text-decoration: none;
+}
+
+img.up_to_top_icon {
+    margin-top: 4px;
+    height: 45px;
+}
+
+.filter_catalog {
+    display: inline-block;
+    position: relative;
+}
+
+.param_block_filter_1 {
+    display: inline-block;
+    position: relative;
+}
+
+.param_block_filter_2 {
+    display: inline-block;
+    position: relative;
+}
+
+.param_block_filter_3 {
+    display: inline-block;
+    position: relative;
+}
+
+.button_filter {
+    display: inline-block;
+    position: relative;
+}
+
+.header_catalog {
+    background-color: #ff7d45;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.filter_catalog {
+    background-color: #fafafa;
+    line-height: 40px;
+    min-height: 40px;
+    width: 100%;
+}
+
+.caption_filter {
+    background-color: #ff7d45;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: -3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+select.selector_filter {
+    border: 1px solid #ff7d45;
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+    height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.filter_catalog {
+    line-height: 45px;
+    min-height: 45px;
+}
+
+.button_filter {
+    background-color: #5c7385;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    height: 24px;
+    line-height: 25px;
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button_filter:hover {
+    background-color: #ff7d45;
+}
+
+.buton_buy_catalog {
+    background-color: #ff7d45;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    line-height: 32px;
+    margin-left: -3px;
+    padding-left: 18px;
+    padding-right: 20px;
+    position: relative;
+    top: 0;
+    float: right;
+    margin-right: 18px;
+}
+
+img.catalog_buy_icon {
+    position: relative;
+    top: 4px;
+}
+
+.buton_buy_catalog:hover {
+    background-color: #ff5b45;
+}
+
+span.Cena.new_price_catalog {
+    color: #666;
+    font-family: Calibri;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+tr.row_hower_table:hover {
+    background-color: #fafafa;
+    margin-bottom: 0;
+    margin-top: -1px;
+    position: relative;
+}
+
+.carousel-button-left_new a, .carousel-button-right_new a {
+    cursor: pointer;
+    height: 230px;
+    text-decoration: none;
+    top: 0;
+    width: 60px;
+}
+
+.carousel-button-left_new a:hover, .carousel-button-right_new a:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease 0s;
+}
+
+.carousel-button-left_new a {
+    background-image: url("/filpannext/FilpanDesign/PageImages/left_arrow.png");
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-button-right_new a {
+    background-image: url("/filpannext/FilpanDesign/PageImages/right_arrow.png");
+    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+div#left_sop_tovar {
+    display: inline-block;
+    position: relative;
+    top: -284px;
+}
+
+div#right_sop_tovar {
+    float: right;
+    margin-top: 25px;
+    position: relative;
+    right: -35px;
+    top: 20px;
+    z-index: 27;
+}
+
+img.KartinkaTovaraSoputstvuyushiyTovarElement {
+    height: 106px;
+}
+
+img.add_to_cart_icon_sop_2 {
+    display: inline-block;
+    height: 19px;
+    position: relative;
+    top: 4px;
+}
+
+span.add_to_cart_text_button_sop_2 {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+div#goldcolor {
+    background-color: #ffbf3b;
+}
+
+div#goldcolor:hover {
+    background-color: #ff7d45;
+}
+
+input#val_gold {
+    border-color: #ffbf3b;
+    color: #ffbf3b;
+}
+
+div#bottom_sop_tovar {
+    margin-left: 7px;
+    position: relative;
+    top: 6px;
+}
+
+div#price_blocker {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+}
+
+.SoputstvuyushiyTovarElement:hover {
+    border-color: #ff7d45;
+}
+
+.SoputstvuyushiyTovarElement:hover div#goldcolor {
+    background-color: #ff7d45;
+}
+
+.SoputstvuyushiyTovarElement:hover input#val_gold {
+    border-color: #ff7d45;
+    color: #ff7d45;
+}
+
+div#left_sop_tovar {
+    left: -27px;
+    margin-top: 0;
+    top: 20px;
+    z-index: 22;
+}
+
+span#new_sop_price {
+    font-size: 16px;
+}
+
+a#res_image_left {
+    background-image: url("/filpannext/FilpanDesign/PageImages/left_sop.png");
+    background-position: 0 104px;
+    background-repeat: no-repeat;
+    top: 17px;
+}
+
+a#res_image_right {
+    background-image: url("/filpannext/FilpanDesign/PageImages/right_sop.png");
+    background-position: 34px 110px;
+    background-repeat: no-repeat;
+    top: -2px;
+}
+
+.block_sop_tovar_informer {
+    height: 215px;
+}
+
+.header_cart_prod {
+    color: #666;
+    display: block;
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1.gift_title {
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+a.path_href {
+    color: #f60;
+    font-family: Calibri;
+    font-size: 16px;
+}
+
+.pathhrefs {
+    color: #f60;
+    margin-bottom: 30px;
+    margin-top: -14px;
+    text-align: center;
+}
+
+a.path_href.gray_acitve {
+    color: #666;
+    text-decoration: none;
+}
+
+a.path_href:hover {
+    text-decoration: none;
+}
+
+h1.name_tovar {
+    color: #5c7394;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 150px;
+    word-break: break-all;
+}
+
+h1.big_orange {
+    font-size: 14px;
+}
+
+.image_block {
+    border: 1px solid rgba(92, 115, 148, 0.35);
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    min-width: 100%;
+    position: relative;
+    width: 100%;
+    padding: 25px 15px 25px 76px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div#kod_tovara {
+    background-color: #ffbf3b;
+    border-radius: 2px;
+    color: #333;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    min-width: 140px;
+    padding: 1px 15px;
+    position: relative;
+}
+
+.description_block {
+    font-size: 14px;
+}
+
+div#price_block {
+    margin-top: 10px;
+    text-align: left;
+}
+
+div#block_buy_prod {
+    display: inline-block;
+    position: relative;
+}
+
+.button_add_to_cart_big {
+    background-color: #339807;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 16px/0px Calibri;
+    height: 47px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 14px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    right:1px;
+}
+
+img.add_to_cart_icon_big {
+    height: 26px;
+    margin-right: 2px;
+    position: relative;
+    top: 9px;
+}
+
+span.add_to_cart_text_button_sop_2_big {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+.StrokaVvodaKolichestvo_big {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #339807;
+    border-image: initial;
+    border-radius: 3px 0 0 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #339807;
+    cursor: auto;
+    font-size: 21px !important;
+    height: 45px;
+    line-height: 47px;
+    outline: medium none;
+    padding: 0 5px;
+    text-align: center;
+    width: 25px;
+}
+
+.button_add_to_cart_big:hover {
+    background-color: #ff7d45;
+}
+
+a.SsilkaNazvanieVTablice.href_colorize {
+    color: #5c7394;
+}
+
+a.SsilkaNazvanieVTablice.href_colorize:hover {
+    color: #ff7d45;
+}
+
+.cena_count {
+    color: #5c7385;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 4px;
+    position: relative;
+    top: 0;
+}
+
+.cena_title {
+    color: gray;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.butons_params {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #E7EAED;
+    border-color: #C6CEDA #C6CEDA #C6CEDA;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: -4px;
+    padding: 0 25px;
+    position: relative;
+    margin-right: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.block_param_and_rew {
+    float: none;
+    margin: 10px 22px -10px 2px;
+    width: 100%;
+    border-top: 1px solid #C6CEDA;
+    margin-left: -35px;
+    margin-top: -2px;
+}
+
+.butons_params.active_button_param {
+    background-color: #fff;
+    border-bottom: 2px solid white;
+    top: 0px;
+}
+
+.block_param {
+    padding: 30px;
+}
+
+.ContentTovara:hover {
+    transition: all 0.3s ease 0s;
+}
+
+.param_line {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 1px;
+    padding: 6px 10px;
+}
+
+span.name_param {
+    color: #898989;
+    display: inline-block;
+    width: 61%;
+}
+
+span.param_informer {
+    color: #666;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.param_line.white_line {
+    background-color: #fff;
+}
+
+.dostavka_i_oplata {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.left_block_informer {
+    border-top: 2px dotted #e7eaef;
+    display: inline-block;
+    margin-top: 20px;
+    min-width: 100%;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.info_information {
+    border-bottom: 1px solid #f2f2f2;
+    color: #5c7385;
+    display: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.bloker_info_timework {
+    background-color: #fcfcfc;
+    border: 1px solid #f2f2f2;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.info_time_title {
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: -1px;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition: all 0.2s ease 0s;
+}
+
+.info_time_title:hover {
+    background-color: #f5f5f5;
+}
+
+span.info_time_text_title {
+    color: #5c7385;
+    font-size: 17px;
+    position: relative;
+    top: 5px;
+}
+
+img.info_time_icon_1 {
+    margin-right: 6px;
+    position: relative;
+    top: 10px;
+}
+
+img.info_time_icon_2 {
+    margin-right: 6px;
+    position: relative;
+    top: 6px;
+}
+
+img.info_time_icon_3 {
+    margin-right: 6px;
+    position: relative;
+    top: 7px;
+}
+
+img.info_time_icon_4 {
+    margin-right: 6px;
+    position: relative;
+    top: 14px;
+}
+
+.KolichestvoPokupokVTablice {
+    color: #ff7d45;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.ElementSsilkaStraniciTabliciPokazatEscheDiv {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ElementSsilkaStraniciTabliciPokazatEsche {
+    background-color: #ff7d45;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    width: 200px;
+    cursor: pointer;
+}
+
+.ElementSsilkaStraniciTabliciPokazatEsche:hover {
+    background-color: #ff5b45;
+}
+
+.ElementSsilkaStraniciTabliciPokazatEsche.not_active {
+    background-color: #f5f5f5;
+    color: #89898a;
+    cursor: inherit;
+}
+
+.HitprodazhVTablice {
+    color: #FF0033;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.video_bloker {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    z-index: 1;
+    width: auto;
+}
+
+.video_bloker img {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+
+.YandexMarketStatus {
+    color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: red;
+    position: relative;
+}
+
+.desc_pop_up {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.24);
+    color: gray;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 41px 35px;
+    position: absolute;
+    right: 35px;
+    width: 43%;
+    z-index: 99;
+}
+
+#FonZatemneniyaKorzini2 {
+    background-color: rgba(0, 0, 0, 0.13);
+    display: none;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+div#show_all_desc {
+    background-color: #5c7385;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 9px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 48.5%;
+}
+
+div#show_all_desc:hover {
+    background-color: #ff7d45;
+    transition: all 0.2s ease 0s;
+}
+
+.main_block {
+    background-color: #fff;
+    margin: 0 auto;
+    min-height: 500px;
+    width: 1090px;
+}
+
+.text_block_up_1 {
+    color: #ccc;
+    font-size: 28px;
+    margin-top: 21px;
+}
+
+.text_block_up_2 {
+    color: #333;
+    font-size: 35px;
+    margin-top: -5px;
+    text-transform: uppercase;
+}
+
+.text_block_up_3 {
+    color: #ccc;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: -9px;
+}
+
+.text_block_up_4 {
+    color: #ff7d45;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.text_block_up_5 {
+    color: #5c7385;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: -8px;
+    text-transform: uppercase;
+}
+
+.block_href_group {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    display: inline-table;
+    height: 305px;
+    margin-bottom: 25px;
+    margin-right: 5px;
+    padding-top: 25px;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    width: 315px;
+}
+
+a.g_href {
+    color: #5c7385;
+    display: block;
+    font-size: 17px;
+}
+
+.g_title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+a.g_href:hover {
+    color: #ff7d45;
+}
+
+.tite_blcok_color {
+    background-color: #ff7d45;
+    color: #fff;
+    display: block;
+    font-size: 21px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.title_param {
+    color: #333;
+    font-size: 19px;
+}
+
+.description_param {
+    color: #999;
+    font-size: 16px;
+}
+
+.block_param {
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    width: 280px;
+}
+
+.block_param:hover {
+    /* opacity: 0.6; */
+    transition: all 0.2s ease 0s;
+}
+
+.blocks_param {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.block_href_group:hover {
+    box-shadow: 0 3px 10px #e8e8e8;
+    transition: all 0.2s ease 0s;
+}
+
+.tite_blcok_color_2 {
+    background-color: #5c7394;
+    color: #fff;
+    display: block;
+    font-size: 21px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.etap_block {
+    display: inline-table;
+    position: relative;
+    width: 160px;
+}
+
+img.arrow_etap {
+    display: inline-table;
+    position: relative;
+    top: -36px;
+}
+
+.etaps_block {
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.etap_title {
+    color: #666;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.center_button_main {
+    background-color: #ff7d45;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 25px;
+    margin-top: -23px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    width: 260px;
+}
+
+a.sennderrr {
+    text-decoration: none;
+}
+
+.center_button_main:hover {
+    background-color: #5c7385;
+    transition: all 0.2s ease 0s;
+}
+
+img.proiz_logo {
+    border: 1px solid #e2e2e2;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    width: 165px;
+}
+
+img.proiz_logo:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease 0s;
+}
+
+.block_pro {
+    padding: 19px 0 10px 38px;
+}
+
+.hrefs_img {
+    text-decoration: none;
+}
+
+.main_block_indexovaya {
+    margin-left: -25px;
+    margin-right: 0;
+}
+
+.text_block {
+    padding-bottom: 35px;
+}
+
+.text_block p {
+    color: #616161;
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 9px;
+    margin-top: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: justify;
+}
+
+.text_block h1 {
+    color: #5c7394;
+    font-size: 29px;
+    margin-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.text_block h2 {
+    color: #ff7d45;
+    font-size: 22px;
+    margin-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.text_block li {
+    color: #949494;
+    font-style: italic;
+    margin-left: 55px;
+    margin-top: 10px;
+    padding-left: 1px;
+    padding-right: 40px;
+}
+
+a.more_link_cont_prod {
+    border: 1px solid #5c7385;
+    border-radius: 20px;
+    color: #5c7385;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    width: 115px;
+}
+
+a.more_link_cont_prod:hover {
+    background-color: #5c7385;
+    color: #fff;
+    transition: all 0.2s ease 0s;
+}
+
+.menu_text_1 {
+    padding-top: 13px;
+    position: relative;
+    line-height: 20px;
+    text-align: center;
+}
+
+.menu_text_2 {
+    color: #ccc;
+    font-size: 15px;
+    position: relative;
+    line-height: 20px;
+    text-align: center;
+}
+
+.next_bye {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 55px rgba(0, 0, 0, 0.31);
+    color: #848484;
+    display: none;
+    font-size: 18px;
+    left: 50%;
+    margin-left: -300px;
+    padding: 30px;
+    position: fixed;
+    top: 120px;
+    width: 520px;
+    z-index: 99;
+}
+
+.other_content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 55px rgba(0, 0, 0, 0.31);
+    display: none;
+    padding: 30px;
+    position: fixed;
+    top: 120px;
+    margin-left: -386px;
+    left: 50%;
+    z-index: 99;
+    text-align: center;
+}
+
+.zshader {
+    background-color: rgba(0, 0, 0, 0.33);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 98;
+}
+
+span.text_cart_top_button.in_inbox {
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.button_goto_cart.in_inbox {
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 27px;
+    width: 203px;
+}
+
+img.right_block.in_inbox {
+    top: 2px;
+}
+
+.nextx {
+    background-color: #ededed;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-table;
+    font-size: 19px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 220px;
+}
+
+.nextx:hover {
+    background-color: #f7f7f7;
+    transition: all 0.2s ease 0s;
+}
+
+._foot_text_addres_1 {
+    color: #999;
+}
+
+div.block_madein a.footer_hrefss {
+    margin-bottom: 0;
+}
+
+.block_madein {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 86px;
+}
+
+#main_block {
+    background-color: #fff;
+    margin: 150px auto 0;
+    min-height: 400px;
+    padding: 35px 35px 0;
+    width: 1094px;
+}
+
+.mcont_block {
+    display: block;
+    margin-left: -35px;
+    margin-right: -35px;
+    position: relative;
+}
+
+.con_post_haeder {
+    background-color: #5c7394;
+    color: #fff;
+    display: block;
+    font-family: Calibri;
+    font-size: 21px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -35px;
+    padding-left: 35px;
+    position: relative;
+    text-align: left;
+}
+
+.cont_inormation {
+    color: #666;
+    font-size: 16px;
+    padding: 0;
+}
+
+.cot_posto_blocker {
+    color: #5c7394;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+img.icon_cont_image {
+    display: inline-block;
+    float: left;
+    height: 55px;
+    margin-left: 35px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.conteiner_block {
+    font-family: Calibri;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+img.photo_cont_panoram {
+    width: 100%;
+}
+
+.tex_cont_seo {
+    padding: 36px 55px;
+}
+
+.yandex_map_block_kont {
+    margin-bottom: -20px;
+    margin-top: 35px;
+}
+
+.conteiner_block2 {
+    font-family: Calibri;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+img.icon_dos_3 {
+    margin-bottom: 15px;
+    margin-top: 65px;
+}
+
+.cont_inormation2 {
+    color: #4d4d4d;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.gray_line_bot {
+    background-color: #e5e5e5;
+    display: inline-block;
+    height: 1px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    position: relative;
+    width: 100%;
+}
+
+img.icon_dos_4 {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.cont_inormation3 {
+    color: #4d4d4d;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.conteiner_block2 {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+}
+
+.cont_inormation4 {
+    color: #4d4d4d;
+    padding-left: 87px;
+    text-align: left;
+}
+
+.cot_posto_blocker5 {
+    color: #5c7385;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+}
+
+img.icon_dos_8 {
+    margin-bottom: 15px;
+    margin-top: 13px;
+}
+
+img.photo_cont_panoram_1 {
+    width: 33%;
+}
+
+#jquery-overlay {
+    height: 500px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+}
+
+#jquery-lightbox {
+    left: 0;
+    line-height: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#jquery-lightbox a img {
+    border: medium none;
+}
+
+#lightbox-container-image-box {
+    background-color: #fff;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+}
+
+#lightbox-container-image {
+    padding: 10px;
+}
+
+#lightbox-loading {
+    height: 25%;
+    left: 0;
+    line-height: 0;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+
+#lightbox-nav {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#lightbox-container-image-box > #lightbox-nav {
+    left: 0;
+}
+
+#lightbox-nav a {
+    outline: medium none;
+}
+
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+    display: block;
+    height: 100%;
+    width: 49%;
+}
+
+#lightbox-nav-btnPrev {
+    float: left;
+    left: 0;
+}
+
+#lightbox-nav-btnNext {
+    float: right;
+    right: 0;
+}
+
+#lightbox-container-image-data-box {
+    background-color: #fff;
+    font: 10px/1.4em Verdana, Helvetica, sans-serif;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 10px;
+    width: 100%;
+}
+
+#lightbox-container-image-data {
+    color: #666;
+    padding: 0 10px;
+}
+
+#lightbox-container-image-data #lightbox-image-details {
+    float: left;
+    text-align: left;
+    width: 70%;
+}
+
+#lightbox-image-details-caption {
+    font-weight: bold;
+}
+
+#lightbox-image-details-currentNumber {
+    clear: left;
+    display: block;
+    padding-bottom: 1em;
+}
+
+#lightbox-secNav-btnClose {
+    float: right;
+    padding-bottom: 0.7em;
+    width: 66px;
+}
+
+ul.clearfix li {
+    display: inline;
+    position: relative;
+}
+
+img.proizvod {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0.7;
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+
+img.proizvod:hover {
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.29);
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+
+.active_zpr {
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.29);
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+
+.itxt {
+    display: none;
+}
+
+img.oplata_bloker {
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    width: 29%;
+}
+
+img.oplata_bloker_f {
+    border-radius: 5px;
+    display: inline-block;
+    height: 45px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.mcont_block a {
+    text-decoration: none;
+}
+
+.mob_menu {
+    display: none;
+}
+
+.hider_fixed_block_top {
+    display: block;
+}
+
+.block_pro a {
+    text-decoration: none;
+}
+
+.DopolnitelnoeOpisanie tr {
+    background-color: #f1f3f6;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    font-size: 12px;
+}
+
+.DopolnitelnoeOpisanie td {
+    padding-left: 13px;
+}
+
+.bloker_katr {
+    border: 1px solid #5c7394;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 151px;
+    margin-left: 3px;
+    overflow: hidden;
+    padding: 15px;
+    text-decoration: none;
+    width: 110px;
+    z-index: 1;
+}
+
+.bloker_katr img {
+    width: 100%;
+}
+
+a.href_kareij_main_bloker {
+    text-decoration: none;
+}
+
+.TextoviyModulSverhu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bloker_kart_name {
+    text-decoration: none;
+}
+
+.bloker_kart_name {
+    background-color: #5c7394;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 37px;
+    line-height: 14px;
+    margin-left: -16px;
+    margin-top: 12px;
+    padding-top: 7px;
+    position: absolute;
+    text-align: center;
+    width: 142px;
+}
+
+img#k4 {
+    height: 110px;
+    width: auto;
+}
+
+img#k5 {
+    height: 110px;
+    width: auto;
+}
+
+img#k6 {
+    margin-bottom: 18px;
+    margin-top: 16px;
+}
+
+img#k7 {
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+
+.bloker_katr:hover {
+    border-color: #ff7d45;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.53);
+    transition: all 0.3s ease 0s;
+    z-index: 222;
+}
+
+.bloker_katr:hover .bloker_kart_name {
+    background-color: #ff7d45;
+}
+
+.bloker_katr:hover img.imager_kart {
+    transform: scale(1.07);
+    transition: all 0.6s ease 0s;
+}
+
+img.imager_kart {
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+}
+
+a.Contacts_fixed {
+    background-color: #339807;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    color: white;
+    display: none;
+    font-size: 21px;
+    font-weight: bold;
+    height: 50px;
+    left: 50%;
+    line-height: 50px;
+    margin-left: -110px;
+    position: fixed;
+    text-align: center;
+    text-decoration: none;
+    width: 220px;
+}
+
+a.Contacts_fixed:hover {
+    background-color: #277505;
+}
+
+form#FormaPiska {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.mmnu span {
+    color: white;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: -2px;
+    position: relative;
+    text-align: center;
+    top: 45px;
+    width: 100%;
+}
+
+.mmlogo span {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+}
+
+.mmlogo a {
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    width: 49%;
+}
+
+.cot_posto_blocker2 {
+    color: #5c7394;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.cot_posto_blocker3 {
+    color: #5c7394;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-top: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+}
+
+.minidescrBloker {
+    height: 172px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: left;
+    width: 330px;
+    position: relative;
+    height: 122px;
+    z-index: 22;
+    font-size: 14px;
+    /* background-color: white; */
+    /* box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.33); */
+    /* padding: 20px; */
+}
+
+.minidescrBloker.active {
+    height: 172px;
+    margin-bottom: 15px;
+    overflow: auto;
+    text-align: left;
+    width: 290px;
+    position: absolute;
+    height: auto;
+    z-index: 222;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.33);
+    padding: 20px;
+    transition: box-shadow 0.25s;
+}
+
+.leftTopTovar {
+    float: left;
+    position: relative;
+    width: 40%;
+}
+
+.centerTopTovar {
+    width: 30%;
+    float: left;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cena_count span {
+    font-size: 16px;
+    margin-left: -3px;
+}
+
+.rightTopTovar {
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.counts_buttons {
+    width: 22px;
+    height: 47px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.addcount {
+    background-color: #339807;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    transition: all 0.15s ease 0s;
+}
+
+.addcount.minus_add {
+    margin-top: 3px;
+}
+
+.addcount:hover {
+    background-color: #216702;
+}
+
+.addcount:active {
+    background-color: #071700;
+}
+
+.addcount.minus_add {
+    margin-top: 3px;
+}
+
+.button_add_to_cart_big:hover {
+    background-color: #216702;
+    transition: all 0.15s ease 0s;
+}
+
+.button_add_to_cart_big:hover:active {
+    background-color: #071700;
+    transition: all 0.15s ease 0s;
+}
+
+.add_to_cart_text_button_big_small_res
+{
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+    display:none;
+}
+
+span.add_to_cart_text_button_big {
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+.info_time_title img {
+    margin-left: 35px;
+    margin-right: 5px;
+    margin-top: 0;
+    width: 26px;
+}
+
+img.info_time_icon_3 {
+    top: 13px;
+}
+
+img.info_time_icon_2 {
+    top: 13px;
+}
+
+img.info_time_icon_1 {
+    top: 13px;
+}
+
+div#cblock_b1 {
+    padding-left: 15px;
+}
+
+div#cblock_b4 {
+    padding-left: 31px;
+}
+
+div#cblock_b2 {
+    padding-left: 35px;
+}
+
+div#cblock_b3 {
+    padding-left: 35px;
+}
+
+div#cblock_b1 a.more_link_cont_prod {
+    margin-left: 20px;
+}
+
+.butons_params.active_button_param:hover {
+    background-color: #fff;
+    border-color: #C6CEDA #C6CEDA #fff;
+    color: #666;
+}
+
+
+.KartridgDlyaPrintera
+{
+    border: 1px solid #dddddd;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 23px;
+    display: table;
+}
+
+.KartridgDlyaPrinteraKartinka
+{
+    width: 245px;
+    border-right: 1px solid #dddddd;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.KartridgDlyaPrinteraKartinka img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.KartridgDlyaPrinteraInfo
+{
+    width: calc(100% - 265px);
+    display: table-cell;
+    vertical-align: top;
+    padding: 0px 10px 0px 10px;
+}
+
+.KartridgDlyaPrinteraName
+{
+    padding: 20px 0px;
+}
+
+.KartridgDlyaPrinteraName a
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraNameLink
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraGlavniyDiv
+{
+    width: 100%;
+    display: table;
+}
+
+.KartridgDlyaPrinteraInfo .KartridgDlyaPrinteraGlavniyDiv
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+.KartridgDlyaPrinteraInfo > .KartridgDlyaPrinteraGlavniyDiv
+{
+    border-top: 1px solid #dddddd;
+}
+
+.KartridgDlyaPrinteraInfo > .KartridgDlyaPrinteraGlavniyDiv ~ .KartridgDlyaPrinteraGlavniyDiv {
+    border-top: none;
+}
+
+.KartridgDlyaPrinteraInfo .KartridgDlyaPrinteraGlavniyDiv:last-child
+{
+    border-bottom: none;
+}
+
+.KartridgDlyaPrinteraDiv
+{
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.KartridgDlyaPrinteraDivName
+{
+    width: 20%;
+}
+
+.KartridgDlyaPrinteraDivCount
+{
+    width: 20%;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraDivCena
+{
+    width: 20%;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraDivKupit
+{
+    width: 20%;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraDivNalichie
+{
+    width: 20%;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraTextKartochkiTovara
+{
+    color: #616161;
+    font-family: Calibri;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraAddcount
+{
+    display:inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 21px !important;
+    border: 1px solid #bac8d3;
+    text-align: center;
+    cursor:pointer;
+}
+
+.KartridgDlyaPrinteraStrokaVvodaKolichestvo
+{
+    display:inline-block;
+    width: 20px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 21px !important;
+    border: 1px solid #bac8d3;
+    border-left:none;
+    border-right:none;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraAddToCart
+{
+    background-color: #339807;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: 16px/0px Calibri;
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraAddToCartIcon
+{
+    height: 26px;
+    position: relative;
+    top: 4px;
+    right: 2px;
+}
+
+.KartridgDlyaPrinteraAddToCartText
+{
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+
+.RightSidebarElementTovara
+{
+    width: 175px;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    z-index: 2;
+}
+
+.KartrigiDlyaPrintera
+{
+    padding-top: 65px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .row_hower_table .StolbecCena:last-child {
+        text-align: center;
+    }
+
+    .buton_buy_catalog {
+        margin-right: 0px;
+        margin-left: 0px;
+        float: none;
+        padding-left: 7px;
+        padding-right: 10px;
+    }
+
+    .add_to_cart_text_button_big
+    {
+        display:none;
+    }
+    .add_to_cart_text_button_big_small_res
+    {
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .leftTopTovar {
+        width: 50%;
+    }
+
+    .video_bloker {
+        height: 50px;
+        bottom: 22px;
+        left: 10px;
+    }
+
+    .centerTopTovar {
+        width: 50%;
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+
+    .rightTopTovar {
+        width: 100%;
+    }
+
+    .dostavka_i_oplata
+    {
+        margin-top:15px;
+    }
+
+    .SsilkaNazvanieVTablice {
+        margin-left: 0px;
+    }
+
+    .KolichestvoPokupokVTablice {
+        margin-left: 0px;
+        padding-top: 3px;
+    }
+
+    .HitprodazhVTablice {
+        margin-left: 0px;
+    }
+
+    .add_to_cart_text_button_big
+    {
+        display:inline-block;
+    }
+    .add_to_cart_text_button_big_small_res
+    {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .row_hower_table .StolbecCena:not(:last-child) {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    input.OrangevayaKnopkaRezinovaya {
+        background-color: #ff7d45;
+        border-radius: 3px;
+        color: #fff;
+        font-family: Calibri;
+        font-size: 15px;
+        font-weight: bold;
+        height: 39px;
+        margin: 6px;
+        min-width: 64px;
+        outline: medium none;
+        padding-left: 0;
+        padding-right: 0;
+        transition: all 0.2s ease 0s;
+    }
+
+    input#StrokaPoiska {
+        border: 1px solid #bac8d3;
+        border-radius: 3px;
+        font-size: 15px;
+        margin-left: 12px;
+        min-width: 100px;
+        outline: medium none;
+        padding-left: 15px;
+        width: calc(100% - 120px);
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .YandexMarketStatus {
+        top: 10px;
+    }
+
+    .ElementSsilkaStraniciTabliciPokazatEscheDiv {
+        width: 100%;
+    }
+
+    .butons_params {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background-color: #E7EAED;
+        border-color: #C6CEDA #C6CEDA #C6CEDA;
+        border-image: none;
+        border-style: solid;
+        border-width: 1px;
+        color: #666;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: -4px;
+        padding: 0 11px;
+        position: relative;
+        margin-right: 0px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .fixed_block_top {
+        display: none;
+    }
+
+    #GlavniyDIV {
+        border: 0 solid #000;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1600px;
+        overflow: auto;
+        position: relative;
+    }
+
+    #PravayaKolonkaSredniyDiv {
+        display: none;
+        float: right;
+        margin-left: 12px;
+        overflow: auto;
+        position: relative;
+        width: 0;
+    }
+
+    #SrednayaKolonkaSredniyDivDlyaTovara {
+        background-color: #fff;
+        margin-left: 294px;
+        margin-right: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    .block_href_group {
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        display: inline-table;
+        height: 305px;
+        margin-bottom: 25px;
+        margin-right: 5px;
+        padding-top: 25px;
+        position: relative;
+        transition: all 0.2s ease 0s;
+        width: 285px;
+    }
+
+    img.proiz_logo {
+        border: 1px solid #e2e2e2;
+        text-decoration: none;
+        transition: all 0.2s ease 0s;
+        width: 162px;
+    }
+
+    a#toper_href_1 {
+        display: none;
+    }
+
+    a#toper_href_2 {
+        display: none;
+    }
+
+    a#toper_href_3 {
+        display: none;
+    }
+
+    .right_cen_top_block {
+        display: inline-block;
+        float: left;
+        padding-right: 20px;
+        position: relative;
+        top: 6px;
+    }
+
+    .showMiniDesc {
+        border: 1px solid #FF7D45;
+        height: 35px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: bold;
+        color: #FF7D45;
+        border-radius: 2px;
+        background-image: url('/filpannext/FilpanDesign/PageImages/botargray.png');
+        background-repeat: no-repeat;
+        background-position: 270px center;
+        cursor: pointer;
+        transition: all 0.15s;
+        margin-bottom: 15px;
+        width: calc(100% - 22px);
+        margin-left: 10px;
+    }
+
+    a.Contacts_fixed {
+        background-color: #339807;
+        border-radius: 10px 10px 0 0;
+        bottom: 0;
+        color: white;
+        display: none;
+        font-size: 21px;
+        font-weight: bold;
+        height: 50px;
+        left: 50%;
+        line-height: 50px;
+        margin-left: -110px;
+        position: fixed;
+        text-align: center;
+        text-decoration: none;
+        width: 220px;
+    }
+
+    .hider_fixed_block_top {
+        display: none;
+    }
+
+    .mob_menu {
+        background-color: #ff7d45;
+        display: block;
+        height: 70px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 22;
+    }
+
+    .new_header {
+        background-color: #5c7385;
+        display: none;
+        height: 230px;
+        margin-top: 11px;
+        overflow: hidden;
+    }
+
+    #GlavniyDIV {
+        border: 0 solid #000;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        min-width: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .ContentLevayaKolonka {
+        background-color: #fff;
+        display: none;
+        margin-bottom: 13px;
+        margin-top: -1px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    #SrednayaKolonkaSredniyDivDlyaTovara {
+        background-color: #fff;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    #LevayaKolonkaSredniyDiv {
+        display: none;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    #SrednayaKolonkaSredniyDiv {
+        background-color: #fff;
+        display: inline-block;
+        margin-left: 0;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    #VerxniyDiv {
+        width: 100%;
+    }
+
+    #SredniyDiv {
+        border: 0 solid #000;
+        margin-top: 60px;
+        overflow: hidden;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        font-family: Arial;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    li.menu_top_level_1 {
+        background-color: #5c7394;
+        border-bottom: 1px solid #4d5e76;
+        border-right: 1px solid #f2f2f2;
+        color: #fff;
+        display: block;
+        float: left;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 500;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    .new_top_menu {
+        background-color: #5c7394;
+        display: none;
+        height: auto;
+        margin-bottom: -70px;
+        margin-top: 70px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .next_bye {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 13px 55px rgba(0, 0, 0, 0.31);
+        color: #848484;
+        display: none;
+        font-size: 15px;
+        left: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 30px;
+        position: fixed;
+        top: 25px;
+        width: calc(100% - 90px);
+        z-index: 99;
+    }
+
+    .zshader {
+        background-color: rgba(0, 0, 0, 0.56);
+        display: none;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 98;
+    }
+
+    .button_goto_cart.in_inbox {
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        margin-top: 27px;
+        width: 100%;
+    }
+
+    .nextx {
+        background-color: #ededed;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-table;
+        font-size: 19px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: -10px;
+        margin-left: 0;
+        position: relative;
+        text-align: center;
+        transition: all 0.2s ease 0s;
+        width: 100%;
+    }
+
+    #Korzina {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 13px 55px rgba(0, 0, 0, 0.31);
+        display: none;
+        left: 0;
+        margin-left: 15px;
+        margin-top: 0;
+        padding: 25px;
+        position: absolute;
+        top: 25px;
+        width: calc(100% - 80px);
+        z-index: 100;
+    }
+
+    .BlankZakazaDivText {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin: 10px 0;
+        overflow: auto;
+        padding: 16px;
+    }
+
+    .BlankZakazaDivText {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin: 10px 0;
+        overflow: hidden;
+        padding: 16px;
+    }
+
+    .TablicaKorzina th {
+        background-color: #fafafa;
+        border: 1px solid #efefef;
+        border-collapse: collapse;
+        display: none;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .TablicaKorzina tr {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mmnu {
+        background-image: url("/filpannext/FilpanDesign/PageImages/m-menu.png");
+        background-position: 20px 22px;
+        background-repeat: no-repeat;
+        background-size: 26px auto;
+        border-right: 1px solid #ef6428;
+        float: left;
+        height: 70px;
+        width: 70px;
+    }
+
+    .mcart {
+        background-image: url("/filpannext/FilpanDesign/PageImages/m-cart.png");
+        background-position: 19px 21px;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+        border-left: 1px solid #ef6428;
+        float: right;
+        height: 70px;
+        position: relative;
+        top: -70px;
+        width: 70px;
+    }
+
+    .mmnu:active {
+        background-color: #e84a06;
+    }
+
+    img.proiz_logo {
+        border: 1px solid #e2e2e2;
+        text-decoration: none;
+        transition: all 0.2s ease 0s;
+        width: 131px;
+    }
+
+    img.arrow_etap {
+        display: none;
+        position: relative;
+        top: -36px;
+    }
+
+    .etap_block {
+        border-bottom: 2px solid #e6e6e6;
+        display: inline-table;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        position: relative;
+        width: 100%;
+    }
+
+    .block_param {
+        display: inline-table;
+        position: relative;
+        transition: all 0.2s ease 0s;
+        width: 250px;
+    }
+
+    .block_href_group {
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        display: inline-table;
+        height: 305px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding-top: 25px;
+        position: relative;
+        transition: all 0.2s ease 0s;
+        width: 285px;
+    }
+
+    .mmlogo {
+        color: #fff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        height: 70px;
+        line-height: 70px;
+        margin-left: 70px;
+        padding-left: 0;
+        text-align: center;
+        width: calc(100% - 142px);
+    }
+
+    .mmlogo:active {
+        background-color: #e84a06;
+    }
+
+    .etap_title {
+        color: #666;
+        font-size: 15px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .text_block p {
+        color: #616161;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    .center_footer {
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+    }
+
+    a.footer_hrefss {
+        color: #ff7d45;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-right: 25px;
+        padding-left: 25px;
+        position: relative;
+        text-align: left;
+        text-decoration: underline;
+        width: 100%;
+    }
+
+    .text_block_up_2 {
+        color: #333;
+        font-size: 21px;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    .text_block_up_3 {
+        color: #ccc;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .text_block_up_4 {
+        color: #ff7d45;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .text_block_up_5 {
+        color: #5c7385;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    .tite_blcok_color_2 {
+        background-color: #5c7394;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+    }
+
+    .tite_blcok_color {
+        background-color: #ff7d45;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+    }
+
+    .bloker_footer {
+        display: inline-table;
+        margin-right: 30px;
+        margin-top: 20px;
+        padding-left: 18px;
+        position: relative;
+        width: 100%;
+    }
+
+    .TablicaKorzina, .TablicaKorzina td {
+        background-color: #fff;
+        border: 1px solid #efefef;
+        border-collapse: collapse;
+        display: block;
+        text-align: center;
+        min-height: 30px;
+        line-height: 30px;
+    }
+
+    .TablicaKorzina, .TablicaKorzina .StolbecKnopok
+    {
+        margin: 0 auto;
+        border:none;
+    }
+
+    .BlankZakazaDivText {
+        background-color: #fff;
+        border: 0 solid #eee;
+        border-radius: 5px;
+        margin: 10px 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .image_block {
+        border: 1px solid #f2f2f2;
+    }
+
+    .conteiner_block {
+        font-family: Calibri;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .conteiner_block {
+        font-family: Calibri;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    img.proizvod {
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        display: inline-block;
+        opacity: 0.7;
+        position: relative;
+        transition: all 0.2s ease 0s;
+        width: 140px;
+    }
+
+    .ContentLevayaKolonkaSredniyDiv {
+        background-color: #5c7394;
+        margin-bottom: 13px;
+        padding-bottom: 10px;
+    }
+
+    #LevayaKolonkaSredniyDiv {
+        background-color: #5c7394;
+        display: none;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .SpisokSsilokMenu a.Neaktivnaya, .SpisokSsilokMenu a.Neaktivnaya:link, .SpisokSsilokMenu a.Neaktivnaya:visited {
+        color: #fff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .SpisokSsilokMenu li {
+        border-bottom: 1px solid #4d5e76;
+        line-height: 40px;
+        margin-bottom: -1px;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    .ZagolovokContentLevayaKolonkaSredniyDiv {
+        background-color: #ef6428;
+        display: block;
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: normal;
+        height: 60px;
+        line-height: 60px;
+        margin-bottom: -1px;
+        padding-left: 0;
+        text-align: center;
+        z-index: 2222;
+    }
+
+    div#LevayaKolonkaSredniyDiv::before {
+        color: #ff7d45;
+        content: " ";
+        font-size: 60px;
+        margin-left: 18px;
+        position: absolute;
+        top: -40px;
+    }
+
+    .new_top_menu::before {
+        color: #ff7d45;
+        content: " ";
+        font-size: 60px;
+        left: 50%;
+        margin-left: -14px;
+        position: absolute;
+        top: 30px;
+    }
+
+    .raskritiyePlus {
+        background-color: transparent;
+        background-image: url("/filpannext/FilpanDesign/new_images/left_icon_menu.png");
+        background-position: 4px 9px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: right;
+        font-size: 0;
+        height: 23px;
+        left: -2px;
+        margin-left: 0;
+        margin-top: 4px;
+        padding: 3px;
+        position: relative;
+        width: 20px;
+    }
+
+    .raskritiyeMinus {
+        background-color: transparent;
+        background-image: url("/filpannext/FilpanDesign/new_images/up_left_icon_menu.png");
+        background-position: 3px 7px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        float: right;
+        font-size: 0;
+        height: 20px;
+        left: -13px;
+        margin-left: 0;
+        margin-top: 4px;
+        padding: 3px;
+        position: relative;
+        width: 16px;
+    }
+
+    .Aktivnay, .SpisokSsilokMenu a.Neaktivnaya:hover {
+        color: #ff7d45;
+        font-family: Arial;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    ul.SpisokSsilokMenu > ul.SpisokSsilokMenu {
+        background-color: #415879;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 15px 35px 15px 40px;
+    }
+
+    ul.SpisokSsilokMenu.RaskritiySpisok ul.SpisokSsilokMenu {
+        background-color: #344a69;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    li.menu_top_level_1:hover {
+        background-color: #4d5e76;
+        color: #ff7d45;
+    }
+
+    input#StrokaPoiska {
+        border: 1px solid #bac8d3;
+        border-radius: 3px;
+        font-size: 15px;
+        height: 26px;
+        margin-left: 12px;
+        margin-top: 14px;
+        min-width: 142px;
+        outline: medium none;
+        padding-left: 15px;
+        width: calc(100% - 125px);
+    }
+
+    #scroller {
+        background: rgba(65, 88, 121, 0.76) url("/filpannext/FilpanDesign/PageImages/up_to_top.png") no-repeat scroll center center / 55px auto;
+        border-radius: 100%;
+        bottom: 15px;
+        cursor: pointer;
+        display: none;
+        height: 90px;
+        position: fixed;
+        right: 15px;
+        transition: all 0.2s ease 0s;
+        width: 90px;
+        z-index: 222222222;
+    }
+
+    .cot_posto_blocker {
+        color: #5c7385;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    p {
+        font-family: arial;
+        font-size: 15px;
+    }
+
+    .TextoviyModulSnizu, .TextoviyModulSverhu {
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 5px;
+        overflow: hidden;
+        padding: 0 35px 35px;
+    }
+
+    .con_post_haeder {
+        background-color: #5c7394;
+        color: #fff;
+        display: block;
+        font-family: Arial;
+        font-size: 21px;
+        height: 55px;
+        line-height: 20px;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    #scroller:active {
+        opacity: 0.6;
+        transition: all 0.2s ease 0s;
+    }
+
+    table.TablicaTovarov, table.TablicaTovarov th, table.TablicaTovarov td {
+        border: 0 solid #efefef;
+        border-collapse: collapse;
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    td.StolbecCena {
+        text-align: center;
+    }
+
+    .buton_buy_catalog {
+        background-color: #ff7d45;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: inline-block;
+        height: 43px;
+        margin-left: -3px;
+        padding-left: 18px;
+        padding-right: 20px;
+        position: relative;
+        width: 85px;
+        line-height: 43px;
+    }
+
+    .StolbecIzobrageniye {
+        padding: 0;
+        width: 100px;
+    }
+
+    td.StolbecIzobrageniye {
+        text-align: center;
+    }
+
+    td.StolbecArticul.TextStolbecArticul {
+        display: none;
+    }
+
+    td.StolbecNazvaniye {
+        text-align: center;
+    }
+
+    .StolbecCena {
+        padding: 0;
+        width: 110px;
+    }
+
+    .StolbecNazvaniye {
+        padding: 0;
+        width: auto;
+    }
+
+    .SsilkaNazvanieVTablice {
+        color: #ff7d45;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+        text-decoration: underline;
+        display: block;
+        padding: 0px 5px;
+    }
+
+    .buton_buy_catalog {
+        top: 0px;
+    }
+
+    span.Cena.new_price_catalog {
+        color: #666;
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .KartinkaTabliciTovarov {
+        width: 125px;
+    }
+
+    tr.row_hower_table {
+        border-bottom: 1px solid #efefef;
+        border-top: 1px solid #efefef;
+        display: block;
+        margin-top: -1px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .header_catalog {
+        background-color: #ff7d45;
+        line-height: 25px;
+        margin-top: -10px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+    .conteiner_block {
+        font-family: Calibri;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding-left: 25px;
+        padding-right: 37px;
+        text-align: center;
+    }
+
+    .yandex_map_block_kont {
+        display: none;
+        margin-bottom: -20px;
+        margin-top: 35px;
+    }
+
+    img.photo_cont_panoram_1 {
+        width: 100%;
+    }
+
+    .tex_cont_seo {
+        font-size: 16px;
+        padding: 36px 55px;
+    }
+
+    .pathhrefs {
+        color: #f60;
+        font-family: arial;
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .cont_inormation {
+        color: #666;
+        font-family: Arial;
+        font-size: 12px;
+        padding: 0 54px 0 0;
+        width: 100%;
+    }
+
+    .ModulSredneyKolonki {
+        overflow: hidden;
+        padding: 0 10px 25px 10px;
+    }
+
+    img.icon_cont_image {
+        display: inline-block;
+        height: 70px;
+        left: 50%;
+        margin-bottom: 10px;
+        margin-left: -35px;
+        position: relative;
+    }
+
+    .block_cont_img {
+        height: 90px;
+        width: 100%;
+    }
+
+    .cont_inormation2 {
+        color: #4d4d4d;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    .cont_inormation {
+        color: #4d4d4d;
+        padding-left: 10px;
+        padding-right: 50px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    #SrednayaKolonkaSredniyDivDlyaTovara {
+        margin-right: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .left_block_informer {
+        display: inline-block;
+        min-width: 100%;
+        position: relative;
+        width: 99%;
+    }
+
+    div#show_all_desc {
+        background-color: #5c7385;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        float: right;
+        font-size: 18px;
+        height: 35px;
+        line-height: 35px;
+        margin-top: 9px;
+        text-align: center;
+        transition: all 0.2s ease 0s;
+        width: 48.5%;
+    }
+
+    h1.name_tovar {
+        color: #4d4d4d;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        padding-right: 0px;
+    }
+
+    div#price_block {
+        border: 1px solid #f2f2f2;
+        display: inline-block;
+        height: 51px;
+        margin-left: -1px;
+        margin-right: 0;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3px;
+        position: relative;
+        top: 20px;
+        width: 100%;
+    }
+
+    .DopolnitelnoeOpisanie {
+        font-size: 14px;
+        margin-top: 10px;
+        overflow: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    .header_cart_prod {
+        color: #666;
+        display: block;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    .ZagolovokSoputstvuyushieTovari {
+        border-bottom: 1px solid #f2f2f2;
+        color: #666;
+        display: block;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .TextKartochkiTovara {
+        color: #616161;
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    input#val_gold {
+        border-color: #ffbf3b;
+        color: #ffbf3b;
+        height: 32px;
+        line-height: 32px;
+        margin-left: -8px;
+        top: 0;
+        width: 22px;
+    }
+
+    .block_pro {
+        padding: 19px 0 10px;
+    }
+
+    .main_block_indexovaya {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .text_block h2 {
+        color: #ff7d45;
+        font-size: 22px;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text_block h1 {
+        color: #5c7394;
+        font-size: 29px;
+        margin-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .marker_Blokers {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .minidescrBloker {
+        height: 172px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-align: left;
+        width: calc(100% - 20px);
+        position: relative;
+        height: 150px;
+        z-index: 22;
+        font-size: 14px;
+        /* background-color: white; */
+        /* box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.33); */
+        padding: 10px;
+    }
+
+    .left_block_informer {
+        border-top: 2px dotted #e7eaef;
+        display: inline-block;
+        margin-top: 5px;
+        min-width: 100%;
+        padding-top: 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    div#price_block {
+        border: 0 solid #f2f2f2;
+        display: inline-block;
+        height: auto;
+        margin-left: -1px;
+        margin-right: 0;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3px;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .HitprodazhVTablice {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .KolichestvoPokupokVTablice {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .RightSidebarElementTovara
+    {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .leftTopTovar {
+        width: 100%;
+    }
+
+    .centerTopTovar {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+     .video_bloker {
+        display: none;
+    }
+
+     .other_content
+     {
+         display: none!important;
+     }
+
+    .ContentElementiLevoeObsheeOknoKartochkaTovara {
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .butons_params {
+        width: 100%;
+        margin-left: -35px;
+    }
+    .butons_params.active_button_param,
+    .butons_params.active_button_param:hover
+    {
+        border-bottom: 1px solid #C6CEDA;
+    }
+
+    .block_param {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    div#price_block {
+        text-align: center;
+    }
+}
+
+.marker_Blokers {
+    position: absolute;
+    z-index: 2;
+    display: block;
+}
+
+.wathvideo {
+    font-size: 13px;
+    font-weight: bold;
+    color: #415879;
+    text-decoration: underline;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+.wathvideo:hover {
+    text-decoration: none;
+}
+
+img#marker-a {
+    position: relative;
+    top: -69px;
+    margin-left: 4px;
+    /* display: none; */
+}
+
+img#marker-r {
+    position: relative;
+    top: -9px;
+    /* margin-left: 60px; */
+}
+
+.butons_params:hover {
+    background-color: #5C7394;
+    border-color: #5C7394 #f2f2f2 #fff;
+    color: white;
+}
+
+div#kratkoeOpisanie {
+    display: block;
+}
+.block_param.new {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+}
+
+.showMiniDesc {
+    border: 1px solid #FF7D45;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: bold;
+    color: #FF7D45;
+    border-radius: 2px;
+    background-image: url('/filpannext/FilpanDesign/PageImages/botargray.png');
+    background-repeat: no-repeat;
+    background-position: 268px center;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 13px;
+}
+
+.showMiniDesc:hover {
+    background-color: rgba(255, 125, 69, 0.08);
+}
+
+.hideMiniDesc {
+    border: 1px solid #FF7D45;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: bold;
+    color: #FF7D45;
+    border-radius: 2px;
+    background-image: url('/filpannext/FilpanDesign/PageImages/botargrayT.png');
+    background-repeat: no-repeat;
+    background-position: 258px center;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 0px;
+}
+
+.hideMiniDesc:hover {
+    background-color: rgba(255, 125, 69, 0.08);
+}
+
+.krankoeOpisanie {
+    color: #5c7394;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sovmesimiyBloker {
+    position: absolute;
+    display: block;
+    top: 430px;
+    float: right;
+    width: 200px;
+    display: block;
+    left: 50%;
+    margin-left: -90px;
+    text-align: center;
+    font-size: 20px;
+    color: #339807;
+    font-weight: bold;
+}
+
+.bottomFlyBar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: hsla(0, 0%, 10%, 0.85);
+    z-index: 10000000;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+.bottomFlyB {
+}
+
+.bottomFlyBar_left {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+.bottomFlyBar_right {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.bottomFlyBar_center {
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.bottomFlyBar_leftTell {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    top: 2px;
+    font-weight: bold;
+}
+
+.bottomFlyBar_rightTell {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    top: 2px;
+    font-weight: bold;
+}
+
+a.bottomFlyBar_contButton {
+    position: relative;
+    display: inline-block;
+}
+
+a.bottomFlyBar_contButton {
+    height: 55px;
+    background-color: #4aaf1e;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 260px;
+    border-radius: 34px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    line-height: 54px;
+    transition: all 0.15s;
+    text-transform: uppercase;
+    top: 1px;
+    letter-spacing: 0.5px;
+}
+
+a.bottomFlyBar_contButton:hover {
+    background-color: #399610;
+}
+
+.bottomFlyBar_leftTell span {
+    font-weight: bold;
+}
+
+.bottomFlyBar_rightTell span {
+    font-weight: bold;
+}
+
+a.bottomFlyBar_linkSedn {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: all 0.15s;
+}
+
+a.bottomFlyBar_linkSedn:hover {
+    opacity: 0.5;
+}
+
+.TextoviyModulSverhu.emptySection
+{
+    font-size:16px!important;
+}
+
+.whatsapp-button {
+    transition: all ease .3s;
+    background-color: #25D366; /*цвет кнопки*/
+    background-image: url("/filpannext/FilpanDesign/PageImages/whatsapp-logo.png");
+    background-position-y: -1px;
+    position: fixed;
+    left: 65px;
+    bottom: 90px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 55px; /*ширина кнопки*/
+    height: 55px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 53px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 9999;
+}
+.whatsapp-button:hover,  .whatsapp-button:focus, .whatsapp-button:active {
+    background-color: #1fa852;
+}
+
+.whatsapp-button a {
+    color: #fff;
+}
+.whatsapp-button:before,
+.whatsapp-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.whatsapp-button:after{
+    animation-delay: .5s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.telegram-button {
+    background-size: contain;
+    transition: all ease .3s;
+    background-color: #1c94c4; /*цвет кнопки*/
+    background-image: url("/filpannext/FilpanDesign/PageImages/telegram-logo.png");
+    /*background-position-y: -1px;*/
+    position: fixed;
+    left: 150px;
+    bottom: 90px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 55px; /*ширина кнопки*/
+    height: 55px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 53px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 1000;
+}
+.telegram-button:hover,  .telegram-button:focus, .telegram-button:active {
+    background-color: #0E3460;
+}
+
+.telegram-button a {
+    color: #fff;
+}
+.telegram-button:before,
+.telegram-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #1c94c4; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden;
+}

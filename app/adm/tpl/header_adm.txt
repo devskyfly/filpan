@@ -1,0 +1,133 @@
+<HTML><HEAD><TITLE>Страница администратора</TITLE>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<META http-equiv=Content-Language content=ru>
+<!-- Meta http equivalent was here                                   -->
+<META http-equiv=Cache-Control content=no-store>
+
+</HEAD>
+<BODY aLink=#333399 bgColor=#ffffff link=#333399 text=#000000 vLink=#333399 leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="design2/bg.gif">
+
+<TABLE bgColor=#000000 border=0 cellPadding=1 cellSpacing=0 height=18   width=100%>   
+  <TR>
+    <TD>
+      <table bgcolor=#9ebac9 border=0 cellpadding=0 cellspacing=0 height=16   width=100%>
+          <tr> 
+          <td align=left width="75%">&nbsp;<a class=headtext  href="index.htm">Home</a> / Страница администратора</td>
+          <td align=right width="25%"> 
+            <script language="JavaScript">
+  var now = new Date();  var yr = now.getYear();
+  var mName = now.getMonth() + 1;  var dName = now.getDay() + 1;
+  var dayNr = ((now.getDate()<10) ? "0" : "")              + now.getDate();
+    if(dName==1) Day = "Воскресенье";    if(dName==2) Day = "Понедельник";
+    if(dName==3) Day = "Вторник";    if(dName==4) Day = "Среда";
+    if(dName==5) Day = "Четверг";    if(dName==6) Day = "Пятница";
+    if(dName==7) Day = "Суббота";        if(mName==1) Month="Января";
+    if(mName==2) Month="Февраля";    if(mName==3) Month="Марта";
+    if(mName==4) Month="Апреля";    if(mName==5) Month="Мая";
+    if(mName==6) Month="Июня";    if(mName==7) Month="Июля";
+    if(mName==8) Month="Августа";    if(mName==9) Month="Сентября";
+    if(mName==10) Month="Октября";    if(mName==11) Month="Ноября";
+    if(mName==12) Month="Декабря";
+  var todaysDate =(" "+dayNr+" "+Month+" "+"" + yr+" г."+" "+ Day);
+  document.open();  document.write("<h8><b>"+todaysDate+"</h8></b>");
+</script>&nbsp;
+          </td>
+        </tr>
+         
+      </table>
+    </TD>
+  </TR>
+  </TABLE>
+<TABLE bgColor=#ffffff border=0 cellPadding=0 cellSpacing=0 width=100%>
+  <TR> 
+    <TD background="design2/3x5_gor.gif" height="5"><IMG alt="" border=0 height=5 src="design/s.gif" width=1></TD>
+   </TR>
+  <TR>
+    <TD  height="5">
+
+<?
+require("tpl/variables.php");
+
+if (!$QUERY_STRING) {
+if (@$sb){
+	$oname=$name."-".$pass;
+	if ($oname==$AdminPass ) {;}
+	else {
+		echo "<center><h5>Неправильный пароль или логин или не заполнены поля</h5></center>";
+		echo "</body></html>\n";
+		exit();
+	}
+}
+else {
+	echo "<form action=\"adm.php\" method=POST>";
+      echo "<br>";
+      echo "<table width=\"50%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
+      echo "<tr>";
+      echo "<td >Ваше имя:</td>";
+      echo "<td>";
+      echo "<input type=\"text\" name=\"name\">";
+      echo "</td>";
+      echo "</tr>";
+      echo "<tr>";
+      echo "<td >Пароль:</td>";
+      echo "<td>";
+      echo "<input type=\"text\" name=\"pass\">";
+      echo "</td>";
+      echo "</tr>";
+      echo "<tr>";
+      echo "<td colspan=\"2\" align=center> <br>";
+      echo "<input type=\"submit\" value=\"Подтвердить\" name=\"sb\">";
+      echo "</td>";
+      echo "</tr>";
+      echo "</table>";
+      echo "<br>";
+      echo "</form>";
+	echo "</body></html>\n";
+	exit();
+}}
+?>
+
+
+<table width=100% border=0 cellpadding=1 cellspacing=0 bgcolor=#000000>
+  <tr>
+	<td>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><ul>
+<td width=153 bgcolor=#9ebac9 align=right valign=top><br>
+<table width=97% border=0 cellpadding=0 cellspacing=0><tr><td valign=top>
+
+<?
+		echo "<hr><a href=adm.php?catraz><li>Редактировать разделы каталога</a><br>";
+	echo "<a href=adm.php?catrub><li>Редактировать подразделы каталога</a><br>";
+	echo "<a href=adm.php?catkat><li>Редактировать категории каталога</a><br>";
+			
+?>
+</td></tr></table>
+<br></td>
+</ul>
+	<TD bgColor=#ffffff valign=top>
+        <table width="97%" border="0" cellspacing="0" cellpadding="0" align="right">
+         <tr> 
+         <td>
+<?
+if ($QUERY_STRING){
+	$msg=$QUERY_STRING;
+	if ($msg=="draz") {echo "Добавить раздел";}
+	if ($msg=="dr") {echo "Добавить рубрику";}
+	if ($msg=="dpr") {echo "Добавить подрубрику";}	
+	if ($msg=="edpr") {echo "Редактирование подрубрик";}
+	if ($msg=="lpr") {echo "Просмотр подрубрик";}
+	if ($msg=="prod") {echo "Просмотр запросов на присвоение логина и пароля";}
+	if ($msg=="prodzar") {echo "Обработанные запросы";}
+	if ($msg=="kurs") {echo "Курс валют";}
+	if (@$ud) {echo "Удаление раздела";}
+	if (@$udt) {echo "Удаление раздела";}
+
+
+}
+else {	echo "Добро пожаловать на страницу администратора";}
+?>
+
+</td></tr>
+ <tr><td bgcolor="#99CCCC" height=1>
+</td></tr>

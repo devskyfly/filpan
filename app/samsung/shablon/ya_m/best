@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2009-05-01 14:30">
+<shop>
+  <name>filpan.ru</name>
+  <company>TALYRUS.ru– копировальная техника</company>
+  <url>http://talyrus.ru/</url>
+
+<currencies><currency id="RUR" rate="1"/><currency id="USD" rate="29"/></currencies>
+
+<categories>
+  <category id="1" parentId="0">Создание сайтов</category>
+  <category id="2" parentId="1">Сайт-визитка</category>
+  <category id="3" parentId="1">Интернет-магазин</category>
+</categories>
+
+<offers>
+  <offer id="1" available="true">
+  <url>http://www.filpan.ru/find.php?view=1&amp;id=856&amp;raz=2&amp;podr=1</url>
+  <price>15000</price>
+  <currencyId>USD</currencyId>
+  <categoryId>2</categoryId>
+  <picture>http://www.filpan.ru/img/1265578493.jpg</picture>
+  <delivery>false</delivery>
+  <name>Canon MF 4018</name>
+  <description>Canon MF 4018, модель которая пришла на смену Canon MF 3228. Canon MF 4018 очень удачная и экономичная модель. Canon MF 4018 имеет не чипованый картридж , которы Вы в последствии будете долго использовать!!! Canon MF 4018 -аппарат с самой низкой себестоимостью копии в своем классе!
+Модель Canon MF 4018 копир/принтер/сканер удовлетворит потребности пользователей, которым необходимо быстро напечатать или скопировать небольшие документы – она будет готова к печати не более, чем через 9 секунд после включения. Удивительная быстрота реакции Canon MF 4018 дополняется необыкновенно высокой скоростью печати – 20 страниц в минуту, благодаря которой Canon MF 4018 принтер также блестяще справляется с более объёмными заданиями. Ключевой особенностью Canon MF 4018 является разработанная Canon технология моментального точечного разогрева, благодаря которой Canon MF 4018 модель в процессе работы потребляет на 75% меньше энергии, чем обычные лазерные принтеры. Скорость Canon MF 4018 обработки задания печати ещё более увеличилась благодаря технологии драйвера принтера UFRII LT (Ultra Fast Rendering) на базе хоста, разработанной Canon.</description>
+  
+  </offer>
+
+  
+</offers>
+</shop>
+</yml_catalog>

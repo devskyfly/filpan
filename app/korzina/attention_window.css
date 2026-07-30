@@ -1,0 +1,12 @@
+.t14_js_attantion_block {margin-top:5px;width:463px;color:#999999;position:relative;left:-4px;}
+.t14_js_attantion_block_close {position:absolute;width:20px;height:20px;background:url(http://www.komus.ru/image/nogreen/oform/close_button_3.png) left top no-repeat;cursor:pointer;cursor:hand;top:0px;right:5px;}
+.t14_js_attantion_block_close:hover {background:url(http://www.komus.ru/image/nogreen/oform/close_button_3.png) left bottom no-repeat;}
+.t14_attantion_block_top {width:463px;height:5px;background:url(http://www.komus.ru/image/nogreen/oform/attantion_block_top.gif) left top no-repeat;overflow:hidden;}
+.t14_attantion_block_middle {background:url(http://www.komus.ru/image/nogreen/oform/attantion_block_middle.gif) left center repeat-y;padding:7px 0px 0px 0px;overflow:hidden;}
+.t14_attantion_block_bottom {width:463px;height:6px;background:url(http://www.komus.ru/image/nogreen/oform/attantion_block_bottom.gif) left top no-repeat;overflow:hidden;}
+.attention_text {
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}

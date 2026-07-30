@@ -1,0 +1,1844 @@
+*{border:0px;margin:0px;padding:0px;}
+body
+{
+background-color: #F6F6F6;
+padding-bottom: 60px;
+}
+
+table {
+    width: 100%;
+}
+
+/*
+Input Text style
+*/
+
+#StrokaPoiska
+{
+	width: 140px;
+	padding: 5px;
+}
+
+#StrokaPoiskaVlevomMenu
+{
+	width: 140px;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	margin: 3px;
+}
+
+.StrokaVvodaKolichestvo
+{
+background-color: #EAF1F7;
+font-size: 12px !important;
+color: #89898A;
+width: 30px;
+padding: 3px;
+-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+}
+/*
+Link style
+*/
+.SpisokSsilokMenu a.Neaktivnaya,
+.SpisokSsilokMenu a.Neaktivnaya:link,
+.SpisokSsilokMenu a.Neaktivnaya:visited
+{
+
+border-bottom: 1px dotted #89898A;
+text-decoration: none;
+color: #89898A;
+}
+
+.Aktivnay, .SpisokSsilokMenu a.Neaktivnaya:hover
+{
+border-bottom: 1px dotted #FF6600;
+text-decoration: none;
+color: #FF6600;
+}
+
+
+.SsilkaNazvanieVTablice
+{
+text-decoration: none;
+color: #89898A;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.SsilkaNazvanieVTablice:hover
+{
+text-decoration: none;
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+list-style-type: square;
+}
+
+
+
+.SsilkaNaStranicuTablici,
+.SsilkaNaStranicuTablici:link,
+.SsilkaNaStranicuTablici:visited
+{
+text-decoration: none;
+color: #89898A;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+
+.SuperPredlogeniye,
+.SuperPredlogeniye:link,
+.SuperPredlogeniye:visited
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+
+.link_orange,
+.link_orange:link,
+.link_orange:visited
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+
+.SsilkaNaSoputstvushiyTovar,
+.SsilkaNaSoputstvushiyTovar:link,
+.SsilkaNaSoputstvushiyTovar:visited
+{
+color: #FF6600;
+font-size: 11px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.SsilkaTriKnopkiKontentaTovara,
+.SsilkaTriKnopkiKontentaTovara:link,
+.SsilkaTriKnopkiKontentaTovara:visited
+{
+text-decoration: none;
+font-size: 11px;
+font-family: Arial;
+}
+/*
+END Link style
+*/
+
+/*
+Button style
+*/
+.OrangevayKnopka
+{
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+padding: 3px 0;
+border: solid 1px #c24f02;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+font: 12px Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #ffffff;
+background-color: #ff6600;
+background-image: -moz-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -webkit-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -o-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -ms-linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf5300', endColorstr='#cf5300',GradientType=0 );
+background-image: linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+-webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+-moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+display: block;
+width: 125px;
+margin-top: 0px;
+float: left;
+}
+
+
+
+
+
+.callback, .or_button {
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+padding: 3px 0;
+border: solid 1px #c24f02;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+font: 12px Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #ffffff;
+background-color: #ff6600;
+background-image: -moz-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -webkit-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -o-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -ms-linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf5300', endColorstr='#cf5300',GradientType=0 );
+background-image: linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+-webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+-moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+display: block;
+width: 125px;
+margin-top: 3px;
+}
+
+
+.plus, .minus
+{
+	width: 20px;
+	border-radius: 6px;
+
+}
+
+.plus:hover, .minus:hover
+{
+cursor: pointer;
+}
+
+.OrangevayaKnopkaRezinovaya
+{
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+padding: 3px 0;
+border: solid 1px #c24f02;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+font: 12px Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #ffffff;
+background-color: #ff6600;
+background-image: -moz-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -webkit-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -o-linear-gradient(top, #ff6600 0%, #cf5300 100%);
+background-image: -ms-linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf5300', endColorstr='#cf5300',GradientType=0 );
+background-image: linear-gradient(top, #ff6600 0% ,#cf5300 100%);
+-webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+-moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+margin-top: 0px;
+padding: 5px;
+}
+
+.knopkaViboraElementa, .knopkaViboraElementaIzZagolovka
+{
+border-radius: 3px;
+margin: 5px;
+padding:2px;
+cursor: pointer; 	
+
+}
+
+.GruppaMenu
+{
+	background-color: #EBEBEB;
+	padding: 6px;
+	border-radius: 3px; 
+	display:none;
+}
+
+/*
+END Button style
+*/
+
+
+
+
+/*
+Img style
+*/
+.Korzina
+{
+position:relative;
+width: 21px;
+height: 19px;
+padding: 0px;
+margin: 0px;
+display:block;
+float: left;
+}
+
+.PodpisPoliya
+{
+	width: 200px;
+}
+
+#Logotip
+{
+width: 325px;
+height: 213px;
+}
+
+#img404
+{
+overflow: visible;
+width: 700px;
+height: 606px;
+margin-left: auto;
+margin-right: auto;
+background-image: url("/pictures_for_elements/404.png");
+}
+
+
+.Text404
+{
+	position:relative;
+	left:300px;
+	top:300px;
+	width:350px;
+}
+
+
+.TextDiv404
+{
+	padding-bottom: 20px;
+}
+
+#ZnachekKarti
+{
+
+}
+
+.KartinkaTovaraSuperPredlogeniya
+{
+width: 130px;	
+
+}
+.KartinkaTovaraSoputstvuyushiyTovarElement
+{
+width: 80px;	
+}
+.ElementiContentaSoputstvuyushiyTovarElement
+{
+width: 100px;
+/*overflow: hidden;	*/
+}
+
+
+
+.KartinkaTabliciTovarov
+{
+width: 80px;	
+}
+
+.KartinkaTabliciTovarovAdmin
+{
+width: 50px;	
+}
+
+
+
+.KorzinaKupit
+{
+cursor: pointer;
+}
+
+.KakNasNayti
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+text-decoration: none;
+}
+
+.SsilkaNaStranicuVZagolovke
+{
+color: #728DA2;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.RazdelitelSsilok
+{
+color: #728DA2;	
+}
+
+.UgolokSuperPredlogeniy
+{
+	margin-left:-10px;
+	margin-bottom:-25px;
+}
+
+.KartinkaTovara
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+width: 130px;
+padding-bottom: 30px;
+}
+/*
+End Img style
+*/
+
+/*
+Text style
+*/
+.TextOrangeviyKrupniy
+{
+font-family: Arial,Helvetica,sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #FF6600;
+}
+
+.PoiskPoSaytu
+{
+color: #FFFFFF;
+font-size: 14px;
+font-weight: bold;
+font-family: Arial;
+text-decoration: none;
+}
+
+
+.TextContenta > *
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+}
+
+#SrednayaKolonkaSredniyDiv > *
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+}
+
+.ZagolovokSsilkaTabliciTovarov
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.TextZagolovokContentLevayaKolonkaSredniyDiv, .TextZagolovokSuperPredlogeniya,  .ZagolovokSoputstvuyushieTovari
+{
+color: white;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.ZagolovokSoputstvuyushieTovari
+{
+color: #FF6600;
+font-size: 15px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.TextRegimRaboti
+{padding-left:10px; 
+color: #fff;
+font-size: 14px;
+margin-top: 30px;
+}
+
+.Cena
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.CenaSumma
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+
+
+.ProstoyText
+{
+font-size: 15px;
+color: #B9B9B9;
+}
+
+.padding
+{
+	padding: 5px;
+}
+
+.TextKartochkiTovara
+{
+font-size: 15px;
+color:#89898A;
+}
+
+.TextStolbecArticul
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+text-align: justify;
+}
+
+.TextNaimenovaniyStolbcov
+{
+color: #89898A;
+font-family: arial,helvetica,tahoma,verdana,sans-serif;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+text-align: justify;
+}
+/*
+
+/*
+End Text style
+*/
+
+
+/*
+GlavniyDIV Style
+*/
+#GlavniyDIV
+{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+min-width:1024px;
+max-width:1800px;
+overflow:auto;
+border:0px solid black;
+}
+
+/*
+VerxniyDiv Style
+*/
+#VerxniyDivSoputstvuyushieTovari
+{
+overflow:visible;
+border:0px solid black;
+}
+
+#VerxniyDiv
+{
+overflow:visible;
+border:0px solid black;
+height:213px;
+background-image: url("/filpannext/FilpanDesign/PageImages/PovtoryaushiysiyaZadnik.gif");
+}
+
+#LevayaKolonkaVerxniyDiv
+{
+position:relative;
+float:left;
+border:0px solid black;
+height:213px;
+width:325px;
+}
+
+#SrednayaKolonkaVerxniyDiv		
+{
+position:relative;
+border:0px solid black;
+height:213px;
+margin-left:327px;
+margin-right:250px;
+background-image: url("PageImages/CentralniyFon.gif");
+background-repeat:no-repeat;
+background-position:50% 24px;
+}		
+
+#CentrirovanniyDivStranicSayta
+{
+	padding-top: 50px;
+	text-align:center;
+}
+
+#PravayaKolonkaVerxniyDiv
+{
+position:relative;
+float:right;
+overflow:auto;
+border:0px solid black;
+height:213px;
+width:220px;
+}
+
+#KorzinaPravayaKolonkaVerxniyDiv
+{
+height: 24px;
+}
+
+#PoiskPravayaKolonkaVerxniyDiv
+{
+padding-top: 10px;
+height: 75px;
+vertical-align: bottom;
+}
+
+#KakNasNaytiPravayaKolonkaVerxniyDiv
+{
+padding-top: 15px;
+}
+
+/*
+END VerxniyDiv Style
+*/
+
+/*
+SredniyDiv Style
+*/
+#SredniyDiv
+{
+padding-top:10px;
+overflow:auto;
+border:0px solid black;
+}
+#LevayaKolonkaSredniyDiv
+{
+overflow:auto;
+border:1px solid black;
+position:relative;
+float:left;
+width:290px;
+border: 1px solid #E0E0D1;
+border-radius: 10px;
+background-color: white;
+}
+
+
+.ContentLevayaKolonkaSredniyDiv
+{
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+margin-bottom: 5px;
+border: 1px solid #FF6600;
+border-radius: 5px;
+background-color: white;
+
+}
+
+.ZagolovokContentLevayaKolonkaSredniyDiv
+{
+height:auto;
+background-color: #FF6600;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+}
+
+.ContentLevayaKolonka
+{
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+margin-bottom: 5px;
+border: 1px solid #FF6600;
+border-radius: 5px;
+background-color: white;
+padding: 10px;
+overflow: auto;
+}
+
+.ZagolovokContentLevayaKolonka
+{
+height:auto;
+background-color: #FF6600;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+margin-left: -10px;
+margin-right: -10px;
+margin-top: -10px;
+
+
+/*display: block;
+text-align: left;
+background-color: #FF7D45;
+display: block;
+text-align: left;
+padding-left: 25px;
+/* height: 50px; */
+/*padding-right: 25px;
+line-height: 20px;
+font-family: Calibri;
+font-size: 18px;
+font-weight: normal;
+margin-top: -10px;
+margin-left: -10px;
+text-align: center;
+margin-right: -10px;
+word-wrap: break-word;*/
+}
+
+.SpisokSsilokMenu
+{
+display: block;
+color: #89898A;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+list-style-type: none;
+width: 80%;
+margin: 0;
+margin-left: 25px;
+padding: 0;
+margin-bottom: 10px;
+}
+
+.SpisokSsilokMenu li
+{
+margin-top: 10px;
+/*height: 20px;*/
+}
+
+
+.SpisokSsilok
+{
+display: block;
+color: #89898A;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+list-style-type: circle;
+width: 80%;
+margin: 0;
+margin-left: 25px;
+padding: 0;
+margin-bottom: 10px;
+}
+
+.SpisokSsilok li
+{
+margin-top: 10px;
+/*height: 20px;*/
+}
+
+.SpisokSsilok a
+{
+color: #89898A;;
+font-size: 10px;
+font-weight: bold;
+font-family: Arial;
+}
+
+
+.raskritiyePlus
+{
+	position: relative;
+	width: 10px;
+	height: 10px;
+	padding: 3px;
+	margin-left: -10px;
+	cursor: pointer;
+	/*left: -10px;*/
+}
+
+
+.raskritiyeMinus
+{
+	position: relative;
+	width: 10px;
+	height: 10px;
+	padding: 3px;
+	margin-left: -10px;
+	cursor: pointer;
+	/*left: -10px;*/
+}
+
+.MiNaYandexMarkete
+{
+clear:both;
+margin-left:auto;
+margin-right:auto;
+width:200px;
+padding-top:20px;
+}
+
+#SrednayaKolonkaSredniyDiv
+{
+position:relative;
+overflow:auto;
+border:1px solid black;
+margin-left:294px;
+margin-right:204px;
+border: 1px solid #E0E0D1;
+border-radius: 10px;
+background-color: white;
+padding: 5px;
+}
+
+#SrednayaKolonkaSredniyDivDlyaTovara
+{
+position:relative;
+overflow:auto;
+border:1px solid black;
+margin-left:294px;
+margin-right:204px;
+border: 1px solid #E0E0D1;
+border-radius: 10px;
+background-color: white;
+padding: 5px;
+}
+
+#SrednayaKolonkaSredniyDivDlyaPaneliUpravleniya
+{
+position:relative;
+overflow:auto;
+border:1px solid black;
+margin-left:294px;
+margin-right:0px;
+border: 1px solid #E0E0D1;
+border-radius: 10px;
+background-color: white;
+padding: 5px;
+}
+
+.LevoeObsheeOknoKartochkaTovara
+{
+position: relative;
+float: left;
+width: 260px;
+overflow: auto;
+margin-right: 5px;
+}
+
+.PravoeOknoOplataDostavkaGarantii
+{
+position: relative;
+float:right;	
+height:214px;
+width:70px;
+margin-top:30px;
+margin-left: 15px;
+}
+
+.ModulSredneyKolonki
+{
+	overflow: auto;
+	padding: 10px;
+}
+
+
+.ContentElementiLevoeObsheeOknoKartochkaTovara
+{
+width: 200px;
+/* height: 300px; */
+overflow-y: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+.ContentTovara
+{
+	position: relative;
+	margin-top:10px;
+	margin-left: 270px;
+	margin-right: 90px;
+	text-align: justify;
+}
+
+.ElementiContenta
+{
+	margin-top: 15px;
+}
+
+#PravayaKolonkaSredniyDiv
+{
+float:right;
+position:relative;
+overflow:auto;
+border:1px solid black;
+width:200px;
+border: 1px solid #E0E0D1;
+border-radius: 10px;
+background-color: white;
+}
+
+.VneshniyVidTovara
+{
+
+overflow: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+.DopolnitelnoeOpisanie
+{
+
+overflow: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+.SoputstvuyushieTovariIUslugi
+{
+overflow: auto;
+margin-left: auto;
+margin-right: auto;
+min-width: 1024px;
+max-width: 1600px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+width: 1100px;
+}
+
+.SoputstvuyushieTovariIUslugiDlyaSoputstvuyushihTovarov
+{
+overflow: auto;
+margin-left: auto;
+margin-right: auto;
+min-width: 1024px;
+max-width: 1600px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+.SoputstvuyushieTovari, .ObshiySpisokSoputstvuushixTovarov
+{
+	overflow: auto;
+}
+
+.SoputstvuyushiyTovarElement
+{
+float: left;
+width: 110px;
+height: 250px;
+/* height: 300px; */
+overflow-y: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+
+.SoputstvuyushiyTovarElementDlyaSoputstvuyushih
+{
+float: left;
+/*width: 110px;*/
+/* height: 300px; */
+overflow-y: auto;
+margin-left: 0px;
+margin-right: 5px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+table.TablicaTovarov
+{
+	width: 100%;
+	position: relative;
+}
+
+
+table.TablicaTovarov caption
+{
+	background-color: #EFEFEF;
+	text-align: left;
+	padding: 5px;
+	color:#89898A;
+}
+
+
+
+table.TablicaTovarov, table.TablicaTovarov th, table.TablicaTovarov td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: 1px solid #EFEFEF;
+}
+
+/*.ZagolovokStolbcaArtikul
+{
+	width: 50px;
+}
+.ZagolovokStolbcaIzobrageniye
+{
+	width: 100px;
+}
+.ZagolovokStolbcaNazvaniye
+{
+	width: auto;
+}
+.ZagolovokStolbcaCena
+{
+	width: 150px;
+}
+*/
+.StolbecArticul
+{
+	padding: 10px;
+	width: 70px;
+}
+
+
+.StolbecPoridkoviyNomer
+{
+	padding: 10px;
+	width: 30px;
+}
+
+.StolbecIzobrageniye
+{
+	padding: 10px;
+	width: 100px;
+}
+.StolbecNazvaniye
+{
+	padding: 5px;
+	width: auto;
+}
+.StolbecCena
+{
+	padding: 10px;
+    width: 110px;
+}
+
+
+
+
+.StolbecArticulAdmin
+{
+	padding: 10px;
+	width: 50px;
+}
+
+
+.StolbecPoridkoviyNomerAdmin
+{
+	padding: 10px;
+	width: 30px;
+}
+
+.StolbecIzobrageniyeAdmin
+{
+	padding: 10px;
+	width: 60px;
+}
+.StolbecNazvaniyeAdmin
+{
+	max-width: 200px;
+	padding: 5px;
+	overflow-wrap:break-word;
+	/*width: auto;*/
+}
+.StolbecCenaAdmin
+{
+	padding: 10px;
+    width: 80px;
+}
+
+.StolbecCheckBoxAdmin
+{
+	padding: 10px;
+    width: 30px;
+}
+
+
+.ModulSsilokNaStraniciTablici
+{
+padding: 10px;
+overflow: auto;
+}
+
+.ElementSsilkaStraniciTablici
+{
+float: left;
+background-color: #EFEFEF;
+width: 20px;
+height: 20px;
+padding: 2px;
+margin: 2px;
+text-align: center;
+}
+
+.TekushiyElementSsilkaStraniciTablici
+{
+float: left;
+background-color: #999999;
+width: 20px;
+height: 20px;
+padding: 2px;
+margin: 2px;
+text-align: center;
+}
+
+.TekushiyElementSsilkaStraniciTablici .SsilkaNaStranicuTablici
+{
+color: white;
+}
+
+
+
+.ElementSsilkaStraniciTablici:hover
+{
+background-color: #999999;
+}
+.ElementSsilkaStraniciTablici:hover .SsilkaNaStranicuTablici
+{
+color: white;
+}
+
+
+.ZagolovokSuperPredlogeniya
+{
+height:auto;
+background-color: #FF6600;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+}
+
+.ContentSuperPredlogeniya
+{
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 20px;
+width: 80%;
+border: 1px solid #FF6600;
+background-color: white;
+}
+
+.DivContentSuperPredlogeniye
+{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+
+
+
+.TextoviyModulSnizu, .TextoviyModulSverhu
+{
+
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+
+padding: 10px;
+border: 1px solid #FF6600;
+border-radius: 5px;
+background-color: white;
+overflow: auto;
+}
+
+
+
+
+/*
+END SredniyDiv Style
+*/
+
+/*
+NigniyDiv Style
+*/
+#NigniyDiv
+{
+bottom:0px;
+position:fixed;
+height:50px;
+left: 0px;
+right: 0px;
+overflow:auto;
+border:0px solid black;
+background-color: #DCDCDC;
+}
+/*
+END NigniyDiv Style
+*/
+
+
+#FonZatemneniyaKorzini
+{
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+
+#Korzina
+{  
+display: none;
+	background-color: white;
+    position: fixed;
+	width:750px;
+	left: 50%;
+	top: 5%;
+	margin-left: -375px;
+	padding: 10px;
+	border-radius: 10px;
+	z-index:100; 
+}
+
+
+.DivVsegoKOplate
+{
+	vertical-align: middle;
+	padding: 5px
+}
+.TablicaKorzina
+{
+	width: 100%;
+}
+
+.TablicaKorzina th
+{
+background-color: #EFEFEF;
+padding: 5px;
+text-align: center;
+border-collapse: collapse;
+border: 1px solid #EFEFEF;
+}
+
+.TablicaKorzina, .TablicaKorzina td
+{
+	background-color: white;
+	text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #EFEFEF;
+}
+
+ td.TablicaKorzinaBezCentrovki
+{
+	background-color: white;
+	text-align: left ;
+    border-collapse: collapse;
+    border: 2px solid #EFEFEF;
+}
+
+
+.StolbecKnopok
+{
+width: 150px;
+}
+
+
+.tablicaBlankaZakaza
+{
+width: 95%;
+}
+
+.tablicaBlankaZakaza , .tablicaBlankaZakaza td , .tablicaBlankaZakaza caption
+{
+	background-color: white;
+	text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+
+.blankZakazaTable input
+{
+border: 1px solid black;
+}
+.blankZakazaTable select
+{
+border: 1px solid black;
+}
+
+.BlankZakazaDivText
+{
+overflow: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #D6D6D6;
+border-radius: 5px;
+background-color: white;
+}
+
+
+#ZakazSamovivoz
+{
+	display: none;
+}
+
+#ZakazViezdBeznal
+{
+	display: none;
+}
+
+#ZakazSamovivozBeznal
+{
+	display: none;
+}
+
+
+.ORGANIZACIYA
+{
+	display: none;
+}
+
+.BEZNAL
+{
+	display: none;
+}
+
+/*Dopolnitelniye stili PaneliUpravleniya*/
+
+
+
+.SsilkaPerehodNaSayt,
+.SsilkaPerehodNaSayt:link,
+.SsilkaPerehodNaSayt:visited
+{
+color: #FF6600;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.knopka
+{
+	border: 1px solid #D6D6D6;
+	border-radius: 5px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.block_kartinki
+{
+	width:210px;
+	float:left;
+	padding:5px;
+}
+
+.blockElementovRabochegoOkna
+{
+	overflow: auto;
+	margin: 10px 20px 10px 20px;
+	border-radius: 5px;
+	background-color: #f5f9f9;
+	border: 1px solid;
+	border-color: #c4ced2 #dce7ed #dce7ed;
+	padding: 19px;
+}
+
+.admin_row_name
+{
+	vertical-align: top;
+	text-align: left;
+    padding: 5px 12px 7px 10px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+}
+
+.admin_row_content
+{
+	vertical-align: top;
+    padding: 5px 4px 7px 0;
+}
+
+.admin_heading
+{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.admin_heading td
+{
+	background-color: #e0e8ea;
+    border-top: 11px solid #F5F9F9;
+    border-bottom: 11px solid #F5F9F9;
+    color: #4b6267;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px #fff;
+	padding: 8px 70px 10px;
+}
+
+.OpisaniyeTextovogoPolya
+{
+	text-align: left;
+    display: block;
+}
+
+.poleVvodaDannixElementa
+{
+	font-size: 13px;
+    height: 25px;
+    padding: 0 5px;
+    margin: 0;
+	background: #fff;
+    border: 1px solid;
+    border-color: #87919c #959ea9 #9ea7b1 #959ea9;
+    border-radius: 4px;
+    color: #000;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+.TextovoyePole 
+{
+	width: 500px;
+	background: #fff;
+    border: 1px solid;
+    border-color: #87919c #959ea9 #9ea7b1 #959ea9;
+    border-radius: 3px;
+    color: #3f4b54;
+    -ms-border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 5px;
+}
+
+.block_kartinki .poleVvodaDannixElementa
+{
+	width:200px;
+}
+
+.NeValidnoePoleVvodaDannixElementa
+{
+	color: red;
+	border: 1px solid red !important;
+}
+
+.kursValuti
+{
+	width:50px;
+	border: 1px solid #D6D6D6;
+	margin-left: 10px;
+}
+
+.poleVvodaDannixStrokiKluchevoeSlovoTablici
+{
+	width: 80px;
+	border: 1px solid #D6D6D6;
+}
+
+.poleVvodaDannixStrokiCena
+{
+	width: 80px;
+	border: 1px solid #D6D6D6;
+	margin-top: 18px;
+}
+
+
+.poleVvodaDannixStrokiTablici
+{
+	width: 40px;
+	border: 1px solid #D6D6D6;
+}
+
+.poleVvodaDannixChechboxStrokiTablici
+{
+	width: 20px;
+	border: 1px solid #D6D6D6;
+}
+
+table.tablicaSsilok
+{
+	width: 100%;
+	position: relative;
+	margin-top: 7px;
+}
+
+
+table.tablicaSsilok caption
+{
+	background-color: #EFEFEF;
+	text-align: left;
+	padding: 5px;
+}
+
+table.tablicaSsilok, table.tablicaSsilok th, table.tablicaSsilok td {
+    border-collapse: collapse;
+	padding-bottom: 7px;
+}
+
+.redaktiruemayaSsilkaVTablice
+{
+	width: 80%;
+	border: 1px solid #D6D6D6;
+}
+
+
+/*
+Filpan.ru
+*/
+
+.content-box-auto-width-grey_100
+{
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+
+width: 99%;
+border: 1px solid #D6D6D6;
+color: #89898A;
+font-size: 15px;
+border-radius: 5px;
+background-color: white;
+overflow-y: auto;
+}
+
+.content_box_title-auto-width-grey {
+height: 25px;
+background-color: #D6D6D6;
+margin-right: -10px;
+margin-left: -10px;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+color: white;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.content_box_title-auto-width-grey-100 {
+height: 25px;
+background-color: #D6D6D6;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+color: white;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.content-box-auto-width-grey {
+/*margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;*/
+margin: 10px;
+padding-left: 10px;
+padding-right: 10px;
+/*width: 90%;*/
+border: 1px solid #D6D6D6;
+color: #89898A;
+font-size: 15px;
+border-radius: 5px;
+background-color: white;
+overflow-y: auto;
+}
+
+.content_box_title-auto-width {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+height: 25px;
+background-color: #FF6600;
+padding-top: 5px;
+padding-left: 5px;
+display: block;
+text-align: left;
+color: white;
+font-size: 12px;
+font-weight: bold;
+font-family: Arial;
+}
+
+.content-box-auto-width {
+border: 1px solid #FF6600;
+color: #FF9933;
+font-size: 15px;
+border-radius: 5px;
+background-color: white;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 5px;
+}
+
+.al_center_orange {
+display: block;
+text-align: center;
+color: #FF6600;
+}
+
+.streetDiv
+{
+	margin-left:20px;
+	padding:20px;
+	color:#FF6600;
+}
+
+/*
+Styles
+*/
+.poleVvodaDannixStrokiKluchevoeSlovoTabliciTextArea {
+    width: 140px;
+    height: 60px;
+    border: 1px solid #D6D6D6;
+    padding: 5px 0px 0px 5px;
+    margin: 0px 5px;
+}
+.polePriorityGoods {
+    border: 1px solid #D6D6D6;
+}
+.knopka_sgenerirovat_ssilku {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px;
+    margin-top: 5px;
+}
+.poleVvodaDannixStrokiKluchevoeSlovoTabliciTextArea {
+    width: 140px;
+    height: 60px;
+    border: 1px solid #D6D6D6;
+    padding: 5px 0px 0px 5px;
+    margin: 0px 5px;
+}
+
+
+
+.KartridgDlyaPrintera
+{
+    border: 1px solid #dddddd;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 23px;
+    display: table;
+}
+
+.KartridgDlyaPrinteraKartinka
+{
+    width: 245px;
+    border-right: 1px solid #dddddd;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.KartridgDlyaPrinteraKartinka img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.KartridgDlyaPrinteraInfo
+{
+    width: calc(100% - 265px);
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.KartridgDlyaPrinteraName a
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraNameLink
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraGlavniyDiv
+{
+    width: 100%;
+    display: table;
+}
+
+.KartridgDlyaPrinteraDiv
+{
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.KartridgDlyaPrinteraDivName
+{
+    width: 50%;
+}
+
+.KartridgDlyaPrinteraDivCena
+{
+    width: 50%;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraTextKartochkiTovara
+{
+    color: #616161;
+    font-family: Calibri;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraAddcount
+{
+    float: left;
+    width: 20px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 21px !important;
+    border: 1px solid #bac8d3;
+    text-align: center;
+    cursor:pointer;
+}
+
+.KartridgDlyaPrinteraStrokaVvodaKolichestvo
+{
+    float: left;
+    width: 20px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 21px !important;
+    border: 1px solid #bac8d3;
+    border-left:none;
+    border-right:none;
+    text-align: center;
+}
+
+.KartridgDlyaPrinteraAddToCart
+{
+    background-color: #339807;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: 16px/0px Calibri;
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.KartridgDlyaPrinteraAddToCartIcon
+{
+    height: 26px;
+    position: relative;
+    top: 4px;
+    right: 2px;
+}
+
+.KartridgDlyaPrinteraAddToCartText
+{
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.kontrentRazvernut,
+.kontrentSvernut
+{
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    background-color: white;
+    cursor:pointer;
+}
+
+.toTopButton
+{
+	display:none;
+	position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: #ff6600;
+    color: #fff;
+    z-index: 99999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 44px;
+    line-height: 64px;
+    border-radius: 50px;
+}

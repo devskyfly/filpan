@@ -1,0 +1,54 @@
+.callback, .or_button {
+    cursor:pointer;
+    text-decoration:none; 
+    text-align:center; 
+    padding:3px 0; 
+    border:solid 1px #c24f02; 
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px; 
+    border-radius: 12px; 
+    font:12px Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color:#ffffff; 
+    background-color:#ff6600; 
+    background-image: -moz-linear-gradient(top, #ff6600 0%, #cf5300 100%); 
+    background-image: -webkit-linear-gradient(top, #ff6600 0%, #cf5300 100%); 
+    background-image: -o-linear-gradient(top, #ff6600 0%, #cf5300 100%); 
+    background-image: -ms-linear-gradient(top, #ff6600 0% ,#cf5300 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf5300', endColorstr='#cf5300',GradientType=0 ); 
+    background-image: linear-gradient(top, #ff6600 0% ,#cf5300 100%);   
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+    display: block;
+    width: 125px;
+    margin-top: 3px;
+}
+.cart_button {
+    display: block;
+    margin-left: 21px;
+    margin-top: 1px;
+    padding: 3px 0;
+}
+.content-box-links {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.feedback_link {
+    cursor: pointer;
+}
+
+.working_time {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.phones {
+    height: 40px;
+    margin-left: 335px;
+    position: absolute;
+    top: 0;
+    width: 400px;
+}

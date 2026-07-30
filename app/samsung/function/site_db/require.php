@@ -1,0 +1,1 @@
+<?php  require_once($_SERVER['DOCUMENT_ROOT'].'/function/site_db/db_func.php');?>

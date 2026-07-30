@@ -1,0 +1,6 @@
+__pycache__
+/volumes/**/
+!/volumes/**/.gitkeep
+.idea/
+!.idea/runConfigurations/
+!.idea/runConfigurations/**

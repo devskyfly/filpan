@@ -1,0 +1,44 @@
+<tr><td><br><br>
+<table width="68%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <form method="post" action="adm.php?rass" enctype=multipart/form-data>
+<tr><td>Выберите тему:<br>
+<?
+echo "<select name=thema>";
+$select=mysql_query("SELECT * FROM $tema");
+$number = mysql_num_rows($select);
+if ($number>0) {
+	while ($Row=mysql_fetch_row($select)){
+		if (@$tema==$Row[0]) {
+			echo "<option value=\"$Row[0]\" SELECTED>$Row[1]</option>";
+		}
+		else {
+			echo "<option value=\"$Row[0]\">$Row[1]</option>";
+		}
+	}
+}
+?>
+<option value="Проверка">Проверка</option>
+<option value="Коммерческое предложение">Коммерческое предложение</option>
+</select><br><br>
+</td></tr>
+    <tr> 
+      <td> Основной текст:<br>
+        <textarea rows=6 cols=50 name=text ><?=@$text?></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td> <br>
+        Вложения: 
+        <input type="file" name="File" size=30>
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><input type=submit name=zak value="Начать рассылку"></td>
+    </tr>
+  </form>
+<tr><td><br><br>
+</td></tr>
+</table>

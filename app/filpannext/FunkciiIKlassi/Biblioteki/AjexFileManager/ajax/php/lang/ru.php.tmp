@@ -1,0 +1,25 @@
+<?php
+
+function translit($input_string)
+{
+	$trans = array();
+	$ch1 = "/\r\n-Р°Р±РІРіРґРµС‘Р·РёР№РєР»РјРЅРѕРїСЂСЃС‚СѓС„С…С†С‹СЌРђР‘Р’Р“Р”Р•РЃР—РР™РљР›РњРќРћРџР РЎРўРЈР¤РҐР¦Р«Р­ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	$ch2 = "    abvgdeeziyklmnoprstufhcyeabvgdeeziyklmnoprstufhcyeabcdefghijklmnopqrstuvwxyz";
+	for($i=0; $i<mb_strlen($ch1); $i++)
+		$trans[mb_substr($ch1, $i, 1)] = mb_substr($ch2, $i, 1);
+	$trans["Р–"] = "zh";  $trans["Р¶"] = "zh";
+	$trans["Р§"] = "ch";  $trans["С‡"] = "ch";
+	$trans["РЁ"] = "sh";  $trans["С€"] = "sh";
+	$trans["Р©"] = "sch"; $trans["С‰"] = "sch";
+	$trans["РЄ"] = "";    $trans["СЉ"] = "";
+	$trans["Р¬"] = "";    $trans["СЊ"] = "";
+	$trans["Р®"] = "yu";  $trans["СЋ"] = "yu";
+	$trans["РЇ"] = "ya";  $trans["СЏ"] = "ya";
+	$trans["\\\\"] = " ";
+	$trans["[^\. a-z0-9]"] = " ";
+	$trans["^[ ]+|[ ]+$"] = "";
+	$trans["[ ]+"] = "_";
+	foreach($trans as $from=>$to)
+		$input_string = mb_ereg_replace(str_replace("\\", "\\", $from), $to, $input_string);
+	return $input_string;
+}
