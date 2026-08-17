@@ -20,9 +20,134 @@ $VsegokOplate = $CartDataArr[1];
 
     <!-- <a href="%skontakti.php" class="SuperPredlogeniye" target="_blank">Как проехать к нам в офис</a> -->
 <? echo sprintf('<div class="top_right_block"><div></div>', $_WEB_ROOT_HREF) ?>
-    <div><a class="lightbox-40161040460336 callback orange_link">Напишите нам</a></div>
-    <div style="text-align:center"><a class="lightbox-40151877212348 orange_link callback">Закажите звонок</a>
+    <div><a class="lightbox-40161040460336 callback orange_link js-open-feedback">Напишите нам</a></div>
+    <div style="text-align:center"><a class="lightbox-40151877212348 orange_link callback js-open-feedback">Закажите звонок</a>
     </div></div>
+<script>
+    $(function () {
+        var $modal = $('#feedbackModal');
+        var $form = $('#feedbackForm');
+        var $message = $('#feedbackMessage');
+        var $submitButton = $form.find('[type="submit"]');
+        var $lastFocusedElement = $();
+
+        function openFeedbackModal() {
+            $lastFocusedElement = $(document.activeElement);
+
+            $modal
+                .addClass('is-open')
+                .attr('aria-hidden', 'false');
+
+            $('body').addClass('feedback-modal-open');
+
+            window.setTimeout(function () {
+                $('#feedbackName').trigger('focus');
+            }, 50);
+        }
+
+        function closeFeedbackModal() {
+            $modal
+                .removeClass('is-open')
+                .attr('aria-hidden', 'true');
+
+            $('body').removeClass('feedback-modal-open');
+
+            if ($lastFocusedElement.length) {
+                $lastFocusedElement.trigger('focus');
+            }
+        }
+
+        // Открытие по кнопке.
+        // Можно добавить класс js-open-feedback к любой кнопке или ссылке.
+        $(document).on('click', '.js-open-feedback', function (event) {
+            event.preventDefault();
+            openFeedbackModal();
+        });
+
+        // Закрытие по крестику
+        $(document).on('click', '.js-close-feedback', function () {
+            closeFeedbackModal();
+        });
+
+        // Закрытие при клике на затемнённый фон
+        $modal.on('click', '.feedback-modal__overlay', function () {
+            closeFeedbackModal();
+        });
+
+        // Закрытие по Escape
+        $(document).on('keydown', function (event) {
+            if (event.key === 'Escape' && $modal.hasClass('is-open')) {
+                closeFeedbackModal();
+            }
+        });
+
+        $form.on('submit', function (event) {
+            event.preventDefault();
+
+            $message
+                .removeClass('is-success is-error')
+                .hide()
+                .text('');
+
+            $submitButton
+                .prop('disabled', true)
+                .text('Отправка...');
+
+            $.ajax({
+                url: '/feedback/executor.php',
+                type: 'POST',
+                data: $form.serialize(),
+                dataType: 'json',
+                timeout: 15000
+            })
+                .done(function (response) {
+                    if (response.success) {
+                        $message
+                            .addClass('is-success')
+                            .text(response.message || 'Спасибо! Сообщение отправлено.')
+                            .show();
+
+                        $form[0].reset();
+
+                        // При необходимости закрываем окно через 2 секунды
+                        window.setTimeout(function () {
+                            closeFeedbackModal();
+
+                            $message
+                                .removeClass('is-success is-error')
+                                .hide()
+                                .text('');
+                        }, 2000);
+                    } else {
+                        $message
+                            .addClass('is-error')
+                            .text(response.message || 'Не удалось отправить сообщение.')
+                            .show();
+                    }
+                })
+                .fail(function (xhr) {
+                    var errorMessage = 'Произошла ошибка. Попробуйте ещё раз.';
+
+                    if (
+                        xhr.responseJSON &&
+                        xhr.responseJSON.message
+                    ) {
+                        errorMessage = xhr.responseJSON.message;
+                    }
+
+                    $message
+                        .addClass('is-error')
+                        .text(errorMessage)
+                        .show();
+                })
+                .always(function () {
+                    $submitButton
+                        .prop('disabled', false)
+                        .text('Отправить');
+                });
+        });
+    });
+</script>
     <div id='SuperPredlogeniyaDiv'>
         <?
         $SuperPredlogeniya = new TovariUslugi();

@@ -1,5 +1,0 @@
-<?require_once($_SERVER['DOCUMENT_ROOT']."/filpannext/FunkciiIKlassi/FailKonfiguracii.php");
-$ElementMenu=new ElementTovarovUslug();
-$ElementMenu->poluchit($_REQUEST['input_id']);
-$ElementMenu->udalitSsilkiNaElement();
-?>

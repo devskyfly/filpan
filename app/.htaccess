@@ -19,12 +19,14 @@ RewriteRule (.*) http://www.filpan.ru/$1 [R=301,L]
 RewriteCond %{REQUEST_URI}  404.php$
 RewriteRule  (.*)  404.php [QSA,L]
 
+RewriteCond %{REQUEST_URI}  (^/inf.php$)
+RewriteRule  (.*) $1 [QSA,L]
+
 RewriteCond %{REQUEST_URI}  (^/tst.php$)
 RewriteRule  (.*) $1 [QSA,L]
 
 RewriteCond %{REQUEST_URI}  (^/MailRegister\.html$)
 RewriteRule  (.*) $1 [QSA,L]
-
 
 RewriteCond %{REQUEST_URI}  (^/session\.php$)
 RewriteRule  (.*) $1 [QSA,L]
@@ -89,6 +91,9 @@ RewriteRule  (.*) $1 [QSA,L]
 
 
 RewriteCond %{REQUEST_URI}  (^/FeedBack/.*)
+RewriteRule  (.*) $1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}  (^/feedback/.*)
 RewriteRule  (.*) $1 [QSA,L]
 
 RewriteCond %{REQUEST_URI}  (^/export/menu.php)

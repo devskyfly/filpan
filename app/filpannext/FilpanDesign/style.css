@@ -5335,3 +5335,160 @@ a.bottomFlyBar_linkSedn:hover {
     opacity: 0;
     backface-visibility: hidden;
 }
+
+
+.feedback-modal-open {
+    overflow: hidden;
+}
+
+.feedback-open-button {
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.feedback-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feedback-modal.is-open {
+    display: flex;
+}
+
+.feedback-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.feedback-modal__window {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 520px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding: 32px;
+    border-radius: 12px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-modal__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #333;
+    font-size: 34px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.feedback-modal__title {
+    margin: 0 40px 24px 0;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.feedback-form__field {
+    margin-bottom: 18px;
+}
+
+.feedback-form__field label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.feedback-form__field input,
+.feedback-form__field textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #222;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.feedback-form__field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.feedback-form__field input:focus,
+.feedback-form__field textarea:focus {
+    border-color: #222;
+    outline: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.feedback-form__submit {
+    width: 100%;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.feedback-form__submit:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.feedback-form__message {
+    display: none;
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.feedback-form__message.is-success {
+    display: block;
+    background: #e8f7ec;
+    color: #176b2c;
+}
+
+.feedback-form__message.is-error {
+    display: block;
+    background: #fdeaea;
+    color: #9c2020;
+}
+
+.feedback-form__honeypot {
+    position: absolute !important;
+    left: -99999px !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .feedback-modal {
+        padding: 12px;
+    }
+
+    .feedback-modal__window {
+        padding: 26px 20px;
+    }
+}

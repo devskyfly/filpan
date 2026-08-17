@@ -161,7 +161,7 @@ $description=$ElementStatya->poluchitSvoystvo('description');
 			<?//require('ObshiyeModuli/Korzina.php');?>
 		</div>
 
-
+        <?require('ObshiyeModuli/FormModalWindow.php');?>
 </body>
 </html>
 <?
