@@ -15,7 +15,7 @@ date_default_timezone_set('Europe/Moscow');
 /*
  * Настройки.
  */
-$recipient = 'info@filpan.ru';
+$recipient = 'filpan@yandex.ru';
 $senderEmail = 'no-reply@filpan.ru';
 $senderName = 'Сайт filpan.ru';
 
@@ -322,6 +322,7 @@ if (
  * Получаем данные формы.
  */
 $website = getPostValue('website');
+$formType = getPostValue('form_type');
 $name = getPostValue('name');
 $phone = getPostValue('phone');
 $email = getPostValue('email');
@@ -344,12 +345,36 @@ if ($website !== '') {
 
 
 /*
- * Проверяем обязательные поля.
+ * Проверяем тип формы и обязательные поля.
  */
-if ($name === '' || $phone === '' || $email === '') {
+if ($formType !== 'callback' && $formType !== 'message') {
     sendJson(
         false,
-        'Заполните имя, телефон и email.',
+        'Неизвестный тип формы.',
+        422
+    );
+}
+
+if ($name === '') {
+    sendJson(
+        false,
+        'Заполните имя.',
+        422
+    );
+}
+
+if ($formType === 'callback' && $phone === '') {
+    sendJson(
+        false,
+        'Заполните телефон.',
+        422
+    );
+}
+
+if ($formType === 'message' && ($email === '' || $comment === '')) {
+    sendJson(
+        false,
+        'Заполните почту и комментарий.',
         422
     );
 }
@@ -391,7 +416,18 @@ if ($phoneLength > 30) {
 if ($emailLength > 150) {
     sendJson(
         false,
-        'Email слишком длинный.',
+        'Почта указана некорректно.',
+        422
+    );
+}
+
+if (
+    $formType === 'message'
+    && !filter_var($email, FILTER_VALIDATE_EMAIL)
+) {
+    sendJson(
+        false,
+        'Укажите корректный адрес почты.',
         422
     );
 }
@@ -400,18 +436,6 @@ if ($commentLength > 2000) {
     sendJson(
         false,
         'Комментарий слишком длинный.',
-        422
-    );
-}
-
-
-/*
- * Проверяем email.
- */
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    sendJson(
-        false,
-        'Укажите корректный email.',
         422
     );
 }
@@ -468,7 +492,9 @@ if (!$emailSlotReserved) {
 /*
  * Формируем тему письма.
  */
-$subjectText = 'Новая заявка с сайта filpan.ru';
+$subjectText = $formType === 'callback'
+    ? 'Заказ звонка с сайта filpan.ru'
+    : 'Сообщение с сайта filpan.ru';
 
 $encodedSubject = '=?UTF-8?B?'
     . base64_encode($subjectText)
@@ -479,18 +505,15 @@ $encodedSubject = '=?UTF-8?B?'
  * Формируем тело письма.
  */
 $messageLines = array(
-    'Получена новая заявка с сайта filpan.ru',
-    '',
-    'Имя: ' . $cleanName,
-    'Телефон: ' . $cleanPhone,
-    'Email: ' . $cleanEmail,
-    '',
-    'Комментарий:',
-    $comment !== '' ? $comment : 'Не указан',
-    '',
-    'Дата: ' . date('d.m.Y H:i:s'),
-    'IP: ' . $remoteAddress
+    'Имя: ' . $cleanName
 );
+
+if ($formType === 'callback') {
+    $messageLines[] = 'Телефон: ' . $cleanPhone;
+} else {
+    $messageLines[] = 'Почта: ' . $cleanEmail;
+    $messageLines[] = 'Комментарий: ' . $comment;
+}
 
 $message = implode("\r\n", $messageLines);
 
@@ -498,7 +521,7 @@ $message = implode("\r\n", $messageLines);
 /*
  * Формируем заголовки.
  *
- * Email пользователя ставим в Reply-To, а не в From.
+ * Адрес отправителя должен принадлежать домену сайта.
  */
 $encodedSenderName = '=?UTF-8?B?'
     . base64_encode($senderName)
@@ -513,9 +536,12 @@ $headers = array(
     . ' <'
     . $senderEmail
     . '>',
-    'Reply-To: ' . $cleanEmail,
     'X-Mailer: PHP/' . PHP_VERSION
 );
+
+if ($formType === 'message') {
+    $headers[] = 'Reply-To: ' . $cleanEmail;
+}
 
 
 /*

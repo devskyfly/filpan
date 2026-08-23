@@ -20,8 +20,8 @@ $VsegokOplate = $CartDataArr[1];
 
     <!-- <a href="%skontakti.php" class="SuperPredlogeniye" target="_blank">Как проехать к нам в офис</a> -->
 <? echo sprintf('<div class="top_right_block"><div></div>', $_WEB_ROOT_HREF) ?>
-    <div><a class="lightbox-40161040460336 callback orange_link js-open-feedback">Напишите нам</a></div>
-    <div style="text-align:center"><a class="lightbox-40151877212348 orange_link callback js-open-feedback">Закажите звонок</a>
+    <div><a class="lightbox-40161040460336 callback orange_link js-open-feedback" data-feedback-type="message">Напишите нам</a></div>
+    <div style="text-align:center"><a class="lightbox-40151877212348 orange_link callback js-open-feedback" data-feedback-type="callback">Заказать звонок</a>
     </div></div>
 <script>
     $(function () {
@@ -29,10 +29,57 @@ $VsegokOplate = $CartDataArr[1];
         var $form = $('#feedbackForm');
         var $message = $('#feedbackMessage');
         var $submitButton = $form.find('[type="submit"]');
+        var $formType = $('#feedbackFormType');
+        var $modalTitle = $('#feedbackModalTitle');
+        var $phone = $('#feedbackPhone');
+        var $phoneField = $phone.closest('.feedback-form__field');
+        var $email = $('#feedbackEmail');
+        var $emailField = $email.closest('.feedback-form__field');
+        var $comment = $('#feedbackComment');
+        var $commentField = $comment.closest('.feedback-form__field');
         var $lastFocusedElement = $();
 
-        function openFeedbackModal() {
+        function openFeedbackModal(feedbackType) {
+            var isCallback = feedbackType === 'callback';
+
             $lastFocusedElement = $(document.activeElement);
+
+            $form[0].reset();
+            $formType.val(isCallback ? 'callback' : 'message');
+            $modalTitle.text(isCallback ? 'Заказать звонок' : 'Напишите нам');
+
+            if (isCallback) {
+                $phoneField
+                    .show()
+                    .attr('aria-hidden', 'false');
+                $phone.prop('disabled', false).prop('required', true);
+                $emailField
+                    .hide()
+                    .attr('aria-hidden', 'true');
+                $email.val('').prop('disabled', true).prop('required', false);
+                $commentField
+                    .hide()
+                    .attr('aria-hidden', 'true');
+                $comment.val('').prop('disabled', true).prop('required', false);
+            } else {
+                $phoneField
+                    .hide()
+                    .attr('aria-hidden', 'true');
+                $phone.val('').prop('disabled', true).prop('required', false);
+                $emailField
+                    .show()
+                    .attr('aria-hidden', 'false');
+                $email.prop('disabled', false).prop('required', true);
+                $commentField
+                    .show()
+                    .attr('aria-hidden', 'false');
+                $comment.prop('disabled', false).prop('required', true);
+            }
+
+            $message
+                .removeClass('is-success is-error')
+                .hide()
+                .text('');
 
             $modal
                 .addClass('is-open')
@@ -61,7 +108,7 @@ $VsegokOplate = $CartDataArr[1];
         // Можно добавить класс js-open-feedback к любой кнопке или ссылке.
         $(document).on('click', '.js-open-feedback', function (event) {
             event.preventDefault();
-            openFeedbackModal();
+            openFeedbackModal($(this).attr('data-feedback-type'));
         });
 
         // Закрытие по крестику

@@ -22,6 +22,13 @@
         </h2>
 
         <form class="feedback-form" id="feedbackForm" method="post">
+            <input
+                type="hidden"
+                id="feedbackFormType"
+                name="form_type"
+                value="message"
+            >
+
             <div class="feedback-form__field">
                 <label for="feedbackName">Имя</label>
                 <input
@@ -47,7 +54,7 @@
             </div>
 
             <div class="feedback-form__field">
-                <label for="feedbackEmail">Email</label>
+                <label for="feedbackEmail">Почта</label>
                 <input
                     type="email"
                     id="feedbackEmail"
@@ -65,6 +72,7 @@
                     name="comment"
                     rows="5"
                     maxlength="2000"
+                    required
                 ></textarea>
             </div>
 
