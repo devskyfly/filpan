@@ -34,6 +34,7 @@ $MassivRoditeleyElementaMenu = array_reverse($TekushiyElementMenu->poluchitRodit
 if (!empty($MassivRoditeleyElementaMenu)) {
     $UsloviyaZaprosa = preobrazovatMassivVINUsloviyeZaprosa($MassivRoditeleyElementaMenu, 'kategoriya_svoystva');
     $ZaprosNaChteniye = new ZaprosNaChteniye('SELECT k.id_svoystva FROM filpan_new_kategorii_svoystv k LEFT JOIN filpan_new_svoystva s ON (s.id = k.id_svoystva) WHERE ' . $UsloviyaZaprosa . ' order by sortirovka');
+    $MassivInformacii = array();
     if ($ZaprosNaChteniye->poluchitKolichestvoStrokOtvetaNaZapros() > 0) {
         $MassivInformacii = $ZaprosNaChteniye->poluchitOtvetNaZaprosAssociativniyMassiv();
     }
