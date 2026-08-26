@@ -1,0 +1,13 @@
+{
+    "name": "filpan/feedback",
+    "description": "SMTP delivery for the filpan.ru feedback form",
+    "require": {
+        "php": ">=5.6",
+        "phpmailer/phpmailer": "^6.9.3"
+    },
+    "config": {
+        "platform": {"php": "5.6.40"},
+        "sort-packages": true
+    },
+    "license": ["proprietary"]
+}

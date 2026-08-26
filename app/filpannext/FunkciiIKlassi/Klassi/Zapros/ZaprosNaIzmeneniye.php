@@ -37,7 +37,7 @@ class ZaprosNaIzmeneniye
 //print_r($TextZaprosa);
         $this->_TextZaprosa = $TextZaprosa;
         $this->_ImyaBaziDannix = 'u3558310_filpan_utf8';
-        $this->_ImyaServera = 'db';
+        $this->_ImyaServera = '127.0.0.1';
         $this->_ImyaPolzovatelya = 'u3558310_filpan_utf8';
         $this->_Parol = 'FilpanChislopi314';
         $this->soedinitsyaSServerom();

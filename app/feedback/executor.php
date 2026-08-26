@@ -1,5 +1,7 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 /*
  * send-feedback.php
  * Совместимо с PHP 5.6
@@ -7,17 +9,31 @@
 
 header('Content-Type: application/json; charset=UTF-8');
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 /*
  * Часовой пояс нужен для правильного сброса суточного лимита.
  */
 date_default_timezone_set('Europe/Moscow');
 
 /*
- * Настройки.
+ * Настройки SMTP.
+ *
+ * Секретные значения передаются через окружение и не хранятся в Git.
  */
-$recipient = 'filpan@yandex.ru';
-$senderEmail = 'no-reply@filpan.ru';
-$senderName = 'Сайт filpan.ru';
+$smtpHost = getEnvironmentValue('SMTP_HOST', 'mail.hosting.reg.ru');
+$smtpPort = (int) getEnvironmentValue('SMTP_PORT', '587');
+$smtpEncryption = strtolower(
+    getEnvironmentValue('SMTP_ENCRYPTION', 'tls')
+);
+$smtpUsername = getEnvironmentValue('SMTP_USERNAME', 'no-reply@filpan.ru');
+$smtpPassword = getEnvironmentValue('SMTP_PASSWORD', 'qwF-5Gi-9rZ-Gd9');
+$recipient = getEnvironmentValue(
+    'FEEDBACK_RECIPIENT',
+    'filpan@yandex.ru'
+);
+$senderEmail = getEnvironmentValue('SMTP_FROM_EMAIL', $smtpUsername);
+$senderName = getEnvironmentValue('SMTP_FROM_NAME', 'Сайт filpan.ru');
 
 /*
  * Максимальное общее количество успешно отправленных писем в сутки.
@@ -53,6 +69,21 @@ function sendJson($success, $message, $statusCode)
     );
 
     exit;
+}
+
+
+/**
+ * Читает строковое значение из окружения.
+ */
+function getEnvironmentValue($name, $defaultValue)
+{
+    $value = getenv($name);
+
+    if ($value === false || trim($value) === '') {
+        return $defaultValue;
+    }
+
+    return trim($value);
 }
 
 
@@ -177,7 +208,7 @@ function reserveDailyEmailSlot($counterFile, $dailyLimit)
         }
 
         /*
-         * Резервируем одно письмо до вызова mail().
+         * Резервируем одно письмо до отправки через SMTP.
          */
         $counterData['count']++;
 
@@ -225,7 +256,7 @@ function reserveDailyEmailSlot($counterFile, $dailyLimit)
 
 /**
  * Возвращает зарезервированную отправку,
- * если mail() завершилась ошибкой.
+ * если SMTP-отправка завершилась ошибкой.
  */
 function releaseDailyEmailSlot($counterFile)
 {
@@ -442,6 +473,34 @@ if ($commentLength > 2000) {
 
 
 /*
+ * Проверяем серверную SMTP-конфигурацию до резервирования лимита.
+ */
+if (
+    $smtpUsername === ''
+    || $smtpPassword === ''
+    || $senderEmail === ''
+    || !filter_var($senderEmail, FILTER_VALIDATE_EMAIL)
+    || !filter_var($recipient, FILTER_VALIDATE_EMAIL)
+    || $smtpPort < 1
+    || $smtpPort > 65535
+    || !in_array($smtpEncryption, array('tls', 'ssl'), true)
+) {
+    error_log(
+        'Ошибка конфигурации SMTP формы filpan.ru. '
+        . 'Проверьте SMTP_USERNAME, SMTP_PASSWORD, '
+        . 'SMTP_FROM_EMAIL, FEEDBACK_RECIPIENT, '
+        . 'SMTP_PORT и SMTP_ENCRYPTION.'
+    );
+
+    sendJson(
+        false,
+        'Сервис временно недоступен. Попробуйте позднее.',
+        500
+    );
+}
+
+
+/*
  * Очищаем данные для почтовых заголовков.
  */
 $cleanName = cleanHeaderValue($name);
@@ -496,10 +555,6 @@ $subjectText = $formType === 'callback'
     ? 'Заказ звонка с сайта filpan.ru'
     : 'Сообщение с сайта filpan.ru';
 
-$encodedSubject = '=?UTF-8?B?'
-    . base64_encode($subjectText)
-    . '?=';
-
 
 /*
  * Формируем тело письма.
@@ -519,40 +574,37 @@ $message = implode("\r\n", $messageLines);
 
 
 /*
- * Формируем заголовки.
- *
- * Адрес отправителя должен принадлежать домену сайта.
+ * Отправляем письмо через авторизованный SMTP REG.RU.
  */
-$encodedSenderName = '=?UTF-8?B?'
-    . base64_encode($senderName)
-    . '?=';
+$mailer = new PHPMailer(true);
+$isSent = false;
+$sendError = '';
 
-$headers = array(
-    'MIME-Version: 1.0',
-    'Content-Type: text/plain; charset=UTF-8',
-    'Content-Transfer-Encoding: 8bit',
-    'From: '
-    . $encodedSenderName
-    . ' <'
-    . $senderEmail
-    . '>',
-    'X-Mailer: PHP/' . PHP_VERSION
-);
+try {
+    $mailer->isSMTP();
+    $mailer->Host = $smtpHost;
+    $mailer->Port = $smtpPort;
+    $mailer->SMTPAuth = true;
+    $mailer->Username = $smtpUsername;
+    $mailer->Password = $smtpPassword;
+    $mailer->SMTPSecure = $smtpEncryption;
+    $mailer->Timeout = 30;
+    $mailer->CharSet = 'UTF-8';
+    $mailer->Encoding = 'base64';
+    $mailer->isHTML(false);
+    $mailer->setFrom($senderEmail, $senderName);
+    $mailer->addAddress($recipient);
 
-if ($formType === 'message') {
-    $headers[] = 'Reply-To: ' . $cleanEmail;
+    if ($formType === 'message') {
+        $mailer->addReplyTo($cleanEmail, $cleanName);
+    }
+
+    $mailer->Subject = $subjectText;
+    $mailer->Body = $message;
+    $isSent = $mailer->send();
+} catch (Exception $exception) {
+    $sendError = $exception->getMessage();
 }
-
-
-/*
- * Отправляем письмо.
- */
-$isSent = mail(
-    $recipient,
-    $encodedSubject,
-    $message,
-    implode("\r\n", $headers)
-);
 
 
 /*
@@ -569,7 +621,8 @@ if (!$isSent) {
 
     error_log(
         'Ошибка отправки формы filpan.ru: '
-        . 'mail() вернула false. IP: '
+        . ($sendError !== '' ? $sendError : $mailer->ErrorInfo)
+        . '. IP: '
         . $remoteAddress
     );
 
