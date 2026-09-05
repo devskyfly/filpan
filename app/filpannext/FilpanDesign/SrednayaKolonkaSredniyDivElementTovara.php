@@ -34,10 +34,10 @@
         </div>
 
         <div style="text-align:center">
-            <a class="lightbox-40161040460336 callbackElementTovara orange_link">Напишите нам</a>
+            <a class="lightbox-40161040460336 callbackElementTovara orange_link js-open-feedback" data-feedback-type="message">Напишите нам</a>
         </div>
         <div style="text-align:center">
-            <a class="lightbox-40151877212348 callbackElementTovara orange_link">Закажите звонок</a>
+            <a class="lightbox-40151877212348 callbackElementTovara orange_link js-open-feedback" data-feedback-type="callback">Закажите звонок</a>
         </div>
     </div>
 

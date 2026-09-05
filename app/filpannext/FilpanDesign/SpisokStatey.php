@@ -130,6 +130,7 @@ $description=$ElementVidStatyi->poluchitSvoystvo('description');
 			<div id='Korzina'>
 			<?require('ObshiyeModuli/Korzina.php');?>
 		</div>
+        <?require('ObshiyeModuli/FormModalWindow.php');?>
 </body>
 </html>
 <?

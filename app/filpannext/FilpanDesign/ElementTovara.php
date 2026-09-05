@@ -262,6 +262,7 @@ if (!empty($MassivRoditeleyElementaMenu)) {
 
         <div id="SrednayaKolonkaSredniyDivDlyaTovara">
             <? require('SrednayaKolonkaSredniyDivElementTovara.php'); ?>
+            <? require('ObshiyeModuli/FeedbackModalScript.php'); ?>
         </div>
     </div>
 
@@ -273,6 +274,8 @@ if (!empty($MassivRoditeleyElementaMenu)) {
 <div id='Korzina'>
     <? //require('ObshiyeModuli/Korzina.php');?>
 </div>
+
+<? require('ObshiyeModuli/FormModalWindow.php'); ?>
 
 
 <div id="FonZatemneniyaKorzini2"></div>

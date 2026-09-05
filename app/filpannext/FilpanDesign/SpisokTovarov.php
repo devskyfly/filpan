@@ -173,7 +173,7 @@ if ($TekushayaPoziciyaStraniciSpiska > 0) {
 		<div id='Korzina'>
 			<?require('ObshiyeModuli/Korzina.php');?>
 		</div>
-
+        <?require('ObshiyeModuli/FormModalWindow.php');?>
 </body>
 </html>
 <?
