@@ -124,6 +124,8 @@ $description="Поиск товаров и услуг Filpan.ru";
 			<?require('ObshiyeModuli/Korzina.php');?>
 		</div>
 
+        <?require('ObshiyeModuli/FormModalWindow.php');?>
+
 
 </body>
 </html>

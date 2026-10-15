@@ -1,2 +1,2 @@
 !#/bin/bash
-zip -r arc.zip app -x '.htaccess' 'volumes/*' '.git/*' 'arc.zip'
+zip -r arc.zip app -x '.htaccess' 'volumes/*' '.git/*' 'arc.zip' 'filpannext/FunkciiIKlassi/Klassi/Zapros/*'

@@ -15,7 +15,7 @@ echo "<noindex>";
         <div class="bottomFlyBar_rightTell">8 (495) <span>776-05-70</span></div>
     </div>
     <div class="bottomFlyBar_right">
-        <a href="tel:jarosss333" class="bottomFlyBar_linkSedn">Связаться по SKYPE</a>
+
     </div>
     <div class="clear"></div>
 </div>
@@ -67,8 +67,8 @@ echo "<noindex>";
         <div class="bloker_footer">
             <div class="blocker_header">Свяжитесь с нами:</div>
             <div class="bloker_content">
-                   <a class="lightbox-40161040460336 callback orange_link">Напишите нам</a>
-                   <a class="lightbox-40151877212348 orange_link callback">Закажите звонок</a>
+                   <a class="lightbox-40161040460336 callback orange_link js-open-feedback" data-feedback-type="message">Напишите нам</a>
+                   <a class="lightbox-40151877212348 orange_link callback js-open-feedback" data-feedback-type="callback">Закажите звонок</a>
             </div>
         </div>
 

@@ -125,6 +125,7 @@ $description = str_replace('_***_', $ElementTovara->poluchitSvoystvo('kluchevoe_
             </div>
             <div id="SrednayaKolonkaSredniyDivDlyaTovara">
                 <? require('SrednayaKolonkaSredniyDivKartrigiDlyaPrintera.php'); ?>
+                <? require('ObshiyeModuli/FeedbackModalScript.php'); ?>
             </div>
         </div>
 
@@ -136,6 +137,8 @@ $description = str_replace('_***_', $ElementTovara->poluchitSvoystvo('kluchevoe_
     <div id='Korzina'>
         <? //require('ObshiyeModuli/Korzina.php');?>
     </div>
+
+    <? require('ObshiyeModuli/FormModalWindow.php'); ?>
 
 
     <div id="FonZatemneniyaKorzini2"></div>
