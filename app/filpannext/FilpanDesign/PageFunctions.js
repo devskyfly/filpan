@@ -261,8 +261,12 @@ function OtpravitZakaz() {
             url: WEB_ROOT + "FilpanDesign/ObshiyeModuli/OtpravitZakaz.php",
             data: StrokaParametrov,
             success: function (msg) {
-            	$("#Korzina").load(WEB_ROOT + "FilpanDesign/ObshiyeModuli/Final_korzina.php",StrokaParametrov);
-            	//$("#Korzina").html(msg);
+                if ($.trim(msg) == 'Yes') {
+                    $("#Korzina").load(WEB_ROOT + "FilpanDesign/ObshiyeModuli/Final_korzina.php", StrokaParametrov);
+                }
+                else {
+                    $("#Korzina").html('<div class="tite_blcok_color">Не удалось отправить заказ по электронной почте. Попробуйте позже или свяжитесь с нами.</div>');
+                }
             }
         }
     )

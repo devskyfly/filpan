@@ -1,5 +1,6 @@
 <?
 require_once($_SERVER['DOCUMENT_ROOT']."/filpannext/FunkciiIKlassi/FailKonfiguracii.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/lib_functions/functions/smtp_mailer.php");
 /*StrokaParametrov='FIO='+encodeURIComponent($('#FIO').val())+
 '&ORGANIZACIYA='+encodeURIComponent($('#ORGANIZACIYA').val())+
 '&TELEFON='+encodeURIComponent($('#TELEFON').val())+
@@ -384,15 +385,24 @@ $iteratorTovarov=0;
 		$PismoFirme.=$Uslugi.$Tovari.sprintf('<table class="tablicaBlankaZakaza"><tr><td>Общая сумма:</td><td>%s руб.</td></tr></table>',$SummaVsego);
 		}
 		//echo $PismoFirme;
-		mail($_POCHTA_FIRMI, "Заказ от ".$FIO, $PismoFirme,
-		"Content-type: text/html; charset=UTF-8 \r\n"
- 		."From: info@filpan.ru\r\n"
-		."Reply-To: ".$EMAIL."\r\n"
-		."X-Mailer: PHP/" . phpversion());
+		$PismaOtpravleni = true;
+		try
+		{
+			sendSiteSmtpMail(
+				$_POCHTA_FIRMI,
+				"Заказ от ".$FAMILIYA.' '.$IMA,
+				$PismoFirme,
+				$EMAIL,
+				$FAMILIYA.' '.$IMA
+			);
+		}
+		catch (Exception $exception)
+		{
+			error_log('Order notification email failed: ' . $exception->getMessage());
+			$PismaOtpravleni = false;
+		}
 		
 		file_put_contents($_SERVER['DOCUMENT_ROOT'].'/MailRegister.html', '<div style="border: 1px solid black; padding:5px; margin:5px;">'.$PismoFirme.'</div>',FILE_APPEND);
-
-		sleep(5);
 
 		if($VIEZD==1)
 		{
@@ -405,12 +415,22 @@ $iteratorTovarov=0;
 		//echo $PismoKlientu;
 
 
+		try
+		{
+			sendSiteSmtpMail(
+				$EMAIL,
+				"Заказ от Filpan",
+				$PismoKlientu,
+				$_POCHTA_FIRMI
+			);
+		}
+		catch (Exception $exception)
+		{
+			error_log('Order confirmation email failed: ' . $exception->getMessage());
+			$PismaOtpravleni = false;
+		}
 
-		mail($_POST['EMAIL'], "Заказ от Filpan", $PismoKlientu,
-		"Content-type: text/html; charset=UTF-8 \r\n"
- 		."From: ".$_POCHTA_FIRMI."\r\n"
-		."Reply-To: ".$_POCHTA_FIRMI."\r\n"
-		."X-Mailer: PHP/" . phpversion());/**/
+		echo $PismaOtpravleni ? "Yes" : "No";
 
 
 		

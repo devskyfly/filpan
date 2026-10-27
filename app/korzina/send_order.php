@@ -1,4 +1,5 @@
 ﻿<?
+require_once($_SERVER['DOCUMENT_ROOT']."/lib_functions/functions/smtp_mailer.php");
 
 $hostname = "127.0.0.1";
 $username = "u3558310_filpan";
@@ -229,31 +230,33 @@ else
 $date=date("F j, Y, g:i a");
 $to = "$Email";
 $subject = "Заказ от $date";
-$header =$header."Content-Type: text/html; charset=utf-8 \r\n";
-$header =$header."From:<'filpan@yandex.ru'>\r\n";
-$retval = mail ($to,$subject,$mess_user,$header);
+$customerEmailSent = true;
+$adminEmailSent = true;
 
-sleep(2);
-//f( $retval == true )  
-if(  true )  
-  {
-      echo "Yes";
-$res = mysql_query("UPDATE zakaz_number SET number=number+1"); 
- 
-$date=date("F j, Y, g:i a");
-$to = "filpan@yandex.ru"; // vladmish@mail.ru  
-$subject = "Заказ от $date";
-
-$header = "From:$Email \r\n"; 
-$header =$header."Content-Type: text/html; charset=utf-8 \r\n";
-$retval = mail ($to,$subject,$message,$header);
-// write_fl_a_pl("salles.txt",$message);
+try {
+    sendSiteSmtpMail($to, $subject, $mess_user);
+} catch (Exception $exception) {
+    error_log('Order confirmation email failed: ' . $exception->getMessage());
+    $customerEmailSent = false;
 }
 
-else
-{
-echo "No";
+$adminRecipient = "filpan@yandex.ru";
+try {
+    sendSiteSmtpMail(
+        $adminRecipient,
+        $subject,
+        $message,
+        $Email,
+        $Name
+    );
+} catch (Exception $exception) {
+    error_log('Order notification email failed: ' . $exception->getMessage());
+    $adminEmailSent = false;
 }
+
+$res = mysql_query("UPDATE zakaz_number SET number=number+1");
+
+echo $customerEmailSent && $adminEmailSent ? "Yes" : "No";
 
 
 ?>
